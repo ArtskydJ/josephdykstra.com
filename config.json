@@ -1,0 +1,10 @@
+{
+	"sendOptions": {
+		"extensions": [
+			"htm",
+			"html"
+		],
+		"root": "./static/"
+	}
+
+}

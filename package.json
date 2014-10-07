@@ -1,0 +1,31 @@
+{
+  "name": "josephdykstra.com",
+  "version": "0.0.0",
+  "description": "Joseph Dykstra's site; josephdykstra.com",
+  "main": "server.js",
+  "scripts": {
+    "test": "tap test/*.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtskydJ/josephdykstra.com.git"
+  },
+  "keywords": [
+    "joseph",
+    "dykstra",
+    "josephdykstra",
+    "send",
+    "http",
+    "server"
+  ],
+  "author": "Joseph Dykstra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArtskydJ/josephdykstra.com/issues"
+  },
+  "homepage": "https://github.com/ArtskydJ/josephdykstra.com",
+  "dependencies": {
+    "send": "~0.9.3"
+  }
+}
