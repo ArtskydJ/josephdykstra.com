@@ -1,0 +1,25 @@
+# made with help from: http://htaccess.madewithlove.be/
+
+AddOutputFilterByType DEFLATE text/html text/plain application/javascript text/css
+
+ExpiresActive On
+ExpiresDefault "access plus 4 hours"
+ExpiresByType application/javascript A3600
+ExpiresByType application/x-javascript A3600
+ExpiresByType text/javascript A3600
+ExpiresByType application/json A5
+ExpiresByType text/html A90
+ExpiresByType text/plain A10
+ExpiresByType text/css A3600
+
+# Handle search engine static file stuff using github.com/TehShrike/seoaas
+#   * if you use a subdirectory, like "site.com/blog/" you'd change to "RewriteBase /blog/"
+#   * if you're running your own static generator site, change the domain in RewriteRule
+#   * if you've changed your config.js `pagePathPrefix` you'll need to change every instance
+#     of "post/" to your new prefix, e.g. "journal/" or whatever
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{QUERY_STRING} ^_escaped_fragment_=(?:[^&]*/)?([^&/]*)
+RewriteRule .* "http://seo.noddityaas.com/?noddityRoot=http://%{HTTP_HOST}%{REQUEST_URI}content/&postUrlRoot=http://%{HTTP_HOST}%{REQUEST_URI}#!/post/&post=%1"
+</IfModule>
