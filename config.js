@@ -1,11 +1,20 @@
 noddityConfig = {
-	title: 'Noddity',
+	title: 'Joseph Dykstra',
 	noddityRoot: window.location.pathname + 'content/',
-	editLink: 'https://github.com/TehShrike/noddity/edit/master/content/',
+	editLink: 'https://github.com/ArtskydJ/josephdykstra.com/edit/master/content/',
 	logo: 'logo.svg',
 	errorPage: '404.md',
 	pathPrefix: '#!/',
-	pagePathPrefix: 'post/',
+	pagePathPrefix: '/',
 	debug: false,
-	sidebar: null
+	sidebar: null,
+
+	send: {
+		root: './static/',
+		extensions: [
+			'md',
+			'html',
+			'htm'
+		]
+	}
 }
