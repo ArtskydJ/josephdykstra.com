@@ -7,14 +7,5 @@ noddityConfig = {
 	pathPrefix: '#!/',
 	pagePathPrefix: '/',
 	debug: false,
-	sidebar: null,
-
-	send: {
-		root: './static/',
-		extensions: [
-			'md',
-			'html',
-			'htm'
-		]
-	}
+	sidebar: null
 }

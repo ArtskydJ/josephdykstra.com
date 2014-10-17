@@ -1,4 +1,6 @@
 Welcome!
 ==========
 
-Go edit this markdown file and make this site your own.
+Hey!
+
+I'm Joseph Dykstra. I like writing code and making bad puns.

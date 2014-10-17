@@ -1,0 +1,9 @@
+{
+	"root": "./static/",
+	"extensions": [
+		"md",
+		"html",
+		"htm"
+	],
+	"port": 80
+}

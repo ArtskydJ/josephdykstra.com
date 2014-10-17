@@ -1,10 +1,9 @@
 var http = require('http')
 var send = require('send')
-var config = require('./config.js')
-var sendOptions = config.send
+var config = require('./serverConfig.json')
 
 function listener(req, res) {
-	send(req, req.url, sendOptions).pipe(res)
+	send(req, req.url, config.send).pipe(res)
 }
 
 http.createServer().listen(process.env.PORT || config.port).on('error', function (err) {
