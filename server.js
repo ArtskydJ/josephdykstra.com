@@ -1,22 +1,17 @@
 var http = require('http')
 var send = require('send')
 var config = require('./serverConfig.json')
+var PORT = process.env.PORT || config.port || 80
 
-function listener(req, res) {
+http.createServer(function (req, res) {
+	console.log('accessing:', req.url)
 	send(req, req.url, config.send).pipe(res)
-}
-
-http.createServer().listen(process.env.PORT || config.port).on('error', function (err) {
+}).listen(PORT).on('error', function (err) {
 	if (err.code == 'EADDRINUSE') {
 		console.log('Address in use, retrying...');
 		setTimeout(function () {
-			try {
-				server.close();
-			} catch (e) {
-				console.error(e)
-			} finally {
-				server.listen(PORT);
-			}
+			try { server.close() } catch (e) { console.error(e) }
+			server.listen(PORT);
 		}, 1000);
 	}
 })
