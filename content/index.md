@@ -1,17 +1,20 @@
-Welcome!
-========
+title: Welcome!
+date: 2014-10-23
 
 I'm Joseph Dykstra. I like writing code and making bad puns.
 
-- [Github](http://github.com/artskydj)
-- [Twitter](https://twitter.com/JosephDykstra)
-- [NPM](http://npmjs.org/~artskydj)
+Perhaps you know of me from one of the following websites. If you don't, then feel free to check out some of my stuff.
+
+[![Github](/images/GitHubIcon.png)](http://github.com/artskydj)
+[![Twitter](/images/TwitterIcon.png)](https://twitter.com/JosephDykstra)
+[![NPM](/images/NpmIcon.png)](http://npmjs.org/~artskydj)
+[![YouTube](/images/YouTubeIcon.png)](https://www.youtube.com/user/YoungerDykstras)
 
 #About Me
 
 ##FLL
 
-I was on the [First Lego League](http://www.firstlegoleague.org/) team: [Data Dragons](http://www.firstlegoleague.org/) for 5 years.
+I was on a [First Lego League](http://www.firstlegoleague.org/) team, the [Data Dragons](http://www.firstlegoleague.org/) for 5 years.
 
 First Lego League (FLL) is a program designed to teach students about science and technology. Each team researchs a problem, creates a solution, and presents it to the judges at a competition. They also create a LEGO Mindstorms robot, and program it to do missions on a 4 ft. x 8 ft. table. Whoever scores the most points gets an award, whoever has the best presentation gets an award, etc.
 
