@@ -1,22 +1,28 @@
+/* Positions */
 #sidebar {
 	float: left;
 	position: relative;
-	padding: 25px;
-	width: 300px;
+	padding: 20px;
+	width: 200px;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#888888));
+	background: -webkit-linear-gradient(top, #888888, #FFFFFF);
+	background: -moz-linear-gradient(top, #888888, #FFFFFF);
+	background: -ms-linear-gradient(top, #888888, #FFFFFF);
+	background: -o-linear-gradient(top, #888888, #FFFFFF);
 }
 
 #main {
 	float: left;
-	padding: 20px;
-	margin: 10px;
-	width: 700px;
+	margin: 0px;
+	margin-left: 25px;
+	width: 650px;
 }
 
 body {
 	float: left;
-	min-width: 1110px;
+	min-width: 915px;
 	color: #141414;
-	background-color: #FAFAFA;
+	background-color: #FFFFFF;
 }
 
 #sidebar ol {
@@ -34,6 +40,7 @@ body {
 	list-style-type: none;
 }
 
+/* Fonts */
 h1,h2,h3,h4,#sidebar a {
 	font-family: "Century Gothic", sans-serif;
 }
@@ -63,15 +70,16 @@ body {
 	font-size: x-large;
 }
 
+/* Pieces */
 img.logo {
 	display: block;
-	width: 120px;
+	width: 200px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 div#edit-post-link {
-	position: absolute;
+	position: fixed;
 	top: 2em;
 	right: 0;
 	border: 0;
@@ -87,12 +95,12 @@ div#edit-post-link a {
 }
 
 blockquote {
-	background-color: #ECECEC;
+	background-color: #999999;
 	padding: 5px 30px;
 	border-radius: 5px;
 	margin: 10px 20px;
 }
 
 code {
-	font-family: "Monaco","Courier","monospace";
+	font-family: "Monaco", "Courier", monospace;
 }

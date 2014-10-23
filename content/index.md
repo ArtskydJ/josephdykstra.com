@@ -19,7 +19,7 @@ First Lego League (FLL) is a program designed to teach students about science an
 
 I learned about basic robotics, mechanics, teamwork, and a little bit of programming.
 
-###Team Acheivements (During the time I was on the team)
+###Team Acheivements (While I was on the team)
 
 - 2008: Climate Connections
 	- Regionals: 1st Place Teamwork
@@ -50,7 +50,7 @@ VEX was designed to teach students about STEM. (Science, Technology, Engineering
 
 I learned about intermediate robotics, mechanics, and programming. It was also a good tool for learning to handle stress. :)
 
-###Team Acheivements (During the time I was on the team)
+###Team Acheivements (While I was on the team)
 
 - 2013: Sack Attack
 	- Regionals: Tournament Champions at 5 of 7; various other awards
