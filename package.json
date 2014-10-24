@@ -18,7 +18,7 @@
   "scripts": {
     "test": "tap ./test/*.js",
     "watch": "watchify js/index.js -o js/build.js -d",
-    "deploy": "nohup ploy server ./data -p 80 -a ../auth.json",
+    "deploy": "nohup ploy server -d ./data -p 80 -a ../auth.json",
     "redeploy": "git push ploy master",
     "postinstall": "browserify js/index.js | uglifyjs -m -o js/build.js"
   },

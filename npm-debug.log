@@ -1,0 +1,26 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'deploy' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose run-script [ 'predeploy', 'deploy', 'postdeploy' ]
+5 info predeploy josephdykstra-com@2.2.0
+6 info deploy josephdykstra-com@2.2.0
+7 verbose unsafe-perm in lifecycle true
+8 info josephdykstra-com@2.2.0 Failed to exec deploy script
+9 error josephdykstra-com@2.2.0 deploy: `nohup ploy server ./data -p 80 -a ../auth.json`
+9 error Exit status 8
+10 error Failed at the josephdykstra-com@2.2.0 deploy script.
+10 error This is most likely a problem with the josephdykstra-com package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     nohup ploy server ./data -p 80 -a ../auth.json
+10 error You can get their info via:
+10 error     npm owner ls josephdykstra-com
+10 error There is likely additional logging output above.
+11 error System Linux 3.13.0-32-generic
+12 error command "/usr/local/bin/node" "/usr/local/bin/npm" "run" "deploy"
+13 error cwd /root/josephdykstra.com
+14 error node -v v0.10.32
+15 error npm -v 1.4.28
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]
