@@ -14,7 +14,7 @@ Perhaps you know of me from one of the following websites. If you don't, then fe
 
 ##FLL
 
-I was on a [First Lego League](http://www.firstlegoleague.org/) team, the [Data Dragons](http://www.firstlegoleague.org/) for 5 years.
+I was on a [First Lego League](http://www.firstlegoleague.org/) team, the [Data Dragons](http://datadragons.com/) for 5 years.
 
 First Lego League (FLL) is a program designed to teach students about science and technology. Each team researchs a problem, creates a solution, and presents it to the judges at a competition. They also create a LEGO Mindstorms robot, and program it to do missions on a 4 ft. x 8 ft. table. Whoever scores the most points gets an award, whoever has the best presentation gets an award, etc.
 
