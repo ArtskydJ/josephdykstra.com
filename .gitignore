@@ -1,2 +1,12 @@
+#############
+## Custom
+#############
+node_modules/*
+mydb
 js/build.js
-node_modules
+log/*
+data/*
+repo/*
+npm-debug.log
+nohup.out
+
