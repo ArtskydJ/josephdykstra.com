@@ -27,6 +27,7 @@ I learned about basic robotics, mechanics, teamwork, and a little bit of program
 	- Regionals: 1st Place Champions
 	- Nebraska State: 3rd Place Champions
 
+* * *
 
 ##VEX
 
