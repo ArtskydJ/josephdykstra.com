@@ -19,7 +19,6 @@
 
 	<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="fonts.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="shortcut icon" href="images/icon/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="images/icon/favicon.ico">
@@ -52,7 +51,7 @@
 	</a>
 
 	<div>
-		<h3>Posts</h3>
+		<h3>Pages</h3>
 		<ol>
 			{{#postList}}
 				<li><a href="{{pathPrefix}}{{pagePathPrefix}}{{filename}}">{{title}}</a></li>
@@ -62,7 +61,7 @@
 </script>
 <script id="template-main" type="text/ractive">
 
-	{{#editLink}}<div id="edit-post-link"><a href="{{editLink}}{{current}}">Edit this post</a></div>{{/editLink}}
+	{{#editLink}}<div id="edit-post-link"><a href="{{editLink}}{{current}}">Edit this page</a></div>{{/editLink}}
 	<article>
 		<div>
 			{{#metadata.title}}
