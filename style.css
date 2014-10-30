@@ -38,6 +38,7 @@ body {
 	margin: 20px 0px;
 	line-height: 1.05;
 	list-style-type: none;
+	font-size: x-large;
 }
 
 /* Fonts */
@@ -67,7 +68,7 @@ h4 {
 
 body {
 	font-family: "Tahoma", sans-serif;
-	font-size: x-large;
+	font-size: large;
 }
 
 /* Pieces */
@@ -80,9 +81,10 @@ img.logo {
 
 div#edit-post-link {
 	position: fixed;
-	top: 2em;
+	top: 2.5em;
 	right: 0;
 	border: 0;
+	font-size: x-large;
 	-webkit-transform: rotate(45deg);
 	-o-transform:rotate(45deg);
 	-moz-transform:rotate(45deg);
