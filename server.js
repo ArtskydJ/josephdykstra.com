@@ -7,6 +7,9 @@ var fileServer = new Static.Server(config.staticDir, {gzip: true})
 
 http.createServer(function (req, res) {
 	config.verbose && console.log('accessing:', req.url)
+	if (req.url.lastIndexOf('/') === req.url.length-1) {
+		req.url += "index.html"
+	}
 	fileServer.serveFile(req.url, 200, {}, req, res).on('error', function (err) {
 		res.writeHead(err.status, err.headers)
 		res.end(err.message)
