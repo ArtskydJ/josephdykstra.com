@@ -1,12 +1,5 @@
 {
-	"send": {
-		"root": "./",
-		"extensions": [
-			"md",
-			"html",
-			"htm"
-		]
-	},
+	"staticDir": "./",
 	"port": 80,
 	"verbose": false
 }
