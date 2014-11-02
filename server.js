@@ -11,7 +11,7 @@ http.createServer(function (req, res) {
 		req.url += "index.html"
 	}
 	fileServer.serveFile(req.url, 200, {}, req, res).on('error', function (err) {
-		res.writeHead(err.status || 500, err.headers)
+		res.writeHead((err && err.status) || 500, err.headers)
 		res.end(err.message)
 	})
 }).listen(PORT).on('error', function (err) {
