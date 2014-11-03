@@ -2,10 +2,8 @@ var Ractive = require('ractive')
 var config = noddityConfig
 var Renderer = require('noddity-renderer')
 
-function noop() {}
-
-module.exports = function MainViewModel(butler, linkifyEmitter) {
-	var renderer = new Renderer(butler, linkifyEmitter.linkify)
+module.exports = function MainViewModel(butler) {
+	var renderer = new Renderer(butler)
 	var changePostInRactive = null
 
 	var titleRactive = new Ractive({
@@ -89,10 +87,6 @@ module.exports = function MainViewModel(butler, linkifyEmitter) {
 			}
 		})
 	}
-
-	linkifyEmitter.on('link', function(pageName) {
-		butler.getPost(pageName, noop)
-	})
 
 	function onPostChanged(key, newValue, oldValue) {
 		function titleHasChanged(postListItem) {

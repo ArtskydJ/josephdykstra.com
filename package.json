@@ -17,20 +17,15 @@
   },
   "scripts": {
     "test": "tap ./test/*.js",
-    "watch": "watchify js/index.js -o js/build.js -d",
     "deploy": "nohup ploy server -d ./data -p 80 -a ../auth.json",
-    "redeploy": "git push ploy master",
-    "postinstall": "browserify js/index.js | uglifyjs -m -o js/build.js"
+    "redeploy": "git push ploy master"
   },
   "devDependencies": {
     "tap": "~0.4.4"
   },
   "dependencies": {
     "level-sublevel": "~5.2.0",
-    "levelup": "~0.18.2",
-    "localstorage-down": "~0.4.0",
     "noddity-butler": "^1.0.0",
-    "noddity-linkifier": "~2.0.0",
     "noddity-renderer": "^2.0.0",
     "node-static": "^0.7.6",
     "pagedown": "~1.1.0",
