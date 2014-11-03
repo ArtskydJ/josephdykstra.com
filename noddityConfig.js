@@ -4,7 +4,7 @@ noddityConfig = {
 	editLink: 'https://github.com/ArtskydJ/josephdykstra.com/edit/master/content/',
 	logo: '/images/logo.png',
 	errorPage: '404.md',
-	pathPrefix: '#!/',
+	pathPrefix: '',
 	pagePathPrefix: '',
 	debug: false,
 	sidebar: null
