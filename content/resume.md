@@ -50,7 +50,7 @@ Not enrolled, no firm college plans
 
 [wellrootedgardens.com](http://wellrootedgardens.com)
 
-I work about two 8-hour days per week for Well Rooted Gardens doing landscape work.
+I work about one 8-hour day each week for Well Rooted Gardens doing landscape work. During the winter months, I do snow removal for them.
 
 ###Coding in the Wild • October 2, 2013 - [Present]
 
