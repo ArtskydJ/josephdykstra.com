@@ -50,7 +50,7 @@ Not enrolled, no firm college plans
 
 [wellrootedgardens.com](http://wellrootedgardens.com)
 
-I work about two 8-hour days per week for Well Rooted Gardens doing landscape work.
+I work about one 8-hour day each week for Well Rooted Gardens doing landscape work. During the winter months, I do snow removal for them.
 
 ###Coding in the Wild • October 2, 2013 - [Present]
 
@@ -73,17 +73,18 @@ Being on this team taught me about teamwork and basic robotics.  The team took 1
 #Personal Projects • July 2008 - [Present] 
 [Github Repositories](https://github.com/ArtskydJ?tab=repositories)  - [NPM modules](http://npmjs.org/~artskydj)
 
-- I have written and maintained over 10 JavaScript modules for NodeJS
+- I have written and I maintain about 15 JavaScript modules for NodeJS
 - I work on programming puzzles from programmingpraxis.com
 - I wrote a library in C to make learning and using SDL easier
-- I entered a RobotC competition, and was 2nd Place in my Division
+- I entered a RobotC competition, and took 1st Place overall
+- I entered a Robot Virtual Worlds competition, and took 2nd Place in my Division
 - I wrote a Tetris clone in C (mostly working)
 - I wrote a Snake clone in C
 - I wrote an iterative 8-Queens Solver in C
 - I wrote a Peg-Solitaire Triangle Solver in Python
 - I wrote a VEX Lift Gear Ratio Calculator for my VEX team in Python 
-- I committed to a VEX Team's code on Github
-- and more! Check out my Github Activity!
+- I have created many pull requests on Github to various open source projects
+- and more! Check out my [Github Activity](https://github.com/ArtskydJ?tab=activity)!
 
 #Skills
 
