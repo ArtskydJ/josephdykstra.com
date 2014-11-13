@@ -1,6 +1,6 @@
 {
 	"title": "Joseph Dykstra",
-	"noddityRoot": "content/",
+	"noddityRoot": "./content",
 	"editLink": "https://github.com/ArtskydJ/josephdykstra.com/edit/master/content/",
 	"logo": "/images/logo.png",
 	"errorPage": "404.md",

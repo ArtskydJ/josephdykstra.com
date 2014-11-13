@@ -1,8 +1,5 @@
-#############
-## Custom
-#############
 node_modules/*
-mydb
+database
 js/build.js
 log/*
 data/*

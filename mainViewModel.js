@@ -1,9 +1,11 @@
 var Ractive = require('ractive')
-var config = noddityConfig
+var config = require('./noddityConfig.json')
 var Renderer = require('noddity-renderer')
 
-module.exports = function MainViewModel(butler) {
-	var renderer = new Renderer(butler)
+module.exports = function MainViewModel(butler, mainRactiveTemplate) {
+	var renderer = new Renderer(butler, function (s) {return s}) //String
+	//render.populateRootRactive(post, ractive)
+	//render.renderPost(post, cb)
 	var changePostInRactive = null
 
 	var titleRactive = new Ractive({
@@ -15,28 +17,10 @@ module.exports = function MainViewModel(butler) {
 	})
 
 	var mainRactive = new Ractive({
-		el: 'main',
-		template: '#template-main',
+		el: '',
+		template: mainRactiveTemplate,
 		data: Object.create(config)
 	})
-
-	var sidebarTemplate = config.sidebar ? '{{{html}}}' : '#template-menu'
-
-	var sidebarRactive = new Ractive({
-		el: 'sidebar',
-		template: sidebarTemplate,
-		data: Object.create(config)
-	})
-
-	if (config.sidebar) {
-		butler.getPost(config.sidebar, function(err, post) {
-			if (err) {
-				sidebarRactive.set('html', err.message)
-			} else {
-				renderer.populateRootRactive(post, sidebarRactive)
-			}
-		})
-	}
 
 	function doSomethingAboutThisError(err) {
 		console.log(err)
@@ -45,7 +29,7 @@ module.exports = function MainViewModel(butler) {
 	function getPostList() {
 		butler.getPosts(function(err, posts) {
 			if (!err) {
-				sidebarRactive.set('postList', posts.reverse().filter(function(post) {
+				mainRactive.set('postList', posts.reverse().filter(function(post) {
 					return typeof post.metadata.title === 'string'
 				}).map(function(post) {
 					return {
@@ -64,24 +48,17 @@ module.exports = function MainViewModel(butler) {
 			if (err) {
 				mainRactive.set('html', err.message)
 				titleRactive.set('page', null)
-
-				if (key !== config.errorPage) {
-					window.location = window.location.origin
-						+ window.location.pathname
-						+ config.pathPrefix
-						+ config.pagePathPrefix
-						+ config.errorPage
-				}
 			} else {
 				titleRactive.set('page', post.metadata.title)
 
 				if (changePostInRactive) {
 					changePostInRactive(post)
 				} else {
-					changePostInRactive = renderer.populateRootRactive(post, mainRactive)
+					changePostInRactive = renderer.renderPost(post, console.log.bind(null, 'pwnage'))
+					//renderer.populateRootRactive(post, mainRactive)
 				}
 
-				if (!sidebarRactive.get('postList')) {
+				if (!mainRactive.get('postList')) {
 					getPostList()
 				}
 			}
@@ -93,7 +70,7 @@ module.exports = function MainViewModel(butler) {
 			return postListItem.filename === key && postListItem.title !== newValue.metadata.title
 		}
 
-		var postList = sidebarRactive.get('postList')
+		var postList = mainRactive.get('postList')
 		if (postList && postList.some(titleHasChanged)) {
 			getPostList()
 		}
@@ -103,6 +80,7 @@ module.exports = function MainViewModel(butler) {
 	butler.on('index changed', getPostList)
 
 	return {
-		setCurrent: changeCurrentPost
+		setCurrent: changeCurrentPost,
+		mainRactive: mainRactive
 	}
 }
