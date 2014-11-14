@@ -2,84 +2,73 @@ var Ractive = require('ractive')
 var config = require('./noddityConfig.json')
 var Renderer = require('noddity-renderer')
 
-module.exports = function MainViewModel(butler, mainRactiveTemplate) {
-	var renderer = new Renderer(butler, function (s) {return s}) //String
-	var changePostInRactive = null
+function cbIfErr(onErr, noErr) {
+	return function (err) {
+		if (err && !err.notFound) onErr(err)
+		else noErr.apply(null, [].slice.call(arguments, 1))
+	}
+}
 
-	var titleRactive = new Ractive({
-		el: '', //'title',
-		template: '{{title}}{{#page}} | {{page}}{{/page}}',
-		data: {
-			title: config.title
-		}
-	})
+module.exports = function MainViewModel(ractiveTemplate, butler, renderer) {
 
-	var mainRactive = new Ractive({
+	var ractive = new Ractive({
 		el: '',
-		template: mainRactiveTemplate,
+		template: ractiveTemplate,
 		data: Object.create(config)
 	})
 
-	function doSomethingAboutThisError(err) {
-		console.log(err)
-	}
-
-	function getPostList() {
-		butler.getPosts(function(err, posts) {
-			if (!err) {
-				mainRactive.set('postList', posts.reverse().filter(function(post) {
-					return typeof post.metadata.title === 'string'
-				}).map(function(post) {
-					return {
-						title: post.metadata.title,
-						filename: post.filename
-					}
-				}))
-			} else {
-				doSomethingAboutThisError(err)
+	function createPostList(posts) {
+		return posts.reverse().filter(function(post) {
+			return typeof post.metadata.title === 'string'
+		}).map(function(post) {
+			return {
+				title: post.metadata.title,
+				filename: post.filename.replace(/\.md$/, '')
 			}
 		})
+	}
+
+	function getPostList(cb) {
+		cb = cb || function () {}
+		var postList = ractive.get('postList')
+		if (postList) {
+			process.nextTick(cb.bind(null, null, postList))
+		} else {
+			butler.getPosts(cbIfErr(cb, function (posts) {
+				postList = createPostList(posts)
+				ractive.set('postList', postList)
+				cb(null, postList)
+			}))
+		}
 	}
 
 	function changeCurrentPost(key, cb) {
-		butler.getPost(key, function(err, post) {
-			if (err) {
-				mainRactive.set('html', err.message)
-				titleRactive.set('page', null)
-			} else {
-				titleRactive.set('page', post.metadata.title)
-
-				renderer.renderPost(post, cb)
-				/*if (changePostInRactive) {
-					changePostInRactive(post, cb)
-				} else {
-					changePostInRactive = renderer.renderPost(post, cb)
-					//renderer.populateRootRactive(post, mainRactive)
-				}*/
-
-				if (!mainRactive.get('postList')) {
-					getPostList()
-				}
-			}
-		})
+		butler.getPost(key, cbIfErr(cb, function (post) {
+			ractive.set('page', post.metadata.title)
+			getPostList(function () {
+				renderer.renderPost(post, cbIfErr(cb, function (html) {
+					ractive.set('html', html)
+					cb(null, ractive.toHTML())
+				}))
+			})
+		}))
 	}
 
-	function onPostChanged(key, newValue, oldValue) { //oldValue does nothing right now
+	/*function onPostChanged(key, newValue, oldValue) { //oldValue does nothing right now
 		function titleHasChanged(postListItem) {
 			return postListItem.filename === key && postListItem.title !== newValue.metadata.title
 		}
 
-		var postList = mainRactive.get('postList')
-		if (postList && postList.some(titleHasChanged)) {
+		var postList = ractive.get('postList')
+		if (postList && postList.some(titleHasChanged)) { //i broke this code!!!
 			getPostList()
 		}
 	}
 
-	butler.on('post changed', onPostChanged)
+	butler.on('post changed', onPostChanged)*/
 	butler.on('index changed', getPostList)
 
 	return {
-		//mainRactive: mainRactive,
 		setCurrent: changeCurrentPost
 	}
 }
