@@ -31,7 +31,7 @@ var model = (function () {
 
 //Routing
 function serveFile(req, res) {
-	console.log('default', req.url)
+	//console.log('default', req.url)
 	fileServer
 		.serveFile(req.url, 200, {}, req, res)
 		.on('error', function () {
@@ -48,7 +48,7 @@ function route(req, res) {
 		if (err) {
 			serveFile(req, res)
 		} else {
-			console.log('page:', path)
+			//console.log('page:', path)
 			res.writeHead(200)
 			res.end(html, 'utf8')
 		}
