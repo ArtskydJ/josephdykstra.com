@@ -1,15 +1,17 @@
 //Include
 var http = require('http')
 var Static = require('node-static')
-var serConfig = require('./serverConfig.json')
 var fs = require('fs')
+var serConfig = require('./serverConfig.json')
+
+var Ractive = require('ractive')
+var level = require('level')
+var route = require('router')()
+var Sublevel = require('level-sublevel')
 
 var Retrieval = require('noddity-fs-retrieval')
 var Butler = require('noddity-butler')
-var level = require('level')
-var route = require('router')()
-var Model = require('./mainViewModel')
-var Sublevel = require('level-sublevel')
+var Renderer = require('noddity-renderer')
 var nodConfig = require('./noddityConfig.json')
 
 //Settings
@@ -24,14 +26,22 @@ var db = Sublevel(level('./database'))
 var normalizedSublevelName = nodConfig.title.replace(/[^\w]+/g, '')
 var retrieve = new Retrieval(nodConfig.noddityRoot)
 var butler = new Butler(retrieve, db.sublevel(normalizedSublevelName))
-var model = new Model(butler, mainRactiveTemplate)
-var ractive = model.mainRactive
+var renderer = new Renderer(butler, function (s) {return s}) //String
 
-/*
-var events = ["construct", "config", "init", "render", "complete", "change", "update", "unrender", "teardown", "insert", "detach"]
-events.forEach(function (evnt) {
-	ractive.on(evnt, console.log('ractive', evnt))
-})*/
+//main view model
+
+function changeCurrentPost(butler, key, cb) {
+	butler.getPost(key, function(err, post) {
+		if (err) {
+			//mainRactive.set('html', err.message)
+			//titleRactive.set('page', null)
+			cb(err)
+		} else {
+			//titleRactive.set('page', post.metadata.title)
+			renderer.renderPost(post, cb)
+		}
+	})
+}
 
 //Routing
 function defaultServe(req, res) {
@@ -39,25 +49,41 @@ function defaultServe(req, res) {
 	fileServer
 		.serveFile(req.url, 200, {}, req, res)
 		.on('error', function () {
-			model.setCurrent('404.md')
+			model.setCurrent('404.md', function (err, html) {
+				if (!err && html) {
+					res.writeHead(404)
+					res.end(html, 'utf8')
+				} else {
+					res.writeHead(500)
+					res.end('fail', 'utf8')
+				}
+			})
 		})
 }
 route.get('/', function (req, res) {
 	console.log('empty', req.url)
-	model.setCurrent('index.md')
-	res.writeHead(200)
-	setTimeout(function () {
-		res.end(ractive.toHTML(), 'utf8')
-	}, 1000)
+	model.setCurrent('index.md', function (err, html) {
+		if (!err && html) {
+			res.writeHead(200)
+			res.end(html, 'utf8')
+		} else {
+			res.writeHead(500)
+			res.end('fail', 'utf8')
+		}
+	})
 })
 //route.get('/{file}.{ext}', defaultServe)
 route.get('/{name}.md', function (req, res) {
 	console.log('/{name}', req.params.name)
-	model.setCurrent(req.params.name)
-	res.writeHead(200)
-	setTimeout(function () {
-		res.end(ractive.toHTML(), 'utf8')
-	}, 1000)
+	model.setCurrent(req.params.name, function (err, html) {
+		if (!err && html) {
+			res.writeHead(200)
+			res.end(html, 'utf8')
+		} else {
+			res.writeHead(500)
+			res.end('fail', 'utf8')
+		}
+	})
 	
 })
 route.get(defaultServe)

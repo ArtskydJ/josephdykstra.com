@@ -4,12 +4,10 @@ var Renderer = require('noddity-renderer')
 
 module.exports = function MainViewModel(butler, mainRactiveTemplate) {
 	var renderer = new Renderer(butler, function (s) {return s}) //String
-	//render.populateRootRactive(post, ractive)
-	//render.renderPost(post, cb)
 	var changePostInRactive = null
 
 	var titleRactive = new Ractive({
-		el: 'title',
+		el: '', //'title',
 		template: '{{title}}{{#page}} | {{page}}{{/page}}',
 		data: {
 			title: config.title
@@ -43,7 +41,7 @@ module.exports = function MainViewModel(butler, mainRactiveTemplate) {
 		})
 	}
 
-	function changeCurrentPost(key) {
+	function changeCurrentPost(key, cb) {
 		butler.getPost(key, function(err, post) {
 			if (err) {
 				mainRactive.set('html', err.message)
@@ -51,12 +49,13 @@ module.exports = function MainViewModel(butler, mainRactiveTemplate) {
 			} else {
 				titleRactive.set('page', post.metadata.title)
 
-				if (changePostInRactive) {
-					changePostInRactive(post)
+				renderer.renderPost(post, cb)
+				/*if (changePostInRactive) {
+					changePostInRactive(post, cb)
 				} else {
-					changePostInRactive = renderer.renderPost(post, console.log.bind(null, 'pwnage'))
+					changePostInRactive = renderer.renderPost(post, cb)
 					//renderer.populateRootRactive(post, mainRactive)
-				}
+				}*/
 
 				if (!mainRactive.get('postList')) {
 					getPostList()
@@ -65,7 +64,7 @@ module.exports = function MainViewModel(butler, mainRactiveTemplate) {
 		})
 	}
 
-	function onPostChanged(key, newValue, oldValue) {
+	function onPostChanged(key, newValue, oldValue) { //oldValue does nothing right now
 		function titleHasChanged(postListItem) {
 			return postListItem.filename === key && postListItem.title !== newValue.metadata.title
 		}
@@ -80,7 +79,7 @@ module.exports = function MainViewModel(butler, mainRactiveTemplate) {
 	butler.on('index changed', getPostList)
 
 	return {
-		setCurrent: changeCurrentPost,
-		mainRactive: mainRactive
+		//mainRactive: mainRactive,
+		setCurrent: changeCurrentPost
 	}
 }
