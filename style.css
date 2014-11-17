@@ -74,12 +74,14 @@ body {
 /* Pieces */
 img {
 	width: 100px;
-	padding: 10px;
+	margin: 20px;
 }
 
 img.logo {
 	display: block;
 	width: 200px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	margin-left: auto;
 	margin-right: auto;
 }
