@@ -90,13 +90,11 @@ img:active {
 }
 
 img.logo {
+	margin: 0px;
+	padding: 0px;
 	border-radius: 12px;
 	display: block;
 	width: 200px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 div#edit-post-link {
