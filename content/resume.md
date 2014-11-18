@@ -33,11 +33,11 @@ Not enrolled, no firm college plans
 	- Command Prompts: cmd, terminal, Android Terminal
 	- Version Control: TortoiseGit, Github
 - Operating Systems:
-	- Windows XP - 8
-	- Mac OS X
-	- Android 2.3 - 4.1
-	- iOS 4 - 7
-	- Linux Ubuntu, Raspbian
+	- Windows: XP - 8
+	- Mac: OS X
+	- Android: 2.3 - 4.1
+	- iOS: 4 - 7
+	- Linux: Ubuntu, Raspbian
 - Other:
 	- Experience with Object Oriented Programming (OOP) 
 	- Programming lingo
