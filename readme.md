@@ -1,1 +1,1 @@
-The [noddity](http://noddity.com) site I threw together for my site.
+My website, [josephdykstra.com](http://josephdykstra.com), built on the [noddity](http://noddity.com) blogging platform.

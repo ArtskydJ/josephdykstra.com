@@ -1,14 +1,13 @@
 //Include
 var http = require('http')
 var Static = require('node-static')
-var fs = require('fs')
 var url = require('url')
-var serConfig = require('./serverConfig.json')
+var config = require('./config.json')
 
 
 //Settings
-var PORT = process.env.PORT || serConfig.port || 80
-var fileServer = new Static.Server(serConfig.staticDir, {gzip: true})
+var PORT = process.env.PORT || config.port || 80
+var fileServer = new Static.Server(config.staticDir, {gzip: true})
 
 //Noddity
 var model = (function () {
@@ -17,16 +16,16 @@ var model = (function () {
 	var Retrieval = require('noddity-fs-retrieval')
 	var Butler = require('noddity-butler')
 	var Renderer = require('noddity-renderer')
-	var Model = require('./mainViewModel.js')
-	var nodConfig = require('./noddityConfig.json')
+	var Model = require('./model.js')
+	var modelData = require('./noddityConfig.json')
+	var modelTemplate = require('fs').readFileSync('./index.html', {encoding:'utf8'})
 
 	var db = Sublevel(level('./database'))
-	var normalizedSublevelName = nodConfig.title.replace(/[^\w]+/g, '')
-	var retrieve = new Retrieval(nodConfig.noddityRoot)
-	var modelTemplate = fs.readFileSync('./index.html', {encoding:'utf8'})
+	var normalizedSublevelName = modelData.title.replace(/[^\w]+/g, '')
+	var retrieve = new Retrieval(modelData.noddityRoot)
 	var butler = new Butler(retrieve, db.sublevel(normalizedSublevelName))
 	var renderer = new Renderer(butler, String)
-	return new Model(modelTemplate, butler, renderer)
+	return new Model(modelTemplate, modelData, butler, renderer)
 })()
 
 //Routing
