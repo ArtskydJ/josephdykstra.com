@@ -1,5 +1,6 @@
 /* Positions */
 #sidebar {
+	border-radius: 4px;
 	float: left;
 	position: relative;
 	padding: 20px;
@@ -74,10 +75,22 @@ body {
 /* Pieces */
 img {
 	width: 100px;
-	margin: 20px;
+	padding: 15px;
+	margin: 10px;
+	background-color: #ddd;
+	border-radius: 6px;
+}
+
+img:hover, img:focus {
+	background-color: #aaa;
+}
+
+img:active {
+	background-color: #888;
 }
 
 img.logo {
+	border-radius: 12px;
 	display: block;
 	width: 200px;
 	margin-top: 0px;
