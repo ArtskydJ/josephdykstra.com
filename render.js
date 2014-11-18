@@ -1,5 +1,4 @@
 var Ractive = require('ractive')
-var Renderer = require('noddity-renderer')
 
 function cbIfErr(onErr, noErr) {
 	return function (err) {
@@ -19,7 +18,7 @@ function formatButlerPostList(posts) {
 	})
 }
 
-module.exports = function Model(ractiveTemplate, ractiveData, butler, renderer) {
+module.exports = function Render(ractiveTemplate, ractiveData, butler, renderer) {
 	var ractive = new Ractive({
 		el: '',
 		template: ractiveTemplate,
@@ -48,7 +47,7 @@ module.exports = function Model(ractiveTemplate, ractiveData, butler, renderer) 
 	}
 
 	function setCurrent(key, cb) {
-		butler.getPost(key, cbIfErr(cb, function (post) {
+		butler.getPost(key + '.md', cbIfErr(cb, function (post) {
 			ractive.set('page', post.metadata.title)
 			ractive.set('date', post.metadata.date)
 			getCurrentPostList(function () {
@@ -73,7 +72,5 @@ module.exports = function Model(ractiveTemplate, ractiveData, butler, renderer) 
 
 	butler.on('post changed', onPostChanged)
 	butler.on('index changed', getCurrentPostList)
-	return {
-		setCurrent: setCurrent
-	}
+	return setCurrent
 }
