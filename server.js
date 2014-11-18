@@ -10,7 +10,7 @@ var fileServer = new Static.Server(config.staticDir, {gzip: true})
 
 //Noddity
 var render = (function () {
-	var level = require('level')
+	var level = require('level-mem')
 	var Sublevel = require('level-sublevel')
 	var Retrieval = require('noddity-fs-retrieval')
 	var Butler = require('noddity-butler')

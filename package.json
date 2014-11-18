@@ -21,7 +21,7 @@
   "devDependencies": {
   },
   "dependencies": {
-    "level": "^0.18.0",
+    "level-mem": "^0.18.0",
     "level-sublevel": "~5.2.0",
     "noddity-butler": "^1.0.0",
     "noddity-fs-retrieval": "^1.0.0",
