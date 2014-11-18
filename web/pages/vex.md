@@ -1,4 +1,4 @@
-title: My Experience in VEX
+title: VEX
 date: 2014-11-18
 
 I was on a [VEX](http://vexrobotics.org) team, [TechnaPWN Robotics](http://technapwn.com) for 2 years.

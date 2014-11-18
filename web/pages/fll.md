@@ -1,4 +1,4 @@
-title: My Experience in FLL
+title: FLL
 date: 2014-11-18
 
 I was on a [First Lego League](http://www.firstlegoleague.org/) team, the [Data Dragons](http://datadragons.com/) for 5 years.
