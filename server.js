@@ -5,7 +5,7 @@ var url = require('url')
 var config = require('./config.json')
 
 //Settings
-var PORT = process.env.PORT || config.port || 80
+var PORT = process.env.PORT || process.argv[2] || config.port || 80
 var fileServer = new Static.Server(config.staticDir, {gzip: true})
 
 //Noddity
@@ -29,14 +29,18 @@ var render = (function () {
 
 //File Serving
 function serveFile(req, res) {
-	fileServer
-		.serveFile(req.url, 200, {}, req, res)
-		.on('error', function () {
-			render('404', function (err, html) {
-				res.writeHead(err? 500 : 404)
+	fileServer.serveFile(req.url, 200, {}, req, res).on('error', function () {
+		render('404', function (err, html) {
+			if (err) {
+				console.log(err.message)
+				res.writeHead(500)
 				res.end(html, 'utf8')
-			})
+			} else {
+				res.writeHead(404)
+				res.end(err.message, 'utf8')
+			}
 		})
+	})
 }
 
 //Routing
