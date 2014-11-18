@@ -1,11 +1,11 @@
 {
   "name": "josephdykstra-com",
-  "version": "2.2.0",
+  "version": "0.0.1",
   "main": "./server.js",
   "author": {
-    "name": "TehShrike",
-    "email": "me@JoshDuff.com",
-    "url": "http://joshduff.com"
+    "name": "ArtskydJ",
+    "email": "josephdykstra@gmail.com",
+    "url": "http://josephdykstra.com"
   },
   "description": "Joseph Dykstra's site",
   "repository": {
@@ -16,12 +16,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap ./test/*.js",
-    "deploy": "nohup ploy server -d ./data -p 80 -a ../auth.json",
-    "redeploy": "git push ploy master"
+    "test": ""
   },
   "devDependencies": {
-    "tap": "~0.4.4"
   },
   "dependencies": {
     "level": "^0.18.0",

@@ -17,14 +17,14 @@ var render = (function () {
 	var Renderer = require('noddity-renderer')
 	var Render = require('./render.js')
 	var renderData = require('./renderData.json')
-	var modelTemplate = require('fs').readFileSync('./index.html', {encoding:'utf8'})
+	var renderTemplate = require('fs').readFileSync(config.staticDir + 'index.html', {encoding:'utf8'})
 
 	var db = Sublevel(level('./database'))
 	var normalizedSublevelName = renderData.title.replace(/[^\w]+/g, '')
 	var retrieve = new Retrieval(renderData.noddityRoot)
 	var butler = new Butler(retrieve, db.sublevel(normalizedSublevelName))
 	var renderer = new Renderer(butler, String)
-	return new Render(modelTemplate, renderingData, butler, renderer)
+	return new Render(renderTemplate, renderData, butler, renderer)
 })()
 
 //File Serving

@@ -2,8 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-
-		<!--<title>Joseph Dykstra</title>-->
 		<title>{{title}}{{#page}} | {{page}}{{/page}}</title>
 
 		<link rel="stylesheet" type="text/css" href="style.css" />
@@ -36,9 +34,9 @@
 			<div>
 				<h3>Pages</h3>
 				<ol>
-					{{#postList}}
-						<li><a href="{{pagePathPrefix}}{{filename}}">{{title}}</a></li>
-					{{/postList}}
+{{#postList}}
+					<li><a href="{{pagePathPrefix}}{{filename}}">{{title}}</a></li>
+{{/postList}}
 				</ol>
 			</div>
 		</div>
@@ -50,19 +48,19 @@
 					<!--{{#metadata.title}}
 						<h1>{{metadata.title}}</h1>
 					{{/metadata.title}}-->
-					{{#page}}
-						<div align=CENTER>
-							<h1>{{page}}</h1>
-						</div>
-					{{/page}}
-					{{#date}}
-						<div align=RIGHT>
-							{{date}}
-						</div>
-					{{/date}}
+{{#page}}
+					<div class="title" align=CENTER>
+						<h1>{{page}}</h1>
+					</div>
+{{/page}}
 					<div class="post-content">
 						{{{html}}}
 					</div>
+{{#date}}
+					<div class="date" align=RIGHT>
+						{{date}}
+					</div>
+{{/date}}
 				</div>
 			</article>
 		</div>

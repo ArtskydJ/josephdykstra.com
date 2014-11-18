@@ -1,5 +1,5 @@
 {
-	"staticDir": "./",
+	"staticDir": "./web/",
 	"port": 80,
 	"verbose": false
 }

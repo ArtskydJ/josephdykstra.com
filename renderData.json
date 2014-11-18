@@ -1,8 +1,8 @@
 {
 	"title": "Joseph Dykstra",
-	"noddityRoot": "./web/pages",
+	"noddityRoot": "./pages",
 	"editLink": "https://github.com/ArtskydJ/josephdykstra.com/edit/master/web/pages/",
-	"logo": "/web/images/logo.png",
+	"logo": "/images/logo.png",
 	"errorPage": "404.md",
 	"pagePathPrefix": ""
 }
