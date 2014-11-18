@@ -22,7 +22,7 @@ var render = (function () {
 	var db = Sublevel(level('./database'))
 	var normalizedSublevelName = renderData.title.replace(/[^\w]+/g, '')
 	var retrieve = new Retrieval(renderData.noddityRoot)
-	var butler = new Butler(retrieve, db.sublevel(normalizedSublevelName))
+	var butler = new Butler(retrieve, db.sublevel(normalizedSublevelName), config.butler)
 	var renderer = new Renderer(butler, String)
 	return new Render(renderTemplate, renderData, butler, renderer)
 })()

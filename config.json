@@ -1,5 +1,9 @@
 {
 	"staticDir": "./web/",
 	"port": 80,
-	"verbose": false
+	"verbose": false,
+	"butler": {
+		"refreshEvery": 600000,
+		"cacheCheckIntervalMs": 10000
+	}
 }
