@@ -1,9 +1,15 @@
 {
-	"staticDir": "./web/",
-	"port": 80,
-	"verbose": false,
-	"butler": {
-		"refreshEvery": 600000,
-		"cacheCheckIntervalMs": 10000
+	"http:": {
+		"dir": "./web/",
+		"port": 80,
+		"butler": {
+			"refreshEvery": 600000,
+			"cacheCheckIntervalMs": 10000
+		},
+	},
+	"ftp": {
+		"host": "104.131.83.59",
+		"dir": "./torrent/",
+		"port": 21
 	}
 }

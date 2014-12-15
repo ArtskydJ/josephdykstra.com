@@ -2,11 +2,11 @@
 var http = require('http')
 var Static = require('node-static')
 var url = require('url')
-var config = require('./config.json')
+var config = require('./config.json').http
 
 //Settings
 var PORT = process.env.PORT || process.argv[2] || config.port || 80
-var fileServer = new Static.Server(config.staticDir, {gzip: true})
+var fileServer = new Static.Server(config.dir, {gzip: true})
 
 //Noddity
 var render = (function () {
@@ -17,7 +17,7 @@ var render = (function () {
 	var Renderer = require('noddity-renderer')
 	var Render = require('./render.js')
 	var renderData = require('./renderData.json')
-	var renderTemplate = require('fs').readFileSync(config.staticDir + 'index.html', {encoding:'utf8'})
+	var renderTemplate = require('fs').readFileSync(config.dir + 'index.html', {encoding:'utf8'})
 
 	var db = Sublevel(level('./database'))
 	var normalizedSublevelName = renderData.title.replace(/[^\w]+/g, '')
@@ -57,7 +57,14 @@ function route(req, res) {
 }
 
 //Server
-var server = http.createServer(route).listen(PORT).on('error', function (err) {
-	if (err.code == 'EADDRINUSE') console.log('Close the server running on port '+PORT+' and try again.')
-	else console.dir("server err:", err)
-})
+var httpServer = function newHttpServer() {
+	http.createServer(route)
+	server.listen(PORT)
+	server.on('error', function (err) {
+		if (err.code == 'EADDRINUSE') console.log('Close the server running on port '+PORT+' and try again.')
+		else console.dir("HTTP Server error:", err)
+	})
+}
+
+var ftpServer = require('./ftpServer.js')
+ftpServer()

@@ -6,4 +6,4 @@ data/*
 repo/*
 npm-debug.log
 nohup.out
-
+auth.json
