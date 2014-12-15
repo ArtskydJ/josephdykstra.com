@@ -57,12 +57,11 @@ function route(req, res) {
 }
 
 //Server
-module.exports = function newHttpServer() {
-	http.createServer(route)
-	server.listen(PORT)
-	server.on('error', function (err) {
-		(err.code == 'EADDRINUSE') ?
-			console.log('A server is already running on '+PORT+'.') :
-			console.dir("HTTP Server error:", err)
-	})
-}
+var server = http.createServer(route)
+server.listen(PORT)
+server.on('error', function (err) {
+	(err.code == 'EADDRINUSE') ?
+		console.log('A server is already running on '+PORT+'.') :
+		console.dir("HTTP Server error:", err)
+})
+
