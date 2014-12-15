@@ -57,14 +57,12 @@ function route(req, res) {
 }
 
 //Server
-var httpServer = function newHttpServer() {
+module.exports = function newHttpServer() {
 	http.createServer(route)
 	server.listen(PORT)
 	server.on('error', function (err) {
-		if (err.code == 'EADDRINUSE') console.log('Close the server running on port '+PORT+' and try again.')
-		else console.dir("HTTP Server error:", err)
+		(err.code == 'EADDRINUSE') ?
+			console.log('A server is already running on '+PORT+'.') :
+			console.dir("HTTP Server error:", err)
 	})
 }
-
-var ftpServer = require('./ftpServer.js')
-ftpServer()
