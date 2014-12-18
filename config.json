@@ -8,9 +8,10 @@
 		}
 	},
 	"ftp": {
-		"host": "127.0.0.1",
-		"host2": "104.131.83.59",
-		"dir": "\\Github\\josephdykstra-com\\storage",
+		"host2": "127.0.0.1",
+		"host": "104.131.83.59",
+		"dir":  "/tmp/webtorrent/",
+		"dir2": "\\Github\\josephdykstra-com\\storage",
 		"port": 21
 	}
 }

@@ -34,10 +34,10 @@ function serveFile(req, res) {
 			if (err) {
 				console.log(err.message)
 				res.writeHead(500)
-				res.end(html, 'utf8')
+				res.end(err.message, 'utf8')
 			} else {
 				res.writeHead(404)
-				res.end(err.message, 'utf8')
+				res.end(html, 'utf8')
 			}
 		})
 	})
