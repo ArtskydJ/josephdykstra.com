@@ -8,8 +8,9 @@
 		}
 	},
 	"ftp": {
-		"host": "104.131.83.59",
-		"dir": "./storage/",
+		"host": "127.0.0.1",
+		"host2": "104.131.83.59",
+		"dir": "\\Github\\josephdykstra-com\\storage",
 		"port": 21
 	}
 }

@@ -3,15 +3,15 @@ var config = require('./config.json').ftp
 var auth = require('./auth.json')
 var ftpd = require('ftpd')
 var path = require('path')
+var gfs = require('graceful-fs')
 
 //Settings
-var PORT = process.argv[3] || config.port || 21
-var PATH = path.join(process.cwd(), config.dir)
+var PORT = process.argv[2] || config.port || 21
 var options = {
 	pasvPortRangeStart: 4000,
 	pasvPortRangeEnd: 5000,
-	getInitialCwd: function () {return PATH},
-	getRoot: function () { return '/' }
+	getInitialCwd: function () {return '' },
+	getRoot: function () { return config.dir }
 }
 
 function onConnect(connection) {
@@ -24,7 +24,7 @@ function onConnect(connection) {
 	})
 
 	connection.on('command:pass', function (pass, success, failure) {
-		(auth[username] === pass) ? success() : failure()
+		(auth[username] === pass) ? success(username, gfs) : failure()
 	})
 
 }
