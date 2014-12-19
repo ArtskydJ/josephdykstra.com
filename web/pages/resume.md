@@ -32,7 +32,7 @@ Not enrolled, no firm college plans
 - Operating Systems:
 	- Windows XP - 8, Mac OS X, Android: 2.3 - 4.1, iOS 4 - 7, Ubuntu (GUI and CLI)
 
-#Experience  (No software development employment)
+#Experience
 
 #Personal Projects | July 2008 - [Present] 
 [Github Repositories](https://github.com/ArtskydJ?tab=repositories) - [NPM modules](http://npmjs.org/~artskydj)
