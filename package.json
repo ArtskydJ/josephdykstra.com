@@ -27,6 +27,7 @@
     "noddity-butler": "^1.0.0",
     "noddity-fs-retrieval": "^1.0.0",
     "noddity-renderer": "^2.0.0",
+    "noddity-retrieval": "^1.1.0",
     "node-static": "^0.7.6",
     "pagedown": "~1.1.0",
     "ractive": "~0.6.0",
