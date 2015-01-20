@@ -10,7 +10,7 @@
 	"ftp": {
 		"host2": "127.0.0.1",
 		"host": "104.131.83.59",
-		"dir":  "/tmp/webtorrent/",
+		"dir":  "/root/Downloads/",
 		"dir2": "\\Github\\josephdykstra-com\\storage",
 		"port": 21
 	}
