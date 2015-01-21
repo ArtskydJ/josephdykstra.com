@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="A countdown for the win.">
+		<title>Seth and Laura's Wedding Countdown</title>
+		<style>
+			body {
+				font-size: 72pt;
+				background-color: #000;
+				color: #fff;
+				text-align: center;
+			}
+			#spacer {
+				height: calc(50vh - 180pt);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="spacer">
+		<script src="countdown.min.js"></script>
+		<script>
+			var weddingDate = new Date('2015-05-15T14:00:00.000Z')
+			var ele = document.createElement('div')
+			document.body.appendChild(ele)
+
+			function setCountdown() {
+				var down = window.countdown(null, weddingDate)
+				ele.innerText = down.toString().replace(/, (and )?/g, '\n')
+			}
+
+			setCountdown()
+			setInterval(setCountdown, 1000)
+		</script>
+	 </body>
+ </html>
