@@ -18,20 +18,22 @@
 		</style>
 	</head>
 	<body>
-		<div id="spacer">
+		<div id="spacer"></div>
+		<div id="insert"></div>
 		<script src="countdown.min.js"></script>
 		<script>
 			var wedding = new Date('2015 may 16 15:00 cst')
-			var ele = document.createElement('div')
-			document.body.appendChild(ele)
+			var ele = document.querySelector('#insert')
 
 			function setCountdown() {
 				var down = window.countdown(null, wedding)
 				if (down.value > 0) {
-					ele.innerText = down.toString().replace(/, (and )?/g, '\n')
+					ele.innerHTML = down.toString().replace(/, (and )?/g, '<br>')
+					console.log('counting down')
 				} else {
+					console.log('stopped')
 					clearTimeout(iv)
-					ele.innerText = 'Congratulations Seth and Laura!!!'
+					ele.innerHTML = 'Congratulations Seth and Laura!!!'
 				}
 			}
 
