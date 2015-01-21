@@ -1,12 +1,16 @@
 //Include
 var http = require('http')
-var Static = require('node-static')
+var St = require('st')
 var url = require('url')
 var config = require('./config.json').http
 
 //Settings
 var PORT = process.env.PORT || process.argv[2] || config.port || 80
-var fileServer = new Static.Server(config.dir, {gzip: true})
+var serveFile = St({
+	path: config.dir,
+	passthrough: true,
+	gzip: true
+})
 
 //Noddity
 var render = (function () {
@@ -27,32 +31,27 @@ var render = (function () {
 	return new Render(renderTemplate, renderData, butler, renderer)
 })()
 
-//File Serving
-function serveFile(req, res) {
-	fileServer.serveFile(req.url, 200, {}, req, res).on('error', function () {
-		render('404', function (err, html) {
-			if (err) {
-				console.log(err.message)
-				res.writeHead(500)
-				res.end(err.message, 'utf8')
-			} else {
-				res.writeHead(404)
-				res.end(html, 'utf8')
-			}
-		})
+function renderPage(path, res, onFail) {
+	render(path, function (err, html) {
+		if (!err) {
+			res.writeHead(200)
+			res.end(html, 'utf8')
+		} else {
+			onFail && onFail()
+		}
 	})
 }
 
 //Routing
 function route(req, res) {
 	var path = url.parse(req.url).pathname.slice(1) || 'index'
-	render(path, function (err, html) {
-		if (err) {
-			serveFile(req, res)
-		} else {
-			res.writeHead(200)
-			res.end(html, 'utf8')
-		}
+	renderPage(path, res, function fail1() {
+		serveFile(req, res, function fail2 () {
+			renderPage('404', res, function fail3() {
+				res.writeHead(500)
+				res.end(err.message, 'utf8')
+			})
+		})
 	})
 }
 
