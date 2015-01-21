@@ -34,7 +34,7 @@ Not enrolled, no firm college plans
 
 #Experience
 
-#Personal Projects | July 2008 - [Present] 
+###Personal Projects | July 2008 - [Present]
 [Github Repositories](https://github.com/ArtskydJ?tab=repositories) - [NPM modules](http://npmjs.org/~artskydj)
 
 - I have created many [pull requests](https://github.com/pulls?q=is%3Apr+author%3AArtskydJ) on Github to various open source projects
