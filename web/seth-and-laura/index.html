@@ -10,9 +10,10 @@
 				background-color: #000;
 				color: #fff;
 				text-align: center;
+				line-height: 1;
 			}
-			#spacer {
-				height: calc(50vh - 180pt);
+			#spacer { /* technically should be 2.5, but 2.6 looks better*/
+				height: calc(50vh - (2.6 * 72pt));
 			}
 		</style>
 	</head>
@@ -20,17 +21,22 @@
 		<div id="spacer">
 		<script src="countdown.min.js"></script>
 		<script>
-			var weddingDate = new Date('2015-05-15T14:00:00.000Z')
+			var wedding = new Date('2015 may 16 15:00 cst')
 			var ele = document.createElement('div')
 			document.body.appendChild(ele)
 
 			function setCountdown() {
-				var down = window.countdown(null, weddingDate)
-				ele.innerText = down.toString().replace(/, (and )?/g, '\n')
+				var down = window.countdown(null, wedding)
+				if (down.value > 0) {
+					ele.innerText = down.toString().replace(/, (and )?/g, '\n')
+				} else {
+					clearTimeout(iv)
+					ele.innerText = 'Congratulations Seth and Laura!!!'
+				}
 			}
 
 			setCountdown()
-			setInterval(setCountdown, 1000)
+			var iv = setInterval(setCountdown, 1000)
 		</script>
 	 </body>
  </html>
