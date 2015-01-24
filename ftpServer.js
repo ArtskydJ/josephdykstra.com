@@ -8,15 +8,15 @@ var gfs = require('graceful-fs')
 //Settings
 var PORT = process.argv[2] || config.port || 21
 var options = {
-	pasvPortRangeStart: 4000,
-	pasvPortRangeEnd: 5000,
+	pasvPortRangeStart: 1024,
+	pasvPortRangeEnd: 8095,
 	getInitialCwd: function () {return '' },
 	getRoot: function () { return config.dir }
 }
 
 function onConnect(connection) {
 	var username = null
-	console.log('client connected: ' + connection.remoteAddress)
+	console.log('client connected: ' + connection.socket.remoteAddress)
 
 	connection.on('command:user', function (user, success, failure) {
 		username = user
