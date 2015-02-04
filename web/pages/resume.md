@@ -37,8 +37,10 @@ Not enrolled, no firm college plans
 ###Personal Projects | July 2008 - [Present]
 [Github Repositories](https://github.com/ArtskydJ?tab=repositories) - [NPM modules](http://npmjs.org/~artskydj)
 
-- I have created many [pull requests](https://github.com/pulls?q=is%3Apr+author%3AArtskydJ) on Github to various open source projects
-- I wrote the server code for my [website](http://josephdykstra.com)
+- I wrote [Just Login](http://justlogin.xyz/), an email-based authentication library for node.js servers
+- I wrote a [test framework for RobotC](https://github.com/ArtskydJ/robotc-tap), a C-based language for robotics
+- I create many [pull requests](https://github.com/pulls?q=is%3Apr+author%3AArtskydJ) on Github to various open source projects
+- I wrote the [server code](https://github.com/ArtskydJ/josephdykstra.com) for my [website](http://josephdykstra.com)
 - I have written and I maintain over 15 JavaScript modules for node.js
 - I entered a RobotC competition and a Robot Virtual Worlds competition; I took 1st and 2nd, respectively
 - I wrote a Snake clone, a Tetris clone, and an 8-Queens Solver in C
