@@ -34,11 +34,11 @@ My objective is to get a job that I can grow my skills as a developer, and use m
 - I wrote a [test framework for RobotC](https://github.com/ArtskydJ/robotc-tap), a C-based language for robotics
 - I create many [pull requests](https://github.com/pulls?q=is%3Apr+author%3AArtskydJ) on Github to various open source projects
 - I wrote the [server code](https://github.com/ArtskydJ/josephdykstra.com) for my [website](http://josephdykstra.com/)
-- I have written and I maintain over 25 JavaScript modules for node.js
+- I have written and I maintain over [25 JavaScript modules](http://npmjs.org/~artskydj) for node.js
 - I entered a RobotC competition and a Robot Virtual Worlds competition; I took 1st and 2nd, respectively
 - I wrote a [Snake](https://github.com/ArtskydJ/C_Source/tree/master/Snake) clone, a [Tetris](https://github.com/ArtskydJ/C_Source/tree/master/Tetris4) clone, and an [8-Queens Solver](https://github.com/ArtskydJ/C_Source/blob/master/EightQueens/EightQueens3.c) in C
 - I work on [programming puzzles](https://github.com/ArtskydJ/programming-praxis) from [Programming Praxis](http://programmingpraxis.com/)
-- I wrote a library in C to simplify SDL ([Simple DirectMedia Layer](http://www.libsdl.org/))
+- I wrote a [library](https://github.com/ArtskydJ/C_Source/tree/master/%23include) in C to simplify my usage of SDL ([Simple DirectMedia Layer](http://www.libsdl.org/))
 
 ###Well Rooted Gardens | May 16, 2014 - [Present]
 
