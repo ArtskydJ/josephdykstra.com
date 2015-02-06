@@ -10,14 +10,7 @@ Honey Creek, IA, 51542
 josephdykstra@gmail.com
 
 #Objective
-My objective is to get an entry level job.
-
-#Education
-**Grades K-12**  
-_Home School_  
-High School Graduate as of May 2014  
-_College_  
-Not enrolled, no firm college plans
+My objective is to get a job that I can grow my skills as a developer, and use my existing skills to benefit the company.
 
 #Knowledge
 - Languages:
@@ -40,12 +33,12 @@ Not enrolled, no firm college plans
 - I wrote [Just Login](http://justlogin.xyz/), an email-based authentication library for node.js servers
 - I wrote a [test framework for RobotC](https://github.com/ArtskydJ/robotc-tap), a C-based language for robotics
 - I create many [pull requests](https://github.com/pulls?q=is%3Apr+author%3AArtskydJ) on Github to various open source projects
-- I wrote the [server code](https://github.com/ArtskydJ/josephdykstra.com) for my [website](http://josephdykstra.com)
-- I have written and I maintain over 15 JavaScript modules for node.js
+- I wrote the [server code](https://github.com/ArtskydJ/josephdykstra.com) for my [website](http://josephdykstra.com/)
+- I have written and I maintain over 25 JavaScript modules for node.js
 - I entered a RobotC competition and a Robot Virtual Worlds competition; I took 1st and 2nd, respectively
-- I wrote a Snake clone, a Tetris clone, and an 8-Queens Solver in C
-- I work on programming puzzles from programmingpraxis.com
-- I wrote a library in C to simplify SDL (Simple DirectMedia Layer)
+- I wrote a [Snake](https://github.com/ArtskydJ/C_Source/tree/master/Snake) clone, a [Tetris](https://github.com/ArtskydJ/C_Source/tree/master/Tetris4) clone, and an [8-Queens Solver](https://github.com/ArtskydJ/C_Source/blob/master/EightQueens/EightQueens3.c) in C
+- I work on [programming puzzles](https://github.com/ArtskydJ/programming-praxis) from [Programming Praxis](http://programmingpraxis.com/)
+- I wrote a library in C to simplify SDL ([Simple DirectMedia Layer](http://www.libsdl.org/))
 
 ###Well Rooted Gardens | May 16, 2014 - [Present]
 
@@ -57,8 +50,8 @@ I work part time for Well Rooted Gardens doing landscape work.  During the winte
 
 [github.com/coding-in-the-wild](http://github.com/coding-in-the-wild)
 
-Coding in the Wild is a group started by a professional developer.  He invited people who were interested in software development to learn development techniques.  We have been working together to create a back-end nodeJS authentication module with an interactive website, and more.
- 
+Coding in the Wild is a group started by a professional developer.  He invited people who were interested in software development to learn development techniques.  We worked together to create a back-end node.js authentication module with an [interactive website](http://justlogin.xyz/).  Now we are working to create a chat room where users upload & play their music for the group, in a round-robin fashion.
+
 ###TechnaPWN (VEX Robotics) | September 2012 - April 2014
 
 [technapwn.com](http://technapwn.com) - [youtube.com/TechnaPWN](http://youtube.com/TechnaPWN)
@@ -72,5 +65,6 @@ I wrote RobotC code (based on C) for a VEX robot, including pre-programmed routi
 Being on this team taught me about teamwork and basic robotics.  The team took 1st place Robot Performance at Nebraska State in 2012.  I was a mentor for the team during the 2012-2013 season.
 
 #References
-- [Josh Duff](http://joshduff.com), friend
-- [Tobias Davis](http://davistobias.com/#!/contact.md), friend
+- [Josh Duff](http://joshduff.com), developer at [eDataSource](http://www.edatasource.com/), friend
+- [Tobias Davis](http://davistobias.com/#!/contact.md), developer at [eDataSource](http://www.edatasource.com/), friend
+- Evan Hurd, developer at [RenWeb](http://www.renweb.com/)
