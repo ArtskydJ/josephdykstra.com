@@ -48,12 +48,16 @@ module.exports = function Render(ractiveTemplate, ractiveData, butler, renderer)
 
 	function setCurrent(key, cb) {
 		butler.getPost(key + '.md', cbIfErr(cb, function (post) {
-			ractive.set('page', post.metadata.title)
 			var date = post.metadata.date
-			ractive.set('date', date instanceof Date && date.toDateString())
+			date = date && date.toDateString && date.toDateString()
 			getCurrentPostList(function () {
 				renderer.renderPost(post, cbIfErr(cb, function (html) {
-					ractive.set('html', html)
+					ractive.set({
+						html: html,
+						current: post.filename,
+						date: date,
+						page: post.metadata.title
+					})
 					cb(null, ractive.toHTML())
 				}))
 			})
