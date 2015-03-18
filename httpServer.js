@@ -9,6 +9,8 @@ var PORT = process.env.PORT || process.argv[2] || config.port || 80
 var serveFile = St({
 	path: config.dir,
 	passthrough: true,
+	index: 'index.html',
+	//cache: false, // Development only!
 	gzip: true
 })
 
@@ -63,4 +65,3 @@ server.on('error', function (err) {
 		console.log('A server is already running on '+PORT+'.') :
 		console.dir("HTTP Server error:", err)
 })
-
