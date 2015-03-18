@@ -1,0 +1,82 @@
+body {
+	margin: 0px;
+	text-align: center;
+}
+
+nav {
+	height: 38px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 39px;
+	text-align: right;
+	border-bottom: 1px solid #b83130;
+	background: #cb3837;
+	overflow: hidden;
+}
+
+#main {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: rgba(0,0,0,0.08);
+	border-bottom: 1px solid #d3d3d3;
+
+	font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
+	font-size: 24px;
+}
+
+#logo {
+	position: relative;
+	vertical-align: top;
+	width: 200px;
+}
+
+#cursor {
+	position: absolute;
+}
+
+#site-search-text {
+	height: 30px;
+	padding: 8px;
+	border-radius: 2px;
+	border-width: 1px;
+	border-color: #bbb;
+	font-size: 18px;
+	width: 400px;
+	outline: 0;
+}
+
+#site-search-text:hover #site-search-text.hover {
+	border-color: #000;
+}
+
+
+
+#site-search-submit {
+	margin-top: 0;
+	margin-left: -100px;
+	height: 47px;
+	width: 94px;
+	text-indent: -9999em;
+	cursor: pointer;
+
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-left: 1px solid rgba(0,0,0,0.2);
+	border-radius: 1px;
+
+	background: url("./ico-search.svg") no-repeat 50% 50%;
+	background-size: 16px 16px;
+}
+#site-search-submit:hover {
+	/*border: 1px solid #ae2e2d;*/
+	background: #cb3837 url("./ico-search-hover.svg") no-repeat 50% 50%;
+	background-size: 16px 16px;
+}
+
+#site-search-submit.hover {
+	/*border: 1px solid #ae2e2d;*/
+	background: #cb3837 url("./ico-search-hover.svg") no-repeat 50% 50%;
+	background-size: 16px 16px;
+}
