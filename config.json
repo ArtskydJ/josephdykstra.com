@@ -2,9 +2,12 @@
 	"http": {
 		"dir": "./web/",
 		"port": 80,
-		"butler": {
-			"refreshEvery": 600000,
-			"cacheCheckIntervalMs": 10000
+		"noddity": {
+			"butler": {
+				"refreshEvery": 600000,
+				"cacheCheckIntervalMs": 10000
+			},
+			"root": "./web/pages/"
 		}
 	},
 	"ftp": {

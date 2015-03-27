@@ -15,26 +15,24 @@ var serveFile = St({
 })
 
 //Noddity
-var render = (function () {
-	var level = require('level-mem')
-	var Sublevel = require('level-sublevel')
+var viewModel = (function () {
+	var Level = require('level-mem')
 	var Retrieval = require('noddity-fs-retrieval')
 	var Butler = require('noddity-butler')
 	var Renderer = require('noddity-renderer')
-	var Render = require('./render.js')
+	var ViewModel = require('noddity-view-model')
 	var renderData = require('./renderData.json')
 	var renderTemplate = require('fs').readFileSync(config.dir + 'index.html', {encoding:'utf8'})
 
-	var db = Sublevel(level('./database'))
-	var normalizedSublevelName = renderData.title.replace(/[^\w]+/g, '')
-	var retrieve = new Retrieval(renderData.noddityRoot)
-	var butler = new Butler(retrieve, db.sublevel(normalizedSublevelName), config.butler)
+	var db = new Level('./database')
+	var retrieve = new Retrieval(config.noddity.root)
+	var butler = new Butler(retrieve, db, config.noddity.butler)
 	var renderer = new Renderer(butler, String)
-	return new Render(renderTemplate, renderData, butler, renderer)
+	return new ViewModel(butler, renderer, renderTemplate, renderData)
 })()
 
 function renderPage(path, res, onFail) {
-	render(path, function (err, html) {
+	viewModel(path, function (err, html) {
 		if (!err) {
 			res.writeHead(200)
 			res.end(html, 'utf8')
@@ -63,5 +61,5 @@ server.listen(PORT)
 server.on('error', function (err) {
 	(err.code == 'EADDRINUSE') ?
 		console.log('A server is already running on '+PORT+'.') :
-		console.dir("HTTP Server error:", err)
+		console.dir('HTTP Server error:', err)
 })

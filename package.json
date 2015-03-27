@@ -28,8 +28,8 @@
     "noddity-fs-retrieval": "^1.0.0",
     "noddity-renderer": "^2.0.0",
     "noddity-retrieval": "^1.1.0",
+    "noddity-view-model": "0.1.0",
     "pagedown": "~1.1.0",
-    "ractive": "~0.6.0",
     "st": "^0.5.2"
   }
 }
