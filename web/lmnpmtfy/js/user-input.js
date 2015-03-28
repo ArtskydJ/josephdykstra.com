@@ -14,7 +14,7 @@ function userInput() {
 		var text = siteSearchText.value
 		var copyable = copyableElement()
 
-		copyable.value = path + '?' + qs.stringify({ q: text })
+		copyable.value = path.replace(/\/$/, '') + '/?' + qs.stringify({ q: text })
 		selectAll(copyable)
 	}
 }
