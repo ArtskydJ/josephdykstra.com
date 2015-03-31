@@ -35,6 +35,7 @@ function onConnect(connection) {
 function Server() {
 	var server = new ftpd.FtpServer(HOST, options)
 	server.on('client:connected', onConnect)
+	return server
 }
 
 //Instance
