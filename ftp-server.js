@@ -3,7 +3,7 @@ var DIR = '/root/Downloads/'
 var HOST = '104.131.83.59'
 
 //Include
-var auth = require('./auth.json')
+var auth = require('./ftp-auth.json')
 var ftpd = require('ftpd')
 var path = require('path')
 var gfs = require('graceful-fs')
