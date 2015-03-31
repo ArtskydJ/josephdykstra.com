@@ -67,6 +67,6 @@ var server = http.createServer(route)
 server.listen(80)
 server.on('error', function (err) {
 	(err.code == 'EADDRINUSE') ?
-		console.log('A server is already running on '+PORT+'.') :
+		console.log('A server is already running on 80.') :
 		console.error('HTTP Server error:', err)
 })
