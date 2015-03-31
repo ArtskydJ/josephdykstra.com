@@ -6,7 +6,6 @@ data/*
 repo/*
 npm-debug.log
 nohup.out
-auth.json
 ftp-auth.json
 ploy-auth.json
 storage/*
