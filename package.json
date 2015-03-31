@@ -12,11 +12,16 @@
     "type": "git",
     "url": "https://github.com/ArtskydJ/josephdykstra-com.git"
   },
-  "directories": {
-    "test": "test"
-  },
+  "private": true,
   "scripts": {
-    "test": ""
+    "start": {
+      "index": "node httpServer.js",
+      "ftp": "echo node ftpServer.js"
+    },
+    "stop": {
+      "index": "kill $PID",
+      "ftp": "kill $PID"
+    }
   },
   "devDependencies": {},
   "dependencies": {

@@ -5,6 +5,7 @@ var url = require('url')
 var config = require('./config.json').http
 
 //Settings
+console.log(process.env)
 var PORT = process.env.PORT || process.argv[2] || config.port || 80
 var serveFile = St({
 	path: config.dir,
