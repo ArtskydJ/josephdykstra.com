@@ -14,14 +14,9 @@
   },
   "private": true,
   "scripts": {
-    "start": {
-      "index": "node httpServer.js",
-      "ftp": "echo node ftpServer.js"
-    },
-    "stop": {
-      "index": "kill $PID",
-      "ftp": "kill $PID"
-    }
+    "start": "nohup node http-server.js & && nohup node http-server.js &",
+    "restart": "rm nohup.out && npm install",
+    "stop": "kill $(ps aux | grep '[n]ode' | awk '{print $2}')"
   },
   "devDependencies": {},
   "dependencies": {

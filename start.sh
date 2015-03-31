@@ -2,5 +2,5 @@
 
 rm nohup.out
 npm install
-nohup node httpServer.js &
-nohup node ftpServer.js &
+nohup node http-server.js &
+nohup node ftp-server.js &

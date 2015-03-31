@@ -1,0 +1,7 @@
+{
+	"root": "./web/pages/",
+	"butler": {
+		"refreshEvery": 600000,
+		"cacheCheckIntervalMs": 10000
+	}
+}
