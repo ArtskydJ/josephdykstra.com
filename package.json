@@ -14,7 +14,7 @@
   },
   "private": true,
   "scripts": {
-    "start": "start.sh",
+    "start": "sh start.sh",
     "restart": "rm nohup.out && npm install",
     "stop": "kill $(ps aux | grep '[n]ode' | awk '{print $2}')"
   },
