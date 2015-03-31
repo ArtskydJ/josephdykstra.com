@@ -14,7 +14,7 @@
   },
   "private": true,
   "scripts": {
-    "start": "nohup node http-server.js & && nohup node http-server.js &",
+    "start": "start.sh",
     "restart": "rm nohup.out && npm install",
     "stop": "kill $(ps aux | grep '[n]ode' | awk '{print $2}')"
   },
