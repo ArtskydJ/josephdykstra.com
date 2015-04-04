@@ -1,7 +1,7 @@
 {
   "name": "josephdykstra-com",
   "version": "0.0.1",
-  "main": "./http-server.js",
+  "main": "server.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com",
@@ -14,9 +14,9 @@
   },
   "private": true,
   "scripts": {
-    "start": "nohup node http-server.js &",
-    "restart": "rm nohup.out && npm install",
-    "stop": "kill $(ps x | awk '/http[-]server/ {print $1}')"
+    "start": "nohup node . 1024 &",
+    "prestop": "rm nohup.out && npm install",
+    "stop": "kill $(ps x | awk '/node \. 1024/ {print $1}')"
   },
   "dependencies": {
     "level-mem": "^0.18.0",
