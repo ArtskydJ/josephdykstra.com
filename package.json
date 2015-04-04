@@ -16,7 +16,7 @@
   "scripts": {
     "start": "sh start.sh || echo ''",
     "restart": "rm nohup.out && npm install",
-    "stop": "kill $(ps aux | grep '[n]ode' | awk '{print $2}')"
+    "stop": "kill $(ps x | awk '/tp[-]server/ {print $1}')"
   },
   "dependencies": {
     "ftpd": "^0.2.11",
