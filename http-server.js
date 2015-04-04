@@ -1,15 +1,13 @@
-//Config
-var DIR = './web/'
-
 //Include
 var http = require('http')
 var St = require('st')
 var url = require('url')
+var config = require('./http-config.json')
 var noddityConfig = require('./noddity-config.json')
 
 //Static File Servers
 var defaultStatic = St({
-	path: DIR,
+	path: config.dir,
 	passthrough: true,
 	index: 'index.html',
 	//cache: false,
@@ -24,7 +22,7 @@ var viewModel = (function () {
 	var Renderer = require('noddity-renderer')
 	var ViewModel = require('noddity-view-model')
 	var renderData = require('./renderData.json')
-	var renderTemplate = require('fs').readFileSync(DIR + 'index.html', {encoding:'utf8'})
+	var renderTemplate = require('fs').readFileSync(config.dir + 'index.html', {encoding:'utf8'})
 
 	var db = new Level('./database')
 	var retrieve = new Retrieval(noddityConfig.root)
@@ -64,9 +62,9 @@ function route(req, res) {
 
 //Server
 var server = http.createServer(route)
-server.listen(80)
+server.listen(config.port)
 server.on('error', function (err) {
 	(err.code == 'EADDRINUSE') ?
-		console.log('A server is already running on 80.') :
+		console.log('A server is already running on '+config.port+'.') :
 		console.error('HTTP Server error:', err)
 })

@@ -1,9 +1,6 @@
-//Config
-var DIR = '/root/Downloads/'
-var HOST = '104.131.83.59'
-
 //Include
 var auth = require('./ftp-auth.json')
+var config = require('./ftp-config.json')
 var ftpd = require('ftpd')
 var path = require('path')
 var gfs = require('graceful-fs')
@@ -13,7 +10,7 @@ var options = {
 	pasvPortRangeStart: 1024,
 	pasvPortRangeEnd: 8095,
 	getInitialCwd: function () { return '' },
-	getRoot: function () { return DIR }
+	getRoot: function () { return config.dir }
 }
 
 function onConnect(connection) {
@@ -33,14 +30,14 @@ function onConnect(connection) {
 
 //Server
 function Server() {
-	var server = new ftpd.FtpServer(HOST, options)
+	var server = new ftpd.FtpServer(config.host, options)
 	server.on('client:connected', onConnect)
 	return server
 }
 
 //Instance
 var server = Server()
-server.listen(21)
+server.listen(config.port)
 server.on('error', function (error) {
 	console.error('FTP Server error:', error)
 })
