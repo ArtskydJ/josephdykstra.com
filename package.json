@@ -1,7 +1,7 @@
 {
   "name": "josephdykstra-com",
   "version": "0.0.1",
-  "main": "./httpServer.js",
+  "main": "./http-server.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com",
@@ -14,13 +14,11 @@
   },
   "private": true,
   "scripts": {
-    "start": "sh start.sh || echo ''",
+    "start": "nohup node http-server.js &",
     "restart": "rm nohup.out && npm install",
-    "stop": "kill $(ps x | awk '/tp[-]server/ {print $1}')"
+    "stop": "kill $(ps x | awk '/http[-]server/ {print $1}')"
   },
   "dependencies": {
-    "ftpd": "^0.2.11",
-    "graceful-fs": "^3.0.5",
     "level-mem": "^0.18.0",
     "level-sublevel": "~5.2.0",
     "noddity-butler": "^1.0.0",
