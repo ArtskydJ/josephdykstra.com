@@ -2,7 +2,6 @@
 var http = require('http')
 var St = require('st')
 var url = require('url')
-var config = require('./config.json')
 var noddityConfig = require('./noddity-config.json')
 
 //Constants
