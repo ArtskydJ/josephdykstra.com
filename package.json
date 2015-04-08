@@ -16,7 +16,7 @@
   "scripts": {
     "start": "nohup node . 1024 &",
     "prestop": "rm nohup.out && npm install",
-    "stop": "kill $(ps x | awk '/node \\. 1024/ {print $1}')"
+    "stop": "kill $(ps x | awk '/node \\. 1024/ {print $1}') || echo ''"
   },
   "dependencies": {
     "level-mem": "^0.18.0",
