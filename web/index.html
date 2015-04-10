@@ -42,7 +42,7 @@
 					</a>
 					<div class="panel panel-primary">
 						<div class="panel-heading">
-							<h3 class="panel-title">Posts</h3>
+							<h3 class="panel-title">Pages</h3>
 						</div>
 						<div class="list-group">
 							{{#postList}}
@@ -53,7 +53,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-9">
+				<article class="col-sm-9">
 					<h1>{{page}}</h1>
 					{{{html}}}
 					{{#date}}
@@ -61,7 +61,7 @@
 							<li>{{date}}</li>
 						</ul>
 					{{/date}}
-				</div>
+				</article>
 			</div>
 		</div>
 		<!-- Breaks the site. On localhost, at least.
