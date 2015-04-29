@@ -1,13 +1,14 @@
 ﻿var noddityConfig = require('./noddity-config.json')
+var fs = require('fs')
 
-module.exports = function VModel() {
+module.exports = function VModel(templateDir) {
 	var Level = require('level-mem')
 	var Retrieval = require('noddity-fs-retrieval')
 	var Butler = require('noddity-butler')
 	var Renderer = require('noddity-renderer')
 	var ViewModel = require('noddity-view-model')
 	var renderData = require('./render-data.json')
-	var renderTemplate = require('fs').readFileSync(DIR + 'index.html', {encoding:'utf8'})
+	var renderTemplate = fs.readFileSync(templateDir, { encoding:'utf8' })
 
 	var db = new Level('./database')
 	var retrieve = new Retrieval(noddityConfig.root)

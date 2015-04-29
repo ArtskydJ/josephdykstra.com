@@ -17,7 +17,7 @@ var defaultStatic = St({
 })
 
 //Noddity
-var viewModel = require('./view-model.js')()
+var viewModel = require('./view-model.js')(DIR + 'index.html')
 
 function renderPage(path, res, onFail) {
 	viewModel(path, function (err, html) {
