@@ -3,7 +3,7 @@ var fs = require('fs')
 
 module.exports = function VModel(templateDir) {
 	var Level = require('level-mem')
-	var Retrieval = require('noddity-fs-retrieval')
+	var Retrieval = require('noddity-retrieval')
 	var Butler = require('noddity-butler')
 	var Renderer = require('noddity-renderer')
 	var ViewModel = require('noddity-view-model')
