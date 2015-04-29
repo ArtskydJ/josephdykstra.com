@@ -24,7 +24,7 @@ var viewModel = (function () {
 	var Butler = require('noddity-butler')
 	var Renderer = require('noddity-renderer')
 	var ViewModel = require('noddity-view-model')
-	var renderData = require('./renderData.json')
+	var renderData = require('./render-data.json')
 	var renderTemplate = require('fs').readFileSync(DIR + 'index.html', {encoding:'utf8'})
 
 	var db = new Level('./database')
