@@ -22,7 +22,7 @@
     "level-mem": "^0.18.0",
     "level-sublevel": "~5.2.0",
     "noddity-butler": "^1.0.0",
-    "noddity-retrieval": "^1.1.3",
+    "noddity-retrieval": "^1.2.0",
     "noddity-renderer": "^2.0.0",
     "noddity-retrieval": "^1.1.0",
     "noddity-view-model": "^0.1.0",
