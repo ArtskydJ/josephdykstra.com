@@ -1,6 +1,6 @@
 //Include
 var http = require('http')
-var St = require('st')
+var Ecstatic = require('ecstatic')
 var url = require('url')
 
 //Constants
@@ -8,12 +8,10 @@ var DIR = './web/'
 var PORT = process.argv[2] || 80
 
 //Static File Server
-var defaultStatic = St({
-	path: DIR,
-	passthrough: true,
-	index: 'index.html',
-	//cache: false,
-	gzip: true
+var defaultStatic = Ecstatic({
+	root: DIR,
+	handleError: false,
+	gzip: true // needs .gz files
 })
 
 //Noddity

@@ -1,6 +1,5 @@
 {
   "name": "josephdykstra-com",
-  "version": "0.0.1",
   "main": "server.js",
   "author": {
     "name": "ArtskydJ",
@@ -19,6 +18,7 @@
     "stop": "kill $(ps x | awk '/node \\. 1024/ {print $1}') || echo ''"
   },
   "dependencies": {
+    "ecstatic": "^0.7.6",
     "level-mem": "^0.18.0",
     "level-sublevel": "~5.2.0",
     "noddity-butler": "^1.0.0",
@@ -26,8 +26,7 @@
     "noddity-renderer": "^2.0.0",
     "noddity-retrieval": "^1.1.0",
     "noddity-view-model": "^0.1.0",
-    "pagedown": "~1.1.0",
-    "st": "^0.5.2"
+    "pagedown": "~1.1.0"
   },
   "devDependencies": {}
 }
