@@ -14,14 +14,14 @@
   "private": true,
   "scripts": {
     "start": "psy start -n josephdykstra_http -- node . 1024",
-    "stop": "psy stop josephdykstrahttp"
+    "stop": "psy stop josephdykstra_http"
   },
   "dependencies": {
     "ecstatic": "^0.8.0",
     "level-mem": "^0.18.0",
     "noddity-butler": "^2.0.0",
     "noddity-renderer": "^3.1.0",
-    "noddity-retrieval": "^1.1.0",
+    "noddity-retrieval": "^1.4.0",
     "noddity-view-model": "^0.1.0"
   },
   "devDependencies": {}
