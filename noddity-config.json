@@ -1,7 +1,0 @@
-{
-	"root": "https://raw.githubusercontent.com/ArtskydJ/josephdykstra.com-content/master/",
-	"butler": {
-		"refreshEvery": 600000,
-		"cacheCheckIntervalMs": 10000
-	}
-}

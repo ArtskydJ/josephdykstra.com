@@ -2,55 +2,55 @@
 var http = require('http')
 var Ecstatic = require('ecstatic')
 var url = require('url')
+var viewModel = require('./view-model.js')()
 
-//Constants
-var DIR = './web/'
+var DIR = __dirname + '/web/'
 var PORT = process.argv[2] || 80
+var MARKDOWN_FILE_RE = /^(?:(.+)\.md|([^\.]+))$/
 
-//Static File Server
-var defaultStatic = Ecstatic({
+var serveAssets = Ecstatic({
 	root: DIR,
-	handleError: false,
-	gzip: true // needs .gz files
+	autoIndex: false
 })
 
-//Noddity
-var viewModel = require('./view-model.js')(DIR + 'index.html')
+var server = http.createServer()
+server.listen(PORT)
+server.on('error', function (err) {
+	if (err.code === 'EADDRINUSE') {
+		console.log('A server is already running on ' + PORT)
+	} else {
+		console.error('HTTP Server error:', err)
+	}
+})
 
-function renderPage(path, res, onFail) {
-	viewModel(path, function (err, html) {
-		if (!err) {
-			res.writeHead(200)
-			res.end(html, 'utf8')
+function renderPage(filename, res, statusCode) {
+	viewModel(filename, function (err, html) {
+		if (err) {
+			if (statusCode !== 404) { // disallow 404 recursion
+				renderPage('404.md', res, 404)
+			} else {
+				res.writeHead(500)
+				res.end(err ? err.message : 'An unknown error occurred', 'utf8')
+			}
 		} else {
-			onFail && onFail()
+			res.writeHead(statusCode || 200)
+			res.end(html, 'utf8')
 		}
 	})
 }
 
-function errorResponse(errorString) {
-	if (!errorString) errorString = 'An unknown error occurred.'
-	return function failure(err) {
-		res.writeHead(500)
-		res.end(err ? err.message : errorString, 'utf8')
+server.on('request', function route(req, res) {
+	var filename = urlToFilename(req.url)
+	if (MARKDOWN_FILE_RE.test(filename)) {
+		renderPage(filename, res)
+	} else {
+		serveAssets(req, res)
 	}
-}
-
-//Routing
-function route(req, res) {
-	var path = url.parse(req.url).pathname.slice(1) || 'index'
-	renderPage(path, res, function fail1() {
-		defaultStatic(req, res, function fail2 () {
-			renderPage('404', res, errorResponse('failed to generate page'))
-		})
-	})
-}
-
-//Server
-var server = http.createServer(route)
-server.listen(PORT)
-server.on('error', function (err) {
-	(err.code == 'EADDRINUSE') ?
-		console.log('A server is already running on '+PORT+'.') :
-		console.error('HTTP Server error:', err)
 })
+
+function urlToFilename(urlStr) {
+	return url.parse(urlStr).pathname
+		.slice(1)
+		.replace(MARKDOWN_FILE_RE, '$1$2.md')
+		|| 'index.md'
+}

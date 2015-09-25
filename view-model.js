@@ -1,17 +1,32 @@
-﻿var noddityConfig = require('./noddity-config.json')
-var fs = require('fs')
 var Level = require('level-mem')
-var Retrieval = require('noddity-retrieval')
 var Butler = require('noddity-butler')
-var Renderer = require('noddity-renderer')
-var ViewModel = require('noddity-view-model')
+var Linkifier = require('noddity-linkifier')
+var render = require('noddity-render-static')
 var renderData = require('./render-data.json')
+var extend = require('xtend')
 
-module.exports = function VModel(templateDir) {
-	var renderTemplate = fs.readFileSync(templateDir, { encoding:'utf8' })
-	var db = new Level('./database')
-	var retrieve = new Retrieval(noddityConfig.root)
-	var butler = new Butler(retrieve, db, noddityConfig.butler)
-	var renderer = new Renderer(butler, String)
-	return new ViewModel(butler, renderer, renderTemplate, renderData)
+module.exports = function VModel() {
+	var butler = new Butler('https://raw.githubusercontent.com/ArtskydJ/josephdykstra.com-content/master/', new Level())
+	var renderOpts = {
+		butler: butler,
+		linkifier: new Linkifier('/'),
+		data: renderData
+	}
+
+	butler.getPosts(function (err, posts) {
+		if (err) throw err
+		console.log('loaded ' + posts.length + ' posts')
+	})
+
+	return function (filename, cb) {
+		butler.getPost('post-template.html', function (err, post) {
+			if (err) {
+				cb(err)
+			} else {
+				post.content = post.content.replace('{{{html}}}', '::' + filename + '::')
+
+				render(post, renderOpts, cb)
+			}
+		})
+	}
 }
