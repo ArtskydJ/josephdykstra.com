@@ -21,7 +21,7 @@
     "level-mem": "^0.18.0",
     "noddity-butler": "^2.0.0",
     "noddity-linkifier": "^2.1.0",
-    "noddity-render-static": "^1.1.0",
+    "noddity-render-static": "^1.1.1",
     "xtend": "^4.0.0"
   },
   "devDependencies": {}
