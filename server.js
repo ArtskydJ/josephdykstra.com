@@ -2,7 +2,7 @@
 var http = require('http')
 var Ecstatic = require('ecstatic')
 var url = require('url')
-var viewModel = require('./view-model.js')()
+var setCurrent = require('./view-model.js')()
 
 var DIR = __dirname + '/web/'
 var PORT = process.argv[2] || 80
@@ -24,7 +24,7 @@ server.on('error', function (err) {
 })
 
 function renderPage(filename, res, statusCode) {
-	viewModel(filename, function (err, html) {
+	setCurrent(filename, function (err, html) {
 		if (err) {
 			if (statusCode !== 404) { // disallow 404 recursion
 				renderPage('404.md', res, 404)
