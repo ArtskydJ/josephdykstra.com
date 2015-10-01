@@ -5,7 +5,7 @@ var render = require('noddity-render-static')
 var renderData = require('./render-data.json')
 
 module.exports = function VModel() {
-	var butler = new Butler('https://raw.githubusercontent.com/ArtskydJ/josephdykstra.com-content/master/', new Level())
+	var butler = new Butler('https://raw.githubusercontent.com/ArtskydJ/josephdykstra.com/content/', new Level())
 	var renderOpts = {
 		butler: butler,
 		linkifier: new Linkifier('/'),
