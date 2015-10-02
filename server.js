@@ -2,7 +2,7 @@
 var http = require('http')
 var Ecstatic = require('ecstatic')
 var url = require('url')
-var setCurrent = require('./view-model.js')()
+var renderPage = require('./render-page.js')()
 
 var DIR = __dirname + '/web/'
 var PORT = process.argv[2] || 80
@@ -22,22 +22,6 @@ server.on('error', function (err) {
 		console.error('HTTP Server error:', err)
 	}
 })
-
-function renderPage(filename, res, statusCode) {
-	setCurrent(filename, function (err, html) {
-		if (err) {
-			if (statusCode !== 404) { // disallow 404 recursion
-				renderPage('404.md', res, 404)
-			} else {
-				res.writeHead(500)
-				res.end(err ? err.message : 'An unknown error occurred', 'utf8')
-			}
-		} else {
-			res.writeHead(statusCode || 200)
-			res.end(html, 'utf8')
-		}
-	})
-}
 
 server.on('request', function route(req, res) {
 	var filename = urlToFilename(req.url)

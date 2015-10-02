@@ -12,19 +12,21 @@ module.exports = function VModel() {
 		data: renderData
 	}
 
-	butler.getPosts(function (err, posts) {
-		if (err) throw err
-	})
-
-	return function setCurrent(filename, cb) {
-		butler.getPost('post-template.html', function (err, post) {
+	function renderPage(statusCode, filename, res) {
+		render('post-template.html', filename, renderOpts, function (err, html) {
 			if (err) {
-				cb(err)
+				if (statusCode === 200) { // disallow 404 recursion
+					renderPage(404, '404.md', res)
+				} else {
+					res.writeHead(500)
+					res.end(err ? err.message : 'An unknown error occurred', 'utf8')
+				}
 			} else {
-				post.content = post.content.replace('{{{html}}}', '::' + filename + '::')
-
-				render(post, renderOpts, cb)
+				res.writeHead(statusCode)
+				res.end(html, 'utf8')
 			}
 		})
 	}
+
+	return renderPage.bind(null, 200)
 }
