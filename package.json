@@ -14,7 +14,7 @@
   "private": true,
   "scripts": {
     "start": "psy start -n josephdykstra_http -- node . 1024",
-    "stop": "psy stop josephdykstra_http"
+    "stop": "psy stop josephdykstra_http || true"
   },
   "dependencies": {
     "ecstatic": "^1.0.1",
