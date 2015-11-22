@@ -1,7 +1,8 @@
 var Feed = require('feed')
 var path = require('path')
+var after = require('after')
 
-module.exports = function (butler) {
+module.exports = function (butler, render) {
 	var feeds = {
 		atom: '',
 		rss: ''
@@ -25,18 +26,25 @@ module.exports = function (butler) {
 
 		butler.getPosts({ mostRecent: 5 }, function (err, posts) {
 			if (!err) {
-				posts.forEach(function (post) {
-					feed.addItem({
-						title: post.metadata.title,
-						link: 'http://josephdykstra.com/' + post.metadata.title.toLowerCase().replace(/ /g, '-'),
-						description: getDescription(post),
-						author: [ authorJoseph ],
-						date: post.metadata.date
-					})
+				var next = after(posts.length, function () {
+					feeds.atom = feed.render('atom-1.0')
+					feeds.rss = feed.render('rss-2.0')
 				})
 
-				feeds.atom = feed.render('atom-1.0')
-				feeds.rss = feed.render('rss-2.0')
+				posts.forEach(function (post) {
+					render(post, function (err, html) {
+						if (!err) {
+							feed.addItem({
+								title: post.metadata.title,
+								link: 'http://josephdykstra.com/' + post.filename,
+								description: html,
+								author: [ authorJoseph ],
+								date: post.metadata.date
+							})
+							next()
+						}
+					})
+				})
 			}
 		})
 	}
@@ -51,8 +59,4 @@ module.exports = function (butler) {
 		})
 		res.end(feeds[type])
 	}
-}
-
-function getDescription(post) {
-	return post.content.replace(/([\s\S]{150}\w*)([\s\S]*)/, '$1') + '...'
 }

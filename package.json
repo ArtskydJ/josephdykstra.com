@@ -18,6 +18,7 @@
     "test": "tape test/*.js"
   },
   "dependencies": {
+    "after": "^0.8.1",
     "ecstatic": "^1.0.1",
     "feed": "^0.2.6",
     "level-mem": "^0.18.0",
