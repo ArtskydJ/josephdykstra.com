@@ -1,6 +1,6 @@
 module.exports = function VModel(render) {
 	function servePage(statusCode, filename, res) {
-		render(filename, function (err, html) {
+		render('post-template.html', filename, function (err, html) {
 			if (err) {
 				if (statusCode === 200) { // disallow 404 recursion
 					servePage(404, '404.md', res)

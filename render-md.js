@@ -9,7 +9,7 @@ module.exports = function renderMarkdown(butler) {
 		data: renderData
 	}
 
-	return function renderPage(filename, cb) {
-		render('post-template.html', filename, renderOpts, cb)
+	return function renderPage(root, filename, cb) {
+		render(root, filename, renderOpts, cb)
 	}
 }

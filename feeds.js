@@ -2,6 +2,12 @@ var Feed = require('feed')
 var path = require('path')
 var after = require('after')
 
+var rssRootPost = {
+	filename: '',
+	content: '{{>current}}',
+	metadata: { markdown: false }
+}
+
 module.exports = function (butler, render) {
 	var feeds = {
 		atom: '',
@@ -32,7 +38,7 @@ module.exports = function (butler, render) {
 				})
 
 				posts.forEach(function (post) {
-					render(post, function (err, html) {
+					render(rssRootPost, post, function (err, html) {
 						if (!err) {
 							feed.addItem({
 								title: post.metadata.title,
