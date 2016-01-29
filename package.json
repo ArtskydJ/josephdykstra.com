@@ -1,6 +1,6 @@
 {
   "name": "josephdykstra-com",
-  "main": "server.js",
+  "main": "index.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com",
@@ -13,21 +13,18 @@
   },
   "private": true,
   "scripts": {
-    "start": "psy start -n josephdykstra_http -- node . 1024",
-    "stop": "psy stop josephdykstra_http || true",
-    "test": "tape test/*.js"
+    "build": "node .",
+    "clean": "rimraf web/*.html web/feed.*"
   },
   "dependencies": {
-    "after": "^0.8.1",
-    "ecstatic": "^1.0.1",
     "feed": "^0.2.6",
     "level-mem": "^0.18.0",
+    "map": "0.0.3",
     "noddity-butler": "^2.0.0",
     "noddity-linkifier": "^2.1.0",
     "noddity-render-static": "^2.1.0"
   },
   "devDependencies": {
-    "simple-get": "^1.4.3",
-    "tape": "^4.2.0"
+    "rimraf": "^2.5.1"
   }
 }
