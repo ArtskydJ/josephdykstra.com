@@ -21,10 +21,12 @@ getPosts(function (err, posts) {
 	// (https://github.com/jpmonette/feed/issues/28)
 	// so they must be added in the correct order.
 	// That's why I'm using `map`.
-	map(noddity.renderFeed, posts.slice(0, 5), function (err, htmlPostFeeds) {
+	var feedPosts = posts.slice(0, 5)
+
+	map(noddity.renderFeed, feedPosts, function (err, htmlPostFeeds) {
 		if (err) throw err
 
-		posts.forEach(function (post, i) {
+		feedPosts.forEach(function (post, i) {
 			feed.add(post, htmlPostFeeds[i])
 		})
 
