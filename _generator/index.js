@@ -13,11 +13,15 @@ noddity.getPosts(function (err, posts) {
 
 	posts.forEach(save)
 
+	// The posts start in the correct order, but
 	// `feed` does not sort the posts by date
 	// (https://github.com/jpmonette/feed/issues/28)
 	// so they must be added in the correct order.
-	// That's why I'm using `map`.
-	var feedPosts = posts.slice(0, 5)
+	// That's why I'm using `map`; to render and
+	// add them in series.
+	
+	// Take last 5, and put the most recent first
+	var feedPosts = posts.slice(-5).reverse()
 
 	map(noddity.renderFeed, feedPosts, function (err, htmlPostFeeds) {
 		if (err) throw err

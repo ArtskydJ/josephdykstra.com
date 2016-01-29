@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Joseph Dykstra&apos;s Blog</title>
     <link>http://josephdykstra.com</link>
-    <updated>2016-01-29T04:23:41Z</updated>
+    <updated>2016-01-29T16:10:30Z</updated>
     <author>
         <name>Joseph Dykstra</name>
         <email>josephdykstra@gmail.com</email>
@@ -14,16 +14,49 @@
     <rights>Copyright © Joseph Dykstra 2015.</rights>
     <generator>Feed for Node.js</generator>
     <entry>
-        <title type="html"><![CDATA[My First Post]]></title>
-        <id>http://josephdykstra.com/my-first-post.md</id>
-        <link href="http://josephdykstra.com/my-first-post.md">
+        <title type="html"><![CDATA[Speech for Michael and Elizabeth's Wedding]]></title>
+        <id>http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding.md</id>
+        <link href="http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding.md">
         </link>
-        <updated>2011-09-20T00:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>First post.</p>
-<p>You can put this blog on Feedly or another RSS feed reader. Feed Readers are the best things since the interwebs. (OK, maybe not.)</p>
-<p>I will probably express feelings on what I believe on somewhat controversial topics. I hope to post my opinions on Music, Dancing, What Time a Day Begins, and anything else that I feel is worthy. Hopefully I am able to present you with a logical and biblical perspective.</p>
-<p>You should check out <a href="http://rebeccasscatteredscribblings.blogspot.com/">Rebecca's Blog</a>, <a href="http://trueandfaithfulwords.wordpress.com/">Laura's Blog</a>, <a href="http://joshduff.com/">Josh's Blog</a>, and <a href="http://cougarlane.com/_/The_Race_Blog/The_Race_Blog.html">Jarrod's Blog</a>.</p>
-<p>I might post twice a day, or twice a year, and that is why feed readers are so nice. You add 10 blogs, it gathers the data, you read it on your own schedule, you don't need 10 bookmarks for your 10 favorite blogs.</p>
+        <updated>2015-11-25T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>I wrote a speech/poem/rap for my brother's wedding. The lyrics are as follows:</p>
+<hr>
+<p>Mi<strong>chael</strong> and Eli<strong>za</strong>beth, the new<strong>ly</strong> married cou<strong>ple</strong>,<br>
+I'm <strong>ex</strong>cited for <strong>you</strong> both, yet it's <strong>sad</strong> to see you <strong>go</strong>.<br>
+It <strong>has</strong> been really <strong>awe</strong>some having <strong>Mi</strong>chael as my <strong>bro</strong>,<br>
+Here <strong>are</strong> some facts a<strong>bout</strong> him that you <strong>may</strong> or may not <strong>know</strong>:</p>
+<hr>
+<p>Mi<strong>chael</strong> is very <strong>car</strong>ing, and for <strong>that</strong> he is a<strong>dored</strong>,<br>
+He's <strong>grac</strong>ious, and he's <strong>thought</strong>ful, and he <strong>seeks</strong> to please the <strong>Lord</strong>.<br>
+Our re<strong>la</strong>tionship was<strong>n't</strong> a picture <strong>per</strong>fect story<strong>board</strong>,<br>
+But o<strong>ver</strong> a little <strong>time</strong> it has most <strong>def</strong>initely <strong>soared</strong>.</p>
+<p>"To <strong>have</strong> a good re<strong>lation</strong>ship with your <strong>wife</strong>, you must be <strong>nice</strong><br>
+to <strong>your</strong> mom and your <strong>sis</strong>ters" our dad <strong>told</strong> us Dykstra <strong>guys</strong>.<br>
+I've <strong>ob</strong>served that Mi<strong>chael</strong> has indeed <strong>foll</strong>owed that ad<strong>vice</strong>;<br>
+He <strong>hugs</strong> Becky or <strong>mom</strong> of-ten; like <strong>each</strong> day, if not <strong>twice</strong>.</p>
+<hr>
+<p>Mi<strong>chael</strong> is a ge<strong>ner</strong>ous guy; he'd <strong>of</strong>ten volun<strong>teer</strong>,<br>
+a<strong>round</strong> the house, at <strong>church</strong>, and es-sen<strong>tial</strong>ly any<strong>where</strong>.<br>
+He'll <strong>stop</strong> by the road, <strong>to</strong> help a stran<strong>ger</strong> put on a <strong>spare</strong>.<br>
+Him <strong>loan</strong>ing out his <strong>re</strong>sources is <strong>a</strong> common af<strong>fair</strong>.</p>
+<p><strong>If</strong> the milk ran <strong>out</strong>, and mom said "<strong>Who</strong> wants to get <strong>more</strong>?"<br>
+Of<strong>ten</strong> Michael would <strong>cheer</strong>fully go <strong>car</strong>ry out the <strong>chore</strong>.<br>
+His <strong>sib</strong>lings' food was <strong>some</strong>thing he would <strong>ran</strong>domly pay <strong>for</strong>.<br>
+He <strong>was</strong> the kind of <strong>guy</strong> who would o<strong>pen</strong> and hold the <strong>door</strong>.</p>
+<hr>
+<p>If <strong>you</strong> know Michael <strong>at</strong> all, then you <strong>know</strong> he's dili<strong>gent</strong>,<br>
+and <strong>that</strong> he likes to <strong>make</strong> sure that all <strong>his</strong> time is well <strong>spent</strong>.<br>
+After <strong>a</strong> short obser<strong>va</strong>tion, a stran<strong>ger</strong> made the com<strong>ment</strong><br>
+that <strong>he</strong> wished he could <strong>have</strong> Michael un<strong>der</strong> his employ<strong>ment</strong>.</p>
+<p>He <strong>stu</strong>dies for his <strong>school</strong>, early be<strong>fore</strong> the sky is <strong>lit</strong>.<br>
+He <strong>works</strong> quickly when <strong>on</strong> the job and <strong>he's</strong> not counter<strong>feit</strong>.<br>
+I <strong>know</strong> this because <strong>at</strong> home he does <strong>not</strong> just like to <strong>sit</strong>.<br>
+He <strong>sees</strong> work that needs <strong>to</strong> be done, and <strong>pro</strong>ceeds to do <strong>it</strong>.</p>
+<hr>
+<p>So <strong>as</strong> you both ac<strong>com</strong>plish this mi<strong>le</strong>stone of life's <strong>race</strong>,<br>
+it <strong>is</strong> my prayer that <strong>God</strong> will give you <strong>His</strong> amazing <strong>grace</strong>.<br>
+Un<strong>til</strong> the day you <strong>pass</strong> away, and <strong>stand</strong> before God's <strong>face</strong>;<br>
+put <strong>God</strong> first, then your <strong>spouse</strong> second, and <strong>your</strong>self in third <strong>place</strong>.</p>
 ]]></summary>
         <author>
             <name>Joseph Dykstra</name>
@@ -32,20 +65,39 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Music]]></title>
-        <id>http://josephdykstra.com/music.md</id>
-        <link href="http://josephdykstra.com/music.md">
+        <title type="html"><![CDATA[FLL]]></title>
+        <id>http://josephdykstra.com/fll.md</id>
+        <link href="http://josephdykstra.com/fll.md">
         </link>
-        <updated>2011-09-23T00:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>Music. We are surrounded by it; MP3 Players, Radios, Bands. Music played at public places is usually pagan except around Christmas time. The first time you hear anything about music is, I believe, Genesis 4:21. The people at my orthodontist's office were playing the most horrendous screeching-singing music that I've heard for a long time.</p>
-<p>I mainly listen to Christian (and instrumental) music. But I don't really care much for, Casting Crowns, even though what they say is (mostly) great. I personally like Christian Hip Hop (CHH) like 116 Clique, Lecrae, Flame, etc.</p>
-<p>Casting Crowns and Lecrae are both Christian, but have different styles. They both reference the same faults/needs of today's culture. For example: environmentalism.</p>
-<p>Casting Crowns in <em>While You were Sleeping</em> says "United States of America ... save[s] the trees and kill[s] the children..."</p>
-<p>Lecrae in <em>Blow your High</em> says "... worshiping a tree instead of worshiping the King..."</p>
-<p>I like the style of rap, but I like rock too, some other styles are cool too.</p>
-<p>Music can be something people listen to way too much, or not the right kind. It shapes how you feel as you listen, and maybe for long periods of time; sort of how certain lighting makes a movie creepy, and if you watch too many creepy movies it does not help how you act.</p>
-<p>If I listen to Relient K, Sanctus Real, Switchfoot, Skillet, and the like, for about 0.75 hours or more, I start getting a bit depressed, dreary, and quite sick of it. If I listen to one style for 1.5 hours or more I get really sick of it.</p>
-<p>I think the music you hear might change you more than you'd think.</p>
+        <updated>2014-11-18T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>I was on a <a href="http://www.firstlegoleague.org/">First Lego League</a> team, the <a href="http://datadragons.com/">Data Dragons</a> for 5 years.</p>
+<p>First Lego League (FLL) is a program designed to teach students about science and technology. Each team researchs a problem, creates a solution, and presents it to the judges at a competition. They also create a LEGO Mindstorms robot, and program it to do missions on a 4 ft. x 8 ft. table. Whoever scores the most points gets an award, whoever has the best presentation gets an award, etc.</p>
+<h3>What I learned</h3>
+<p>I learned about basic robotics, mechanics, teamwork, and a little bit of programming.</p>
+<h3>Team Acheivements (While I was on the team)</h3>
+<ul>
+<li>2008: Climate Connections
+<ul>
+<li>Regionals: 1st Place Teamwork</li>
+<li>Iowa State: 2nd Place Programming</li>
+</ul></li>
+<li>2009: Smart Move
+<ul>
+<li>Regionals: 2nd Place Champions</li>
+<li>Iowa State: 1st Place Champions</li>
+<li>Nebraska State: (Unofficial) 2nd Place Robot Performance</li>
+<li>Worlds: 3rd Place Research</li>
+</ul></li>
+<li>2010: Body Forward
+<ul>
+<li>Nebraska State: 1st Place Champions</li>
+</ul></li>
+<li>2011: Food Factor
+<ul>
+<li>Regionals: 1st Place Champions</li>
+<li>Nebraska State: 3rd Place Champions</li>
+</ul></li>
+</ul>
 ]]></summary>
         <author>
             <name>Joseph Dykstra</name>
@@ -54,19 +106,35 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Intellectual Property]]></title>
-        <id>http://josephdykstra.com/intellectual-property.md</id>
-        <link href="http://josephdykstra.com/intellectual-property.md">
+        <title type="html"><![CDATA[VEX]]></title>
+        <id>http://josephdykstra.com/vex.md</id>
+        <link href="http://josephdykstra.com/vex.md">
         </link>
-        <updated>2011-09-29T00:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>Intellectual Property is the philosophy that thoughts, ideas, sounds, sights, etc. are owned by the person who first conceived/made them. Intellectual property is non-physical  including, but is not limited to: musical, literary, and artistic works, discoveries, inventions, and words, phrases, symbols, and designs.</p>
-<p>The aforementioned intangible objects are protected under copyrights, trademarks, patents, and more.</p>
-<p>Infringements on copyrights are often, considered stealing, partially due to propaganda spread by video marketing companies, like this video:</p>
-<iframe width="560" height="315" src="http://www.youtube.com/v/HmZm8vNHBSU&amp;fs=1&amp;source=uds"></iframe>
-<p>The Christian's (and the movie's) main argument against "piracy" that it "is stealing". If I go to wal-mart, take a CD and run out with out paying, I am stealing the CD. If I torrent the data from the CD, then I am not taking a tangible object, therefore I am not stealing. If I paint a picture, and someone takes it from my house, they're stealing. If they takes a photograph of it, and then they print it, they are not stealing.</p>
-<p>The Christian's second argument is sometimes "A worker is worthy of his wages." Just because I paint a picture that is, to my perspective, very beautimous, does not mean that I am entitled to someone's buying it. If someone does buy it though, it belongs to them.</p>
-<p>And if you are and atheist or the like, then I don't see why you would have any conscience issues doing anything, because you have little reason to be "moral", except the government's laws and social peer pressure.</p>
-<p>I am not saying that you should "pirate" whatever. I am stating the belief that intellectual property is bogus, and "pirating" is not theft.</p>
+        <updated>2014-11-18T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>I was on a <a href="http://vexrobotics.org">VEX</a> team, <a href="http://technapwn.com">TechnaPWN Robotics</a> for 2 years.</p>
+<p>VEX was designed to teach students about STEM. (Science, Technology, Engineering, Math.) Students design, build, program, and drive a robot for each game, documenting their progress.</p>
+<p>2013 was my first year, and I basically helped build the robot. I did some code maintainence, and some autonomous programming. <a href="https://www.youtube.com/watch?v=TUmyI8DoeQE">TechnaPWN Programming Skills 2013</a></p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/TUmyI8DoeQE"></iframe>
+<p>2014 was my last year. (As a student, that is. I do a bit of mentoring now.) I took a larger role in all areas; I designed and built more of the robot than I did the previous year, and I was the sole programmer. I was also the main driver, but could not have gone far without the coach and secondary driver. (Shout-out to y'all!) At the World Championship, we had issues, but were picked by <a href="http://youtu.be/QR0cl95RWIQ">Team 1200F</a>. We ended up losing in the Division Finals, in matches 2 and 3. Here is my favorite match: <a href="https://www.youtube.com/watch?v=YQccSPfuhW4">Division Finals Match 1</a></p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/YQccSPfuhW4"></iframe>
+<h3>What I learned</h3>
+<p>I learned about intermediate robotics, mechanics, and programming. It was also a good tool for learning to handle stress. :)</p>
+<h3>Team Acheivements (While I was on the team)</h3>
+<ul>
+<li>2013: Sack Attack
+<ul>
+<li>Regionals: Tournament Champions at 5 of 7; various other awards</li>
+<li>Nationals: 2nd Place Programming Skills, Division Finalists</li>
+<li>Worlds: Innovate Award, 2nd Place Programming Skills</li>
+</ul></li>
+<li>2014: Toss Up
+<ul>
+<li>Regionals: various awards</li>
+<li>Iowa State: 9-0-0, 1st Seed, Tournament Champions, Excellence Award</li>
+<li>Nationals: 8-2-0, 2nd Seed</li>
+<li>Worlds: 5-5-0, Division Finalists</li>
+</ul></li>
+</ul>
 ]]></summary>
         <author>
             <name>Joseph Dykstra</name>
@@ -75,18 +143,102 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Jokes]]></title>
-        <id>http://josephdykstra.com/jokes.md</id>
-        <link href="http://josephdykstra.com/jokes.md">
+        <title type="html"><![CDATA[Résumé]]></title>
+        <id>http://josephdykstra.com/resume.md</id>
+        <link href="http://josephdykstra.com/resume.md">
         </link>
-        <updated>2011-10-06T00:00:00Z</updated>
-        <summary type="html"><![CDATA[<p>Disclaimer: I am not referencing Batman: The Dark Knight in this post.</p>
-<p>One thing I have noted with many unkind jokes, is that they are based on something mean that the joker thinks.</p>
-<p>What if I thought Seth's hair was awful when he dyed it? (My bro, for a play, 2012)</p>
-<p>I could have said "Seth, your hair is horrendous. Just kidding." The "joke" would have been based on truth.</p>
-<p>Bob is pitching to Tom who is batting, and Tom thinks, "he is not very good at pitching." It could be easy for Tom to say, "you should take pitching lessons from me... Kidding!" Or Tom might sarcastically say "You're good at pitching."</p>
-<p>The previous insults are based on truth, which not only hurts the receiver more, but also tells what the joker is thinking. In the case of sarcasm though, usually the statement is opposite of the thought. When I see it, I wonder how often I do the same.</p>
-<p>If our lives were fully centered around following in Christ's footsteps, then how different would our jokes be?</p>
+        <updated>2014-10-23T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<h2>Joseph Dykstra</h2>
+<p><a href="mailto:josephdykstra@gmail.com"><em>josephdykstra@gmail.com</em></a></p>
+<h2>About Me</h2>
+<p>I am passionate about software development. I am ambitious, and have been writing code for over 5 years.</p>
+<p>I like writing JavaScript modules, and websites.</p>
+<p>I am currently working remotely for <a href="http://renweb.com">RenWeb</a>, a company that makes school-related software.  I fix issues that clients have, create custom reports, and develop new functionality.</p>
+<h2>Objective</h2>
+<p>I am not currently looking for work.</p>
+<h2>Knowledge</h2>
+<ul>
+<li>Languages:
+<ul>
+<li>JavaScript, HTML, CSS, SQL, ColdFusion, C</li>
+<li>Written a little bit of Python, and BASIC</li>
+</ul></li>
+<li>Compilers/Runtimes:
+<ul>
+<li>Extensive use of NodeJS, RobotC, and GCC</li>
+<li>Used Python, and MySQL a little bit</li>
+</ul></li>
+<li>Tools:
+<ul>
+<li>Sublime Text, Atom, Notepad++, SSMS, cmd, npm, TortoiseGit</li>
+<li>Used terminal, Github for Windows, and SQLyog a little bit</li>
+</ul></li>
+<li>Operating Systems:
+<ul>
+<li>Windows XP - 8</li>
+<li>Mac OS X</li>
+<li>Ubuntu (GUI and CLI)</li>
+</ul></li>
+</ul>
+<h2>Experience</h2>
+<h3>RenWeb | April 2015 - [Present]</h3>
+<p><a href="http://renweb.com">renweb.com</a></p>
+<p>I work with a small team to fix issues that come in, and develop new features on software for over 3000 schools.</p>
+<ul>
+<li>I have created a label system so schools can print Mail Labels, ID Cards, barcodes, and more onto standard Avery label sheets.</li>
+<li>I have worked with REST APIs to sync school data with 3rd party school-related software such as LMS's and State Reporting.</li>
+<li>I work on fixing various issues. Few issues are like other issues. My debugging skills have improved a lot in this position.</li>
+</ul>
+<h3>Personal Projects | July 2008 - [Present]</h3>
+<p><a href="https://github.com/ArtskydJ?tab=repositories">Github Repositories</a> - <a href="http://npmjs.org/~artskydj">NPM modules</a></p>
+<ul>
+<li>I wrote <a href="http://justlogin.xyz/">Just Login</a>, an email-based authentication library for node.js servers</li>
+<li>I have created hundreds of <a href="https://github.com/pulls?utf8=%E2%9C%93&amp;q=is%253Apr+author%253AArtskydJ+">pull requests</a> on Github to various open source projects</li>
+<li>I wrote the <a href="https://github.com/ArtskydJ/josephdykstra.com">server code</a> for my <a href="http://josephdykstra.com/">website</a></li>
+<li>I have written and I maintain over <a href="http://npmjs.org/~artskydj">50 JavaScript modules</a> for node.js</li>
+<li>I wrote <a href="https://github.com/ArtskydJ/snake">Snake</a>, <a href="https://github.com/ArtskydJ/tetris">Tetris</a>, and an <a href="https://github.com/ArtskydJ/eight-queens">8-Queens Solver</a> in C</li>
+</ul>
+<h3>Well Rooted Gardens | May 16, 2014 - [Present]</h3>
+<p><a href="http://wellrootedgardens.com">wellrootedgardens.com</a></p>
+<p>I work part time for Well Rooted Gardens doing landscape work.  During the winter, we do snow removal.</p>
+<h3>Coding in the Wild | October 2, 2013 - [Present]</h3>
+<p><a href="http://github.com/coding-in-the-wild">github.com/coding-in-the-wild</a></p>
+<p>Coding in the Wild is a group started by a professional developer.  He invited people who were interested in software development to learn development techniques.  We worked together to create a back-end node.js authentication module with an <a href="http://justlogin.xyz/">interactive website</a>.  Now we are working to create a chat room where users upload &amp; play their music for the group, in a round-robin fashion.</p>
+<h3>TechnaPWN (VEX Robotics) | September 2012 - April 2014</h3>
+<p><a href="http://technapwn.com">technapwn.com</a> - <a href="http://youtube.com/TechnaPWN">youtube.com/TechnaPWN</a></p>
+<p>I wrote RobotC <a href="https://github.com/ArtskydJ/technapwn-toss-up">code</a> (based on C) for a VEX robot, including pre-programmed routines, teleoperation, slewed motor control, an extensive LCD menu system, and more.  I maintained and updated the code throughout the entire season.  Also, the previous year, I worked with two other team members to write and maintain the code-base.  I am now mentoring the team, although I am not on it.</p>
+<h3>Data Dragons (FLL, LEGO Robotics) | September 2008 - February 2013</h3>
+<p><a href="http://datadragonsfll.com">datadragonsfll.com</a></p>
+<p>Being on this team taught me about teamwork and basic robotics.  The team took 1st place Robot Performance at Nebraska State in 2012.  I was a mentor for the team during the 2012-2013 season.</p>
+<h2>References</h2>
+<ul>
+<li>Josh Duff
+<ul>
+<li><a href="http://joshduff.com">http://joshduff.com</a></li>
+<li>Developer, <a href="http://www.edatasource.com/">eDataSource</a></li>
+</ul></li>
+<li>Tobias Davis
+<ul>
+<li><a href="http://davistobias.com">http://davistobias.com</a></li>
+<li>Developer, <a href="http://www.edatasource.com/">eDataSource</a></li>
+</ul></li>
+<li>Evan Hurd
+<ul>
+<li>Developer, <a href="http://www.renweb.com/">RenWeb</a></li>
+</ul></li>
+<li>Seth Dykstra
+<ul>
+<li>On-Site IT Support, <a href="http://www.pltechnology.com/">P&amp;L Technology</a></li>
+</ul></li>
+<li>David Dykstra
+<ul>
+<li>Owner of Millennium Construction (Omaha)</li>
+</ul></li>
+<li>Michael Dykstra
+<ul>
+<li>Apprentice plumber, Schulte Plumbing</li>
+</ul></li>
+</ul>
 ]]></summary>
         <author>
             <name>Joseph Dykstra</name>
@@ -95,23 +247,23 @@
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ECD Part 2: Kilts]]></title>
-        <id>http://josephdykstra.com/ecd-part-2-kilts.md</id>
-        <link href="http://josephdykstra.com/ecd-part-2-kilts.md">
+        <title type="html"><![CDATA[Change pt. 2]]></title>
+        <id>http://josephdykstra.com/change-pt-2.md</id>
+        <link href="http://josephdykstra.com/change-pt-2.md">
         </link>
-        <updated>2011-10-08T00:00:00Z</updated>
-        <summary type="html"><![CDATA[<blockquote>
-<p><strong>Deuteronomy 22:5</strong></p>
-<p>A woman shall not wear anything that pertains to a man, nor shall a man put on a woman's garment, for all who do so are an abomination to the Lord your God.</p>
-</blockquote>
-<p>In the US, skirts, dresses, and the like, are considered a woman's garments.</p>
-<p>A kilt probably is not cross-dressing. I feel that it is somewhat border lined.</p>
-<p>Why I would not wear one:</p>
-<ol>
-<li>I don't know if it is morally ok.</li>
-<li>They look silly.</li>
-<li>I'm Dutch, not Scottish.</li>
-</ol>
+        <updated>2014-02-21T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>People tend not to welcome change, even good change. (Think about every time Facebook updates its interface.)</p>
+<p>People don't want to change themselves, they like routine, they like order.</p>
+<p>In football, the successful teams get into a routine, (a rhythm, as some announcers call it,) and move the ball down the field methodically.</p>
+<p>I like my current bedroom. It might not be in the most convenient place, but I would not want to get used to sleeping in a different room.</p>
+<p>People don't want to change themselves, and do not like it when outside change requires them to.</p>
+<p>I did not like it when my church switched tunes on 2 songs I liked. On one, I liked the new tune better, but I had gotten used to the old tune, and didn't like switching. On the other, I didn't like the new tune as well.</p>
+<hr>
+<p>Sometimes people do like change. They want a different job, just because it is different. They are tired of being slaves of routine. They don't like repeating the same task 2000 hours each year. (50 weeks * 5 days * 8 hours, 2 weeks vacation.)</p>
+<p>This is why some people like going on vacation, <em>and</em> like coming home from vacation.</p>
+<hr>
+<p>If you are in a routine of serving the Lord, do not get tired of it!</p>
+<p>If you are in a routine of not serving the Lord, do get tired of it!</p>
 ]]></summary>
         <author>
             <name>Joseph Dykstra</name>
