@@ -1,5 +1,6 @@
 var Level = require('level-mem')
 var Butler = require('noddity-butler')
+var Retrieval = require('noddity-fs-retrieval')
 var Linkifier = require('noddity-linkifier')
 var renderStatic = require('noddity-render-static')
 
@@ -10,14 +11,14 @@ var FEED_ROOT_POST = {
 }
 
 module.exports = function () {
-	var butler = new Butler('https://raw.githubusercontent.com/ArtskydJ/josephdykstra.com/content/', new Level())
+	var butler = new Butler(new Retrieval('../_content/'), new Level())
 
 	function render(root, filename, cb) {
 		renderStatic(root, filename, {
 			butler: butler,
 			linkifier: new Linkifier('/'),
 			data: {
-				editLink: 'https://github.com/ArtskydJ/josephdykstra.com/edit/content/',
+				editLink: 'https://github.com/ArtskydJ/josephdykstra.com/edit/gh-pages/_content/',
 				logo: '/logo.png',
 				errorPage: '404.md'
 			}

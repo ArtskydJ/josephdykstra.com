@@ -1,19 +1,22 @@
 var fs = require('fs')
+var path = require('path')
 var map = require('map')
 var feed = require('./feeds.js')()
 var noddity = require('./noddity.js')()
-var getPosts = noddity.getPosts
 
-var ROOT_DIR = __dirname + '/web/'
+function resolvePath(filename) {
+	return path.resolve(__dirname, '..', filename)
+}
 
-getPosts(function (err, posts) {
+noddity.getPosts(function (err, posts) {
 	if (err) throw err
 
 	posts.forEach(function (post) {
 		noddity.renderHtml(post, function (err, html) {
 			if (err) throw err
 
-			fs.writeFileSync(ROOT_DIR + post.filename.replace(/\.md$/, '.html'), html)
+			var htmlFilename = post.filename.replace(/\.md$/, '.html')
+			fs.writeFileSync(resolvePath(htmlFilename), html)
 		})
 	})
 
@@ -30,7 +33,7 @@ getPosts(function (err, posts) {
 			feed.add(post, htmlPostFeeds[i])
 		})
 
-		fs.writeFileSync(ROOT_DIR + 'feed.atom', feed.renderAtom())
-		fs.writeFileSync(ROOT_DIR + 'feed.rss', feed.renderRss())
+		fs.writeFileSync(resolvePath('feed.atom'), feed.renderAtom())
+		fs.writeFileSync(resolvePath('feed.rss'), feed.renderRss())
 	})
 })
