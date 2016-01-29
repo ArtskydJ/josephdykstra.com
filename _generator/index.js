@@ -11,14 +11,7 @@ function resolvePath(filename) {
 noddity.getPosts(function (err, posts) {
 	if (err) throw err
 
-	posts.forEach(function (post) {
-		noddity.renderHtml(post, function (err, html) {
-			if (err) throw err
-
-			var htmlFilename = post.filename.replace(/\.md$/, '.html')
-			fs.writeFileSync(resolvePath(htmlFilename), html)
-		})
-	})
+	posts.forEach(save)
 
 	// `feed` does not sort the posts by date
 	// (https://github.com/jpmonette/feed/issues/28)
@@ -37,3 +30,18 @@ noddity.getPosts(function (err, posts) {
 		fs.writeFileSync(resolvePath('feed.rss'), feed.renderRss())
 	})
 })
+
+noddity.getPost('index.md', function (err, post) {
+	if (err) throw err
+
+	save(post)
+})
+
+function save(post) {
+	noddity.renderHtml(post, function (err, html) {
+		if (err) throw err
+
+		var htmlFilename = post.filename.replace(/\.md$/, '.html')
+		fs.writeFileSync(resolvePath(htmlFilename), html)
+	})
+}
