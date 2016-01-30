@@ -1,29 +1,28 @@
 var fs = require('fs')
 var path = require('path')
 var map = require('map')
-var rimraf = require('rimraf')
 var feed = require('./feeds.js')()
 var noddity = require('./noddity.js')()
 
-
-rimraf(resolvePath('*.html'), function (err) {
-	if (err) throw err
-
-	rimraf(resolvePath('feed.*'), function (err) {
-		if (err) throw err
-
-		getAndRenderAndSavePosts()
-	})
-})
-
 function resolvePath(filename) {
 	return path.resolve(__dirname, '..', filename)
+}
+
+function save(post) {
+	noddity.renderHtml(post, function (err, html) {
+		if (err) throw err
+
+		var htmlFilename = post.filename.replace(/\.md$/, '.html')
+		fs.writeFileSync(resolvePath(htmlFilename), html)
+	})
 }
 
 function getAndRenderAndSavePosts() {
 	noddity.getPosts(function (err, posts) {
 		if (err) throw err
 
+		// These don't need to be generated in the
+		// correct order
 		posts.forEach(save)
 
 		// The posts start in the correct order, but
@@ -45,21 +44,14 @@ function getAndRenderAndSavePosts() {
 
 			fs.writeFileSync(resolvePath('feed.atom'), feed.renderAtom())
 			fs.writeFileSync(resolvePath('feed.rss'), feed.renderRss())
+
+			noddity.getPost('index.md', function (err, post) {
+				if (err) throw err
+
+				save(post)
+			})
 		})
 	})
-
-	noddity.getPost('index.md', function (err, post) {
-		if (err) throw err
-
-		save(post)
-	})
 }
 
-function save(post) {
-	noddity.renderHtml(post, function (err, html) {
-		if (err) throw err
-
-		var htmlFilename = post.filename.replace(/\.md$/, '.html')
-		fs.writeFileSync(resolvePath(htmlFilename), html)
-	})
-}
+getAndRenderAndSavePosts()

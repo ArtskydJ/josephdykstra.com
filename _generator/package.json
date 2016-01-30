@@ -1,6 +1,6 @@
 {
   "name": "josephdykstra-com",
-  "main": "index.js",
+  "main": "",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com",
@@ -12,9 +12,13 @@
     "url": "https://github.com/ArtskydJ/josephdykstra-com.git"
   },
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "rimraf ../*.html ../feed.* && node index.js && node uncss.js"
+  },
   "dependencies": {
+    "clean-css": "^3.4.9",
     "feed": "^0.2.6",
+    "glob": "^6.0.4",
     "level-mem": "^0.18.0",
     "map": "0.0.3",
     "noddity-butler": "^2.0.0",
@@ -22,6 +26,7 @@
     "noddity-linkifier": "^2.1.0",
     "noddity-render-static": "^2.1.0",
     "random-uuid-v4": "0.0.5",
-    "rimraf": "^2.5.1"
+    "rimraf": "^2.5.1",
+    "uncss": "^0.13.0"
   }
 }
