@@ -1,5 +1,5 @@
 ---
-title: 3 Topics of Ethics
+title: 3 Topics of Ethics | 1
 date: 2012-03-14
 ---
 

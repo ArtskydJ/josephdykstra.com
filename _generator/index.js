@@ -1,45 +1,59 @@
 var fs = require('fs')
 var path = require('path')
 var map = require('map')
+var rimraf = require('rimraf')
 var feed = require('./feeds.js')()
 var noddity = require('./noddity.js')()
+
+
+rimraf(resolvePath('*.html'), function (err) {
+	if (err) throw err
+
+	rimraf(resolvePath('feed.*'), function (err) {
+		if (err) throw err
+
+		getAndRenderAndSavePosts()
+	})
+})
 
 function resolvePath(filename) {
 	return path.resolve(__dirname, '..', filename)
 }
 
-noddity.getPosts(function (err, posts) {
-	if (err) throw err
-
-	posts.forEach(save)
-
-	// The posts start in the correct order, but
-	// `feed` does not sort the posts by date
-	// (https://github.com/jpmonette/feed/issues/28)
-	// so they must be added in the correct order.
-	// That's why I'm using `map`; to render and
-	// add them in series.
-	
-	// Take last 5, and put the most recent first
-	var feedPosts = posts.slice(-5).reverse()
-
-	map(noddity.renderFeed, feedPosts, function (err, htmlPostFeeds) {
+function getAndRenderAndSavePosts() {
+	noddity.getPosts(function (err, posts) {
 		if (err) throw err
 
-		feedPosts.forEach(function (post, i) {
-			feed.add(post, htmlPostFeeds[i])
+		posts.forEach(save)
+
+		// The posts start in the correct order, but
+		// `feed` does not sort the posts by date
+		// (https://github.com/jpmonette/feed/issues/28)
+		// so they must be added in the correct order.
+		// That's why I'm using `map`; to render and
+		// add them in series.
+
+		// Take last 5, and put the most recent first
+		var feedPosts = posts.slice(-5).reverse()
+
+		map(noddity.renderFeed, feedPosts, function (err, htmlPostFeeds) {
+			if (err) throw err
+
+			feedPosts.forEach(function (post, i) {
+				feed.add(post, htmlPostFeeds[i])
+			})
+
+			fs.writeFileSync(resolvePath('feed.atom'), feed.renderAtom())
+			fs.writeFileSync(resolvePath('feed.rss'), feed.renderRss())
 		})
-
-		fs.writeFileSync(resolvePath('feed.atom'), feed.renderAtom())
-		fs.writeFileSync(resolvePath('feed.rss'), feed.renderRss())
 	})
-})
 
-noddity.getPost('index.md', function (err, post) {
-	if (err) throw err
+	noddity.getPost('index.md', function (err, post) {
+		if (err) throw err
 
-	save(post)
-})
+		save(post)
+	})
+}
 
 function save(post) {
 	noddity.renderHtml(post, function (err, html) {

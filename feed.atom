@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>3eeeb505-c911-4e64-9bff-0e73e1d07f8b</id>
+    <id>ffaa9742-ce1c-4371-9872-ee0038abb54a</id>
     <title>Joseph Dykstra&apos;s Blog</title>
-    <updated>2016-01-30T16:53:22Z</updated>
+    <updated>2016-01-30T17:15:22Z</updated>
     <author>
         <name>Joseph Dykstra</name>
         <email>josephdykstra@gmail.com</email>
@@ -15,7 +15,7 @@
     <generator>Feed for Node.js</generator>
     <entry>
         <title type="html"><![CDATA[Speech for Michael and Elizabeth's Wedding]]></title>
-        <id>1fd9c550-fe31-4acc-99ad-7913eb4068f4</id>
+        <id>51bf9228-cbdc-4c6a-8f5e-be4d6d796de1</id>
         <link href="http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding.md">
         </link>
         <updated>2015-11-25T00:00:00Z</updated>
@@ -66,7 +66,7 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
     </entry>
     <entry>
         <title type="html"><![CDATA[FLL]]></title>
-        <id>825d7978-0f8f-47f0-9b39-3880ae7bcdd5</id>
+        <id>8cff76d5-c664-4dad-9f2d-27eb48311c6e</id>
         <link href="http://josephdykstra.com/fll.md">
         </link>
         <updated>2014-11-18T00:00:00Z</updated>
@@ -107,7 +107,7 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
     </entry>
     <entry>
         <title type="html"><![CDATA[VEX]]></title>
-        <id>27c1a349-cede-4956-97f5-7bfa17f11757</id>
+        <id>d4e280d8-719e-46ea-8a65-2bb6c449fc35</id>
         <link href="http://josephdykstra.com/vex.md">
         </link>
         <updated>2014-11-18T00:00:00Z</updated>
@@ -144,7 +144,7 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
     </entry>
     <entry>
         <title type="html"><![CDATA[Résumé]]></title>
-        <id>b53796ee-5c8d-4440-bead-74710c6a5d6a</id>
+        <id>b44ec2b5-d53a-4758-a38b-f8f2ea247bbb</id>
         <link href="http://josephdykstra.com/resume.md">
         </link>
         <updated>2014-10-23T00:00:00Z</updated>
@@ -247,8 +247,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Change pt. 2]]></title>
-        <id>7ea32dbe-1d12-428d-8eb2-a0fe6573bf1d</id>
+        <title type="html"><![CDATA[Change | 2]]></title>
+        <id>7c691adb-51a9-4fe9-9238-a049c1cc1f59</id>
         <link href="http://josephdykstra.com/change-pt-2.md">
         </link>
         <updated>2014-02-21T00:00:00Z</updated>

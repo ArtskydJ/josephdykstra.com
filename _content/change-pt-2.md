@@ -1,5 +1,5 @@
 ---
-title: Change pt. 2
+title: Change | 2
 date: 2014-02-21
 ---
 

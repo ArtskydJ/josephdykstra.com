@@ -1,5 +1,5 @@
 ---
-title: 3 Topics of Ethics Pt. 2
+title: 3 Topics of Ethics | 2
 date: 2012-03-18
 ---
 

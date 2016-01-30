@@ -21,7 +21,7 @@ module.exports = function () {
 	function add(post, html) {
 		feed.addItem({
 			title: post.metadata.title,
-			link: 'http://josephdykstra.com/' + post.filename, // + '.html' maybe?
+			link: 'http://josephdykstra.com/' + post.filename,
 			description: html,
 			author: [ authorJoseph ],
 			date: post.metadata.date,

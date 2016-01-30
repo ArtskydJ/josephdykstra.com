@@ -1,9 +1,7 @@
 ---
-title: 'ECD Part 1: Searching'
-date: 2011-10-08
+title: 'ECD: Searching'
+date: 2011-10-08 13:00:00
 ---
-
-This is the first of a series on English Country Dancing (ECD). My thoughts on ECD, on the people attending, and the thoughts about ECD of those who I've talked to.
 
 First off, I probably need to clarify that, yes, I am fine with dancing. I like dancing with my sister best though, it's much easier to talk.
 

@@ -1,6 +1,6 @@
 ---
-title: 'ECD Part 2: Kilts'
-date: 2011-10-08
+title: 'ECD: Kilts'
+date: 2011-10-08 16:00:00
 ---
 
 > **Deuteronomy 22:5**

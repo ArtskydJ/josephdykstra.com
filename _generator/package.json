@@ -12,10 +12,7 @@
     "url": "https://github.com/ArtskydJ/josephdykstra-com.git"
   },
   "private": true,
-  "scripts": {
-    "build": "node .",
-    "clean": "rimraf ../*.html ../feed.*"
-  },
+  "scripts": {},
   "dependencies": {
     "feed": "^0.2.6",
     "level-mem": "^0.18.0",
@@ -24,9 +21,7 @@
     "noddity-fs-retrieval": "^1.1.0",
     "noddity-linkifier": "^2.1.0",
     "noddity-render-static": "^2.1.0",
-    "random-uuid-v4": "0.0.5"
-  },
-  "devDependencies": {
+    "random-uuid-v4": "0.0.5",
     "rimraf": "^2.5.1"
   }
 }
