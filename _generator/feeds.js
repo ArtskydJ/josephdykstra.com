@@ -1,4 +1,5 @@
 var Feed = require('feed')
+var uuid = require('random-uuid-v4')
 
 module.exports = function () {
 	var authorJoseph = {
@@ -13,7 +14,8 @@ module.exports = function () {
 		link: 'http://josephdykstra.com',
 		image: 'http://josephdykstra.com/logo.png',
 		copyright: 'Copyright © Joseph Dykstra 2015.',
-		author: authorJoseph
+		author: authorJoseph,
+		id: uuid()
 	})
 
 	function add(post, html) {
@@ -22,10 +24,11 @@ module.exports = function () {
 			link: 'http://josephdykstra.com/' + post.filename, // + '.html' maybe?
 			description: html,
 			author: [ authorJoseph ],
-			date: post.metadata.date
+			date: post.metadata.date,
+			id: uuid()
 		})
 	}
-	
+
 	return {
 		add: add,
 		renderAtom: feed.render.bind(feed, 'atom-1.0'),

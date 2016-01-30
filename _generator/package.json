@@ -23,7 +23,8 @@
     "noddity-butler": "^2.0.0",
     "noddity-fs-retrieval": "^1.1.0",
     "noddity-linkifier": "^2.1.0",
-    "noddity-render-static": "^2.1.0"
+    "noddity-render-static": "^2.1.0",
+    "random-uuid-v4": "0.0.5"
   },
   "devDependencies": {
     "rimraf": "^2.5.1"
