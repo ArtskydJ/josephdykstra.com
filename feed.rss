@@ -4,7 +4,7 @@
         <title>Joseph Dykstra&apos;s Blog</title>
         <description>Follow Joseph&apos;s opinions on your feed reader!</description>
         <link>http://josephdykstra.com</link>
-        <lastBuildDate>Sat, 30 Jan 2016 19:14:59 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 31 Jan 2016 03:54:59 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <image>
             <title>Joseph Dykstra&apos;s Blog</title>
@@ -15,8 +15,8 @@
         <generator>Feed for Node.js</generator>
         <item>
             <title><![CDATA[Speech for Michael and Elizabeth's Wedding]]></title>
-            <link>http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding.md</link>
-            <guid>http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding.md</guid>
+            <link>http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding</link>
+            <guid>http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding</guid>
             <pubDate>Wed, 25 Nov 2015 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>I wrote a speech/poem/rap for my brother's wedding. The lyrics are as follows:</p>
 <hr>
@@ -65,8 +65,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
         </item>
         <item>
             <title><![CDATA[FLL]]></title>
-            <link>http://josephdykstra.com/fll.md</link>
-            <guid>http://josephdykstra.com/fll.md</guid>
+            <link>http://josephdykstra.com/fll</link>
+            <guid>http://josephdykstra.com/fll</guid>
             <pubDate>Tue, 18 Nov 2014 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>I was on a <a href="http://www.firstlegoleague.org/">First Lego League</a> team, the <a href="http://datadragons.com/">Data Dragons</a> for 5 years.</p>
 <p>First Lego League (FLL) is a program designed to teach students about science and technology. Each team researchs a problem, creates a solution, and presents it to the judges at a competition. They also create a LEGO Mindstorms robot, and program it to do missions on a 4 ft. x 8 ft. table. Whoever scores the most points gets an award, whoever has the best presentation gets an award, etc.</p>
@@ -105,8 +105,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
         </item>
         <item>
             <title><![CDATA[VEX]]></title>
-            <link>http://josephdykstra.com/vex.md</link>
-            <guid>http://josephdykstra.com/vex.md</guid>
+            <link>http://josephdykstra.com/vex</link>
+            <guid>http://josephdykstra.com/vex</guid>
             <pubDate>Tue, 18 Nov 2014 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>I was on a <a href="http://vexrobotics.org">VEX</a> team, <a href="http://technapwn.com">TechnaPWN Robotics</a> for 2 years.</p>
 <p>VEX was designed to teach students about STEM. (Science, Technology, Engineering, Math.) Students design, build, program, and drive a robot for each game, documenting their progress.</p>
@@ -141,8 +141,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
         </item>
         <item>
             <title><![CDATA[Résumé]]></title>
-            <link>http://josephdykstra.com/resume.md</link>
-            <guid>http://josephdykstra.com/resume.md</guid>
+            <link>http://josephdykstra.com/resume</link>
+            <guid>http://josephdykstra.com/resume</guid>
             <pubDate>Thu, 23 Oct 2014 00:00:00 GMT</pubDate>
             <description><![CDATA[<h2>Joseph Dykstra</h2>
 <p><a href="mailto:josephdykstra@gmail.com"><em>josephdykstra@gmail.com</em></a></p>
@@ -244,8 +244,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
         </item>
         <item>
             <title><![CDATA[Change | 2]]></title>
-            <link>http://josephdykstra.com/change-pt-2.md</link>
-            <guid>http://josephdykstra.com/change-pt-2.md</guid>
+            <link>http://josephdykstra.com/change-pt-2</link>
+            <guid>http://josephdykstra.com/change-pt-2</guid>
             <pubDate>Fri, 21 Feb 2014 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>People tend not to welcome change, even good change. (Think about every time Facebook updates its interface.)</p>
 <p>People don't want to change themselves, they like routine, they like order.</p>

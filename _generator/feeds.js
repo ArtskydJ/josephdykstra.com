@@ -1,5 +1,12 @@
+var crypto = require('crypto')
 var Feed = require('feed')
-var uuid = require('random-uuid-v4')
+
+function makeId(str) {
+	var hasher = crypto.createHash('md5')
+	hasher.update(str)
+	var hash = hasher.digest('hex')
+	return hash.replace(/(.{8})(.{4})(.{4})(.{4})(.{12})/, '$1-$2-$3-$4-$5')
+}
 
 module.exports = function () {
 	var authorJoseph = {
@@ -15,17 +22,21 @@ module.exports = function () {
 		image: 'http://josephdykstra.com/logo.png',
 		copyright: 'Copyright © Joseph Dykstra 2015.',
 		author: authorJoseph,
-		id: uuid()
+		id: makeId('http://josephdykstra.com')
 	})
 
 	function add(post, html) {
+		var link = 'http://josephdykstra.com/' + post.filename.replace(/\.md$/, '')
+
 		feed.addItem({
 			title: post.metadata.title,
-			link: 'http://josephdykstra.com/' + post.filename,
+			link: link,
 			description: html,
 			author: [ authorJoseph ],
 			date: post.metadata.date,
-			id: uuid()
+			// Unfortunately, if the link changes, so will the ID.
+			// The links shouldn't be changing, so hopefully this doesn't become an issue.
+			id: makeId(link)
 		})
 	}
 

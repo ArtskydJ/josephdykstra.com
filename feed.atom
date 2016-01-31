@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>5364c61b-e737-48ae-ab25-52578399a4d4</id>
+    <id>918c7751-68b6-7b8e-f1fe-37779d91fa11</id>
     <title>Joseph Dykstra&apos;s Blog</title>
-    <updated>2016-01-30T19:14:59Z</updated>
+    <updated>2016-01-31T03:54:59Z</updated>
     <author>
         <name>Joseph Dykstra</name>
         <email>josephdykstra@gmail.com</email>
@@ -15,8 +15,8 @@
     <generator>Feed for Node.js</generator>
     <entry>
         <title type="html"><![CDATA[Speech for Michael and Elizabeth's Wedding]]></title>
-        <id>9e6b6b16-4e5b-4619-915f-f01fedb476b9</id>
-        <link href="http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding.md">
+        <id>73d2d4bc-6ef0-b8b8-8536-0266606dfbf4</id>
+        <link href="http://josephdykstra.com/speech-for-michael-and-elizabeths-wedding">
         </link>
         <updated>2015-11-25T00:00:00Z</updated>
         <summary type="html"><![CDATA[<p>I wrote a speech/poem/rap for my brother's wedding. The lyrics are as follows:</p>
@@ -66,8 +66,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
     </entry>
     <entry>
         <title type="html"><![CDATA[FLL]]></title>
-        <id>578a0328-866c-4d36-b7eb-63ed62fa2f48</id>
-        <link href="http://josephdykstra.com/fll.md">
+        <id>a818f969-d87e-4b03-3fd8-0fefdda8aa56</id>
+        <link href="http://josephdykstra.com/fll">
         </link>
         <updated>2014-11-18T00:00:00Z</updated>
         <summary type="html"><![CDATA[<p>I was on a <a href="http://www.firstlegoleague.org/">First Lego League</a> team, the <a href="http://datadragons.com/">Data Dragons</a> for 5 years.</p>
@@ -107,8 +107,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
     </entry>
     <entry>
         <title type="html"><![CDATA[VEX]]></title>
-        <id>358938fc-ca8c-4e33-96f5-851bde491340</id>
-        <link href="http://josephdykstra.com/vex.md">
+        <id>25da7c7a-42fd-b53a-813c-81eb94f229d4</id>
+        <link href="http://josephdykstra.com/vex">
         </link>
         <updated>2014-11-18T00:00:00Z</updated>
         <summary type="html"><![CDATA[<p>I was on a <a href="http://vexrobotics.org">VEX</a> team, <a href="http://technapwn.com">TechnaPWN Robotics</a> for 2 years.</p>
@@ -144,8 +144,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
     </entry>
     <entry>
         <title type="html"><![CDATA[Résumé]]></title>
-        <id>5dac6925-2fca-4e1a-891f-d6dcda6fd20c</id>
-        <link href="http://josephdykstra.com/resume.md">
+        <id>d616558b-4a78-db50-f4a9-2ec48957218b</id>
+        <link href="http://josephdykstra.com/resume">
         </link>
         <updated>2014-10-23T00:00:00Z</updated>
         <summary type="html"><![CDATA[<h2>Joseph Dykstra</h2>
@@ -248,8 +248,8 @@ put <strong>God</strong> first, then your <strong>spouse</strong> second, and <s
     </entry>
     <entry>
         <title type="html"><![CDATA[Change | 2]]></title>
-        <id>35880747-6b94-4857-8700-d19875136d78</id>
-        <link href="http://josephdykstra.com/change-pt-2.md">
+        <id>5d79dba4-3b13-666d-0fe1-48e2f00ebc93</id>
+        <link href="http://josephdykstra.com/change-pt-2">
         </link>
         <updated>2014-02-21T00:00:00Z</updated>
         <summary type="html"><![CDATA[<p>People tend not to welcome change, even good change. (Think about every time Facebook updates its interface.)</p>
