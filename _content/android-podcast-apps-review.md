@@ -11,7 +11,7 @@ I am a fan of podcasts, and I recently purchased an android phone. I needed an a
 
 I tried 4 well-rated apps: AntennaPod, Podcast Republic, Podkicker, and Podcast Addict
 
-> Disclaimer: Facts such as ratings and features of apps are from the writing of this review.
+> Disclaimer: Facts such as ratings and features of apps might change after I write this review.
 
 ## AntennaPod
 
@@ -19,7 +19,7 @@ I tried 4 well-rated apps: AntennaPod, Podcast Republic, Podkicker, and Podcast 
 
 The UI is great. It is simple, intuitive, and I like how it is set up.
 
-It does have an auto-download, and auto-delete. However, it doesn't download from oldest to newest, so it was out.
+It does have an auto-download, and auto-delete. However, it doesn't support downloading from oldest to newest, so it's out.
 
 ## Podcast Republic
 
@@ -29,7 +29,7 @@ The UI is beautiful. The app feel like it was created by a designer; it acts in 
 
 Lots of settings for this app, but they're well organized, so you can easily find the setting you're looking for.
 
-This app has auto-download and auto-delete. It's unable to auto-download oldest to newest, so I didn't keep it either.
+This app has auto-download and auto-delete. It's unable to auto-download oldest to newest, so I am not keeping it.
 
 ## Podkicker
 
@@ -37,7 +37,7 @@ This app has auto-download and auto-delete. It's unable to auto-download oldest 
 
 This app is hands-down the simplest UI for a podcast app of the four. Very intuitive, and easy to use, but the simplicity has its downsides, including making it harder to do some bulk tasks, but this was rather minor.
 
-The app seems to lack an auto-delete, but it has a new-episodes-only auto-download. I decided against this app as well.
+The app seems to lack an auto-delete, but it has a new-episodes-only auto-download. Goodbye app.
 
 ## Podcast Addict
 
@@ -53,7 +53,9 @@ I'm really liking this app, and I got the **Donate** version. If you like the ap
 
 ## You're so picky!
 
-I don't want to have to think about my podcast app. If I have to think about it, then it's not doing it's job as well as it could.
+Maybe you're saying, "one silly feature destroyed most of your options!"
+
+I don't want to have to think about my podcast app. If I have to think about it, or manually download episodes before driving, then it's not doing it's job as well as it should.
 
 ## Bye
 
