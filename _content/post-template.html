@@ -9,7 +9,7 @@ markdown: false
 		<meta charset="utf-8">
 		<title>Joseph Dykstra{{#title}} | {{title}}{{/title}}</title>
 		<link href="bootstrap.min.css" rel="stylesheet">
-		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="shortcut icon" href="./favicon.ico">
 		<style>
 			iframe {
 				border: none;
@@ -24,11 +24,9 @@ markdown: false
 						<li><a class="navbar-brand" href="/">Joseph Dykstra</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/feed.atom">Atom Feed</a></li>
-						<li><a href="/feed.rss">RSS Feed</a></li>
-						{{#editLink}}
-							<li><a href="{{editLink}}{{current}}">Edit this Page</a></li>
-						{{/editLink}}
+						<li><a href="./feed.atom">Atom Feed</a></li>
+						<li><a href="./feed.rss">RSS Feed</a></li>
+						<li><a href="https://github.com/ArtskydJ/josephdykstra.com/edit/gh-pages/_content/{{current}}">Edit this Page</a></li>
 					</ul>
 				</div>
 			</div>
@@ -37,7 +35,7 @@ markdown: false
 			<div class="row">
 				<div class="col-sm-3">
 					<a href="/">
-						<img src="{{logo}}" alt="logo" style="width:100%;">
+						<img src="./logo.png" alt="logo" style="width:100%;">
 					</a>
 					<div class="panel panel-primary">
 						<div class="list-group">

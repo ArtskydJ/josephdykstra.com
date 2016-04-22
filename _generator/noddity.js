@@ -16,12 +16,7 @@ module.exports = function () {
 	function render(root, filename, cb) {
 		renderStatic(root, filename, {
 			butler: butler,
-			linkifier: new Linkifier('/'),
-			data: {
-				editLink: 'https://github.com/ArtskydJ/josephdykstra.com/edit/gh-pages/_content/',
-				logo: '/logo.png',
-				errorPage: '404.md'
-			}
+			linkifier: new Linkifier('/')
 		}, cb)
 	}
 
