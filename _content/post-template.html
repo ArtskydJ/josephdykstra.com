@@ -45,15 +45,14 @@ markdown: false
 						</div>
 					</div>
 				</div>
-				<article class="col-sm-9">
-					<h1 class="text-center">{{title}}</h1>
-					{{{html}}}
+				<div class="col-sm-9">
+					<article>
+						<h1 class="text-center">{{title}}</h1>
+						{{{html}}}
+					</article>
 					{{#date}}
-						<ul class="breadcrumb">
-							<li>{{date.toDateString()}}</li>
-						</ul>
+						<div class="breadcrumb">{{date.toDateString()}}</div>
 					{{/date}}
-				</article>
 			</div>
 		</div>
 	</body>
