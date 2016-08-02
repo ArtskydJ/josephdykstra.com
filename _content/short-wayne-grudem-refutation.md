@@ -1,4 +1,7 @@
+---
 title: Why Voting for Trump is a Morally Bad Choice
+date: 2016-08-02
+---
 
 I was going to read [a refutation](http://www.thegreatfiction.com/2016/07/30/the-moral-case-for-donald-trump-refuted/) to Wayne Grudem's article about voting for Trump, but then I saw the dreaded "wall of text". The small scrollbar whispered, "Is this really how you want to spend your time?"  And so instead of reading a few paragraphs, I decided to see if I can construct a shorter refutation.
 
