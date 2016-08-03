@@ -6,14 +6,8 @@ date: 2016-08-02
 Have you heard this?
 
 > A vote for a candidate that has no chance of winning is a vote for the majority.
-> 
+>
 > — Facebook Comment
-
-<!--
-I think that sometimes, when you see a fun fact that is unintuitive, you actually remember it more clearly. (E.g. how many spiders do you swallow during your sleep?) Is this phenomena occurring for the saying in question?
-
-BTW, you should question all little sayings you hear; the intuitive, and the unintuitive. Maybe you should question all the things.
--->
 
 I am not convinced that a vote for a candidate that can't win is a vote for the leader (a.k.a. "majority"). I've decided to run the numbers.
 
