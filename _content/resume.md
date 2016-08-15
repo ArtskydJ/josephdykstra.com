@@ -22,16 +22,15 @@ I am not currently looking for work.
 ## Knowledge
 
 - Languages:
-	- JavaScript, HTML, CSS, SQL, ColdFusion, C
-	- Written a little bit of Python, and BASIC
-- Compilers/Runtimes:
-	- Extensive use of NodeJS, RobotC, and GCC
-	- Used Python, and MySQL a little bit
-- Tools:
-	- Sublime Text, Atom, Notepad++, SSMS, cmd, npm, TortoiseGit
-	- Used terminal, Github for Windows, and SQLyog a little bit
+	- JavaScript
+	- HTML
+	- CSS
+	- SQL
+	- ColdFusion
+	- C
+	- I have a basic understanding of Python, BASIC, Batch, VBScript, Ruby, Bash, and Java
 - Operating Systems:
-	- Windows XP - 8
+	- Windows XP - 10
 	- Mac OS X
 	- Ubuntu (GUI and CLI)
 
@@ -91,9 +90,9 @@ Being on this team taught me about teamwork and basic robotics.  The team took 1
 	- Developer, [eDataSource](http://www.edatasource.com/)
 - Evan Hurd
 	- Developer, [RenWeb](http://www.renweb.com/)
-- Seth Dykstra
+- Seth Dykstra (Family)
 	- On-Site IT Support, [P&L Technology](http://www.pltechnology.com/)
-- David Dykstra
+- David Dykstra (Family)
 	- Owner of Millennium Construction (Omaha)
-- Michael Dykstra
+- Michael Dykstra (Family)
 	- Apprentice plumber, Schulte Plumbing
