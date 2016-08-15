@@ -36,4 +36,4 @@ Here are the two scenarios:
 
 As you can see, I just ran the numbers; feel free to double-check them. In each scenarios, Clam Chowder had the same number of votes: 4500. It is clear that a vote for Creamy Cool Whip was not a vote for Clam Chowder. You know what *is* a vote for Clam Chowder? Voting for Clam Chowder.
 
-The Ketchuppers are attemting to get your vote. Are you comprimising your morals if you give it to them?
+The Ketchuppers are attempting to get your vote. Are you comprimising your morals if you give it to them?
