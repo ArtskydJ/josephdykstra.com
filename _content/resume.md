@@ -3,11 +3,13 @@ title: Résumé
 date: 2014-10-23
 ---
 
-## Joseph Dykstra
+-----
+
+# Joseph Dykstra
 
 [*josephdykstra@gmail.com*](mailto:josephdykstra@gmail.com)
 
-## About Me
+# About Me
 
 I am passionate about software development. I am ambitious, and have been writing code for over 5 years.
 
@@ -15,11 +17,11 @@ I like writing JavaScript modules, and websites.
 
 I am currently working remotely for [RenWeb](http://renweb.com), a company that makes school-related software.  I fix issues that clients have, create custom reports, and develop new functionality.
 
-## Objective
+# Objective
 
 I am not currently looking for work.
 
-## Knowledge
+# Knowledge
 
 - Languages:
 	- JavaScript
@@ -34,7 +36,7 @@ I am not currently looking for work.
 	- Mac OS X
 	- Ubuntu (GUI and CLI)
 
-## Experience
+# Experience
 
 ### RenWeb | April 2015 - [Present]
 
@@ -89,7 +91,7 @@ I wrote RobotC [code](https://github.com/ArtskydJ/technapwn-toss-up) (based on C
 
 Being on this team taught me about teamwork and basic robotics.  The team took 1st place Robot Performance at Nebraska State in 2012.  I was a mentor for the team during the 2012-2013 season.
 
-## References
+# References
 
 - Josh Duff
 	- http://joshduff.com
