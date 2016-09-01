@@ -13,7 +13,8 @@
   },
   "private": true,
   "scripts": {
-    "build": "(mkdir josephdykstra.com_gh-pages || true) && node index.js && node uncss.js"
+    "prebuild": "mkdir josephdykstra.com_gh-pages || true",
+    "build": "node index.js && node uncss.js"
   },
   "dependencies": {
     "clean-css": "^3.4.9",
