@@ -12,11 +12,16 @@ var htmlFiles = glob.sync('*.html', {
 	return 'http://josephdykstra.com/' + filename
 })
 
+var stylesheets = [
+	resolveCssPath('cosmo.css'),
+	resolveCssPath('my-styles.css')
+]
+
+console.log(htmlFiles)
+console.log(stylesheets)
+
 uncss(htmlFiles, {
-	stylesheets: [
-		resolveCssPath('cosmo.css'),
-		resolveCssPath('my-styles.css')
-	]
+	stylesheets: stylesheets
 }, function (err, css) {
 	if (err) throw err
 
