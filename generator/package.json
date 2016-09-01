@@ -25,5 +25,8 @@
     "noddity-linkifier": "^2.1.0",
     "noddity-render-static": "^2.1.0",
     "uncss": "^0.13.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.4"
   }
 }
