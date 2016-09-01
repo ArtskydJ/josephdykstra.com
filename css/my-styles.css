@@ -1,3 +1,15 @@
 iframe {
 	border: none;
 }
+
+#navbar-main {
+	margin-bottom: 0;
+}
+
+#page {
+	font-size: large;
+}
+
+#logo {
+	width: 100%;
+}
