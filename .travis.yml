@@ -2,30 +2,14 @@ language: node_js
 node_js: node
 branches:
   only: master
+env:
+  global:
+    secure: p4VutIC4suwg6JuF5hj6GyWgBBQ5c6uKgsfYWP/6Obt8SwJN/kUn3wLgSK8T8bbWEOOV4fpMFVHP/k8yxPq27z2LdoQR+0AMTfe5aag00P0eD4WLWjTO4oC277+9Hd+Kb9Pt5IW9YFG1udhCra2AmPApWMyChkxsI9LpSX0FRBg=
 script:
-  # maybe...
-    - openssl aes-256-cbc ... # Replace with the line that travis encrypt-file printed out
-    - chmod go-rwx .travisdeploykey
-    - eval `ssh-agent -s`
-    - ssh-add .travisdeploykey
-  # ...maybe
   - npm i
   - npm run build # I think this does not work yet
   - git config user.name "Travis CI Deploy"
   - git config user.email "noreply@travis-ci.org"
   - git checkout -b gh-pages
   - git commit -a -m "build"
-
-  - git push --quiet YOUR_REPOS_SSH_URL master:master
-  # OR
-  - git push --force --quiet "https://${GITHUB_TOKEN}@github.com/[USER]/[REPO].git" master:gh-pages
-  # Forcibly push (overwrite) the distribute code to the gh-pages branch.
-  # Replace [USER] to your username & [REPO] to target repository name. --quite prevents the
-  # remote address (include GitHub token) output to the build log.
-
-branches:
-  only:
-    - source
-
-
-
+  - git push --quiet https://${GITHUB_TOKEN}@github.com/ArtskydJ/josephdykstra.com gh-pages:gh-pages
