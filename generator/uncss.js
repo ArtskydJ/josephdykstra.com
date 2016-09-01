@@ -2,11 +2,11 @@ var path = require('path')
 var glob = require('glob')
 var uncss = require('uncss')
 var cleanCss = require('clean-css')
-var config = require('./config.js')
+var config = require('./config.json')
 var writeDestinationFileSync = require('./write-dest-file-sync.js')
 
 var htmlFiles = glob.sync('*.html', {
-	cwd: config.destinationPath
+	cwd: path.resolve(__dirname, config.relativeDestinationPath)
 }).map(function (filename) {
 	// uncss doesn't seem to like local files.
 	return 'http://josephdykstra.com/' + filename
@@ -30,5 +30,5 @@ uncss(htmlFiles, {
 })
 
 function resolveCssPath(filename) {
-	return path.resolve(config.cssPath, filename)
+	return path.resolve(__dirname, config.relativeCssPath, filename)
 }

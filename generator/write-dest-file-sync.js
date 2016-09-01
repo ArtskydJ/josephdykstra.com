@@ -1,7 +1,8 @@
 var fs = require('fs')
 var path = require('path')
-var config = require('./config.js')
+var config = require('./config.json')
 
 module.exports = function writeDestinationFileSync(filename, data) {
-	return fs.writeFileSync(path.resolve(config.destinationPath, filename), data)
+	var filePath = path.resolve(__dirname, config.relativeDestinationPath, filename)
+	return fs.writeFileSync(filePath, data)
 }
