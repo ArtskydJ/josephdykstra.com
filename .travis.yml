@@ -6,8 +6,10 @@ env:
   global:
     secure: p4VutIC4suwg6JuF5hj6GyWgBBQ5c6uKgsfYWP/6Obt8SwJN/kUn3wLgSK8T8bbWEOOV4fpMFVHP/k8yxPq27z2LdoQR+0AMTfe5aag00P0eD4WLWjTO4oC277+9Hd+Kb9Pt5IW9YFG1udhCra2AmPApWMyChkxsI9LpSX0FRBg=
 script:
+  - pushd generator
   - npm i
-  - npm run build # I think this does not work yet
+  - npm run build
+  - popd
   - git config user.name "Travis CI Deploy"
   - git config user.email "noreply@travis-ci.org"
   - git checkout -b gh-pages
