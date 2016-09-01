@@ -13,7 +13,7 @@
   },
   "private": true,
   "scripts": {
-    "build": "rimraf ../*.html ../feed.* && node index.js && node uncss.js && node open-browser.js"
+    "build": "rimraf ../*.html ../feed.* && node index.js && node uncss.js"
   },
   "dependencies": {
     "clean-css": "^3.4.9",
@@ -25,7 +25,6 @@
     "noddity-fs-retrieval": "^1.1.0",
     "noddity-linkifier": "^2.1.0",
     "noddity-render-static": "^2.1.0",
-    "opn": "^4.0.2",
     "rimraf": "^2.5.1",
     "uncss": "^0.13.0"
   }
