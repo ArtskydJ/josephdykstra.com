@@ -9,7 +9,7 @@
   "description": "Joseph Dykstra's site",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArtskydJ/josephdykstra-com.git"
+    "url": "https://github.com/ArtskydJ/josephdykstra.com.git"
   },
   "private": true,
   "scripts": {
