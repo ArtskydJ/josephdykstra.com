@@ -14,7 +14,7 @@ script:
   - git clone https://github.com/ArtskydJ/josephdykstra.com josephdykstra.com_gh-pages
   - pushd josephdykstra.com_gh-pages
   - git checkout gh-pages
-  - rimraf ../*.html ../feed.*
+  - rm -rf *.html feed.*
   - popd
   - npm run build
   - pushd josephdykstra.com_gh-pages
