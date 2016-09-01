@@ -18,7 +18,6 @@
   "dependencies": {
     "clean-css": "^3.4.9",
     "feed": "^0.2.6",
-    "glob": "^6.0.4",
     "level-mem": "^0.18.0",
     "map": "0.0.3",
     "noddity-butler": "^2.0.0",

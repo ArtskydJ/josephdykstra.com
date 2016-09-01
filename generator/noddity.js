@@ -15,10 +15,12 @@ module.exports = function () {
 	var butler = new Butler(new Retrieval(config.relativeContentPath), new Level())
 
 	function render(root, filename, cb) {
+
 		renderStatic(root, filename, {
 			butler: butler,
 			linkifier: new Linkifier('/')
 		}, cb)
+
 	}
 
 	return {
