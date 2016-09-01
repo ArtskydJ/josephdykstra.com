@@ -11,9 +11,11 @@ var htmlFiles = glob.sync('*.html', {
 	return 'http://josephdykstra.com/' + filename
 })
 
-var stylesheetPath = path.resolve(__dirname, 'cosmo.css')
 uncss(htmlFiles, {
-	stylesheets: [ stylesheetPath ]
+	stylesheets: [
+		path.resolve(__dirname, '..', 'css', 'cosmo.css'),
+		path.resolve(__dirname, '..', 'css', 'my-styles.css')
+	]
 }, function (err, css) {
 	if (err) throw err
 
