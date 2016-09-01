@@ -11,7 +11,7 @@ var FEED_ROOT_POST = {
 }
 
 module.exports = function () {
-	var butler = new Butler(new Retrieval('../_content/'), new Level())
+	var butler = new Butler(new Retrieval('../content/'), new Level())
 
 	function render(root, filename, cb) {
 		renderStatic(root, filename, {
