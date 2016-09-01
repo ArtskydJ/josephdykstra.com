@@ -7,12 +7,18 @@ env:
     secure: tBhx4bS1GNTTkA0R+xsjInuSuI6AXFf00ewAa2JBKke9zMfVRt+x0+4FeWSTdCtdhORNZKrb8x30JScMrJ/AYue/dmx91Fd3sykg15MOC1xQCij6OS3ibP6kDNLve/0V/RiZPtnHGknm4QSf+sxFvsKo2vCT5EGdjLCXNqETrwk=
 script:
   - set -e # If one script throws an error, all scripts end
-  - pushd generator
-  - npm i
-  - npm run build
-  - popd
   - git config user.name "Travis CI Deploy"
   - git config user.email "noreply@travis-ci.org"
-  - git checkout -b gh-pages
+  - pushd generator
+  - npm i
+  - git clone https://github.com/ArtskydJ/josephdykstra.com josephdykstra.com_gh-pages
+  - pushd josephdykstra.com_gh-pages
+  - git checkout gh-pages
+  - rimraf ../*.html ../feed.*
+  - popd
+  - npm run build
+  - pushd josephdykstra.com_gh-pages
   - git commit -a -m "build"
   - git push --quiet https://${GITHUB_TOKEN}@github.com/ArtskydJ/josephdykstra.com gh-pages:gh-pages
+  - popd
+  - popd

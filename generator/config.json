@@ -1,6 +1,6 @@
 {
-	"relativeDestinationPath": "../",
-	"relativeContentPath": "../content/",
-	"relativeCssPath": "../css/",
-	"relativeDestinationCssPath": "./css/"
+	"relativeGeneratorToHtmlPath": "./josephdykstra.com_gh-pages/",
+	"relativeGeneratorToContentPath": "../content/",
+	"relativeGeneratorToCssPath": "../css/",
+	"relativeHtmlToCssPath": "../../css/"
 }
