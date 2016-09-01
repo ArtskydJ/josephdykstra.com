@@ -20,7 +20,7 @@ module.exports = function () {
 		description: 'Follow Joseph\'s opinions on your feed reader!',
 		link: 'http://josephdykstra.com',
 		image: 'http://josephdykstra.com/logo.png',
-		copyright: 'Copyright © Joseph Dykstra 2015.',
+		copyright: 'Copyright © Joseph Dykstra 2016.',
 		author: authorJoseph,
 		id: makeId('http://josephdykstra.com')
 	})
