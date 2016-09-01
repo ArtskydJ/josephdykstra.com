@@ -1,11 +1,12 @@
-var fs = require('fs')
 var path = require('path')
 var glob = require('glob')
 var uncss = require('uncss')
 var cleanCss = require('clean-css')
+var config = require('./config.js')
+var writeDestinationFileSync = require('./write-dest-file-sync.js')
 
 var htmlFiles = glob.sync('*.html', {
-	cwd: path.resolve(__dirname, '..')
+	cwd: config.destinationPath
 }).map(function (filename) {
 	// uncss doesn't seem to like local files.
 	return 'http://josephdykstra.com/' + filename
@@ -13,14 +14,16 @@ var htmlFiles = glob.sync('*.html', {
 
 uncss(htmlFiles, {
 	stylesheets: [
-		path.resolve(__dirname, '..', 'css', 'cosmo.css'),
-		path.resolve(__dirname, '..', 'css', 'my-styles.css')
+		resolveCssPath('cosmo.css'),
+		resolveCssPath('my-styles.css')
 	]
 }, function (err, css) {
 	if (err) throw err
 
 	var minifiedCss = new cleanCss().minify(css).styles
-
-	var bootstrapPath = path.resolve(__dirname, '..', 'bootstrap.min.css')
-	fs.writeFileSync(bootstrapPath, minifiedCss)
+	writeDestinationFileSync('bootstrap.min.css', minifiedCss)
 })
+
+function resolveCssPath(filename) {
+	return path.resolve(config.cssPath, filename)
+}

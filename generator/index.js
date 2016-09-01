@@ -1,8 +1,8 @@
 var fs = require('fs')
-var path = require('path')
 var map = require('map')
 var feed = require('./feeds.js')()
 var noddity = require('./noddity.js')()
+var writeDestinationFileSync = require('./write-dest-file-sync.js')
 
 noddity.getPosts(function (err, posts) {
 	if (err) throw err
@@ -24,8 +24,8 @@ noddity.getPosts(function (err, posts) {
 			feed.add(post, htmlPostFeeds[i])
 		})
 
-		writeFileSync('feed.atom', feed.renderAtom())
-		writeFileSync('feed.rss', feed.renderRss())
+		writeDestinationFileSync('feed.atom', feed.renderAtom())
+		writeDestinationFileSync('feed.rss', feed.renderRss())
 
 		noddity.getPost('index.md', function (err, post) {
 			if (err) throw err
@@ -40,14 +40,6 @@ function save(post) {
 		if (err) throw err
 
 		var htmlFilename = post.filename.replace(/\.md$/, '.html')
-		writeFileSync(htmlFilename, html)
+		writeDestinationFileSync(htmlFilename, html)
 	})
-}
-
-function writeFileSync(filename, data) {
-	fs.writeFileSync(resolvePath(filename), data)
-}
-
-function resolvePath(filename) {
-	return path.resolve(__dirname, '..', filename)
 }
