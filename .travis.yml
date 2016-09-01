@@ -7,8 +7,8 @@ env:
     secure: tBhx4bS1GNTTkA0R+xsjInuSuI6AXFf00ewAa2JBKke9zMfVRt+x0+4FeWSTdCtdhORNZKrb8x30JScMrJ/AYue/dmx91Fd3sykg15MOC1xQCij6OS3ibP6kDNLve/0V/RiZPtnHGknm4QSf+sxFvsKo2vCT5EGdjLCXNqETrwk=
 script:
   - set -e # If one script throws an error, all scripts end
-  - git config user.name "Travis CI Deploy"
-  - git config user.email "noreply@travis-ci.org"
+  - git config --global user.name "Travis CI Deploy"
+  - git config --global user.email "noreply@travis-ci.org"
   - pushd generator
   - npm i
   - git clone https://github.com/ArtskydJ/josephdykstra.com josephdykstra.com_gh-pages
