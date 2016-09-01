@@ -4,6 +4,8 @@ var feed = require('./feeds.js')()
 var noddity = require('./noddity.js')()
 var writeDestinationFileSync = require('./write-dest-file-sync.js')
 
+require('./hide-ractive-debug-message')()
+
 noddity.getPosts(function (err, posts) {
 	if (err) throw err
 
