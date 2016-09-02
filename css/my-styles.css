@@ -13,3 +13,17 @@ iframe {
 #logo {
 	width: 100%;
 }
+
+#main-column {
+	float: right;
+}
+
+#sidebar-column {
+	float: left;
+}
+
+svg[height="24"][width="24"] {
+	position: relative;
+	top: 3pt;
+	margin-top: -3pt;
+}
