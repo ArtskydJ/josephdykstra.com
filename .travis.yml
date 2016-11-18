@@ -14,7 +14,6 @@ script:
   - git clone https://github.com/ArtskydJ/josephdykstra.com josephdykstra.com_gh-pages
   - pushd josephdykstra.com_gh-pages
   - git checkout gh-pages
-  - rm -rf *.html feed.*
   - npm run build # Runs the build script from ../generator/package.json
   - git add . # `git commit -a` does not add unversioned files
   - git commit -m "build"

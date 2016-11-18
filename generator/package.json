@@ -1,6 +1,6 @@
 {
   "name": "josephdykstra-com",
-  "main": "",
+  "main": "index.js",
   "author": {
     "name": "ArtskydJ",
     "email": "josephdykstra@gmail.com",
@@ -13,11 +13,11 @@
   },
   "private": true,
   "scripts": {
-    "prebuild": "mkdir josephdykstra.com_gh-pages || true",
-    "build": "node index.js && node uncss.js"
+    "build": "node index.js"
   },
   "dependencies": {
     "clean-css": "^3.4.9",
+    "dive": "^0.5.0",
     "feed": "^0.2.6",
     "level-mem": "^0.18.0",
     "map": "0.0.3",
