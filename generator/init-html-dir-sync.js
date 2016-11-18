@@ -10,5 +10,9 @@ try {
 
 // rm -rf htmlDir
 fs.readdirSync(htmlDir).forEach(function (file) {
-	fs.unlinkSync(path.join(htmlDir, file))
+	try {
+		fs.unlinkSync(path.join(htmlDir, file))
+	} catch (err) {
+		if (file !== '.git') throw err
+	}
 })
