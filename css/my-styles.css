@@ -2,14 +2,6 @@ iframe {
 	border: none;
 }
 
-#navbar-main {
-	margin-bottom: 0;
-}
-
-#page {
-	font-size: large;
-}
-
 #logo {
 	width: 100%;
 }
@@ -26,4 +18,10 @@ svg[height="24"][width="24"] {
 	position: relative;
 	top: 3pt;
 	margin-top: -3pt;
+}
+
+body {
+	background-color: #fcfcfc;
+	color: #222222;
+	font-size: 14pt;
 }
