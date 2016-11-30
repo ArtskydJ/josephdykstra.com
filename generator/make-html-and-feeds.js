@@ -31,8 +31,8 @@ noddity.getPosts(function (err, posts) {
 			feed.add(post, htmlPostFeeds[i])
 		})
 
-		fs.writeFile(path.join(htmlDir, 'feed.atom'), feed.renderAtom())
-		fs.writeFile(path.join(htmlDir, 'feed.rss'), feed.renderRss())
+		fs.writeFile(path.join(htmlDir, 'feed.atom'), feed.renderAtom(), throwIfErr)
+		fs.writeFile(path.join(htmlDir, 'feed.rss'), feed.renderRss(), throwIfErr)
 	})
 })
 
@@ -41,6 +41,10 @@ function savePost(post) {
 		if (err) throw err
 
 		var htmlFilename = post.filename.replace(/\.md$/, '.html')
-		fs.writeFile(path.join(htmlDir, htmlFilename), html)
+		fs.writeFile(path.join(htmlDir, htmlFilename), html, throwIfErr)
 	})
+}
+
+function throwIfErr(err) {
+	if (err) throw err
 }
