@@ -18,7 +18,7 @@ Gilbert and Donna drove Daniel and Nathanael to the Lego Razorback competition i
 Jordon and Jessica moved to Glenwood, Iowa after Jordon accepted a job in Clarinda, Iowa.  Seth and Laura moved from their apartment into a house, also in May.
  
 Early in July, Micah proposed to Rebecca.  She said yes, of course, and so we ate ice cream and watched the hidden-camera footage of the proposal.  It was adorable!
-Later in July, had a family from church, camp in our back-yard.  They had to move due to their husband's military job, and providentially their house sold more quickly than they expected.  They were awesome guests, and we thoroughly enjoyed our time together!  A fringe benefit for us was, they took care of the house and dog chores while we went on vacation.
+Later in July, we had a family from church camp in our back-yard.  They had to move due to their husband's military job, and providentially their house sold more quickly than they expected.  They were awesome guests, and we thoroughly enjoyed our time together!  A fringe benefit for us was, they took care of the house and dog chores while we went on vacation.
 In mid-July, we left on vacation to Alberta, Canada.  We wanted one last family vacation before Rebecca left.  We saw all kinds of wildlife and majestic landscapes.
  
 In August, David and Ruth had their 3rd child, Jochebed Dykstra.
