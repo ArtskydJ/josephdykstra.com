@@ -1,0 +1,347 @@
+/* bootswatch v3.3.6
+Homepage: http://bootswatch.com
+Copyright 2012-2015 Thomas Park
+Licensed under MIT
+Based on Bootstrap
+Bootstrap v3.3.6 (http://getbootstrap.com)
+Copyright 2011-2015 Twitter, Inc.
+Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css*/
+hr,img {
+	border:0
+}
+.col-xs-12,.col-xs-4 {
+	float:left
+}
+body {
+	margin:0
+}
+article {
+	display:block
+}
+a:active,a:hover {
+	outline:0
+}
+strong {
+	font-weight:700
+}
+h1 {
+	margin:.67em 0
+}
+h1,h2,h3,hr {
+	margin-top:21px
+}
+h1,h2,h3,ol,ul {
+	margin-bottom:10.5px
+}
+sub,sup {
+	font-size:75%;
+		line-height:0;
+	position:relative;
+	vertical-align:baseline
+}
+sup {
+	top:-.5em
+}
+sub {
+	bottom:-.25em
+}
+img {
+	vertical-align:middle
+}
+svg:not(:root) {
+	overflow:hidden
+}
+hr {
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+	height:0;
+	margin-bottom:21px;
+	border-top:1px solid #e6e6e6
+}
+button::-moz-focus-inner,input::-moz-focus-inner {
+	border:0;
+	padding:0
+}
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+	blockquote,img {
+		page-break-inside:avoid
+	}
+	*,:after,:before {
+		background:0 0!important;
+		color:#000!important;
+		-webkit-box-shadow:none!important;
+		box-shadow:none!important;
+		text-shadow:none!important
+	}
+	a,a:visited {
+		text-decoration:underline
+	}
+	a[href]:after {
+		content:" (" attr(href) ")"
+	}
+	blockquote {
+		border:1px solid #999
+	}
+	img {
+		max-width:100%!important
+	}
+	h2,h3,p {
+		orphans:3;
+		widows:3
+	}
+	h2,h3 {
+		page-break-after:avoid
+	}
+}
+@font-face {
+	font-family:'Glyphicons Halflings';
+	src:url(../fonts/glyphicons-halflings-regular.eot);
+	src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),
+		url(../fonts/glyphicons-halflings-regular.woff) format('woff'),
+		url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+		url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+*,:after,:before {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box
+}
+html {
+	font-family:sans-serif;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	font-size:10px;
+	-webkit-tap-highlight-color:transparent
+}
+a {
+	background-color:transparent;
+	color:#2780e3;
+	text-decoration:none
+}
+a:focus,a:hover {
+	color:#165ba8;
+	text-decoration:underline
+}
+a:focus {
+	outline:dotted thin;
+	outline:-webkit-focus-ring-color auto 5px;
+	outline-offset:-2px
+}
+h1,h2,h3 {
+	font-weight:300;
+	line-height:1.1;
+	color:inherit
+}
+h1 {
+	font-size:39px
+}
+h2 {
+	font-size:32px
+}
+h3 {
+	font-size:26px
+}
+p {
+	margin:0 0 10.5px
+}
+.text-left {
+	text-align:left
+}
+.text-right {
+	text-align:right
+}
+.text-center {
+	text-align:center
+}
+ol,ul {
+	margin-top:0
+}
+blockquote p:last-child,ul ul {
+	margin-bottom:0
+}
+blockquote {
+	padding:10.5px 21px;
+	margin:0 0 21px;
+	font-size:18.75px;
+	border-left:5px solid #e6e6e6
+}
+.container {
+	margin-right:auto;
+	margin-left:auto;
+	padding-left:15px;
+	padding-right:15px
+}
+@media (min-width:768px) {
+	.container {
+		width:750px
+	}
+}
+@media (min-width:992px) {
+	.container {
+		width:970px
+	}
+}
+@media (min-width:1200px) {
+	.container {
+		width:1170px
+	}
+}
+.row {
+	margin-left:-15px;
+	margin-right:-15px
+}
+.col-md-3,.col-md-9,.col-xs-12,.col-xs-4 {
+	position:relative;
+	min-height:1px;
+	padding-left:15px;
+	padding-right:15px
+}
+.col-xs-12 {
+	width:100%
+}
+.col-xs-4 {
+	width:33.33333333%
+}
+@media (min-width:992px) {
+	.col-md-3,.col-md-9 {
+		float:left
+	}
+	.col-md-9 {
+		width:75%
+	}
+	.col-md-3 {
+		width:25%
+	}
+}
+.form-control::-moz-placeholder {
+	color:#999;
+	opacity:1
+}
+.form-control:-ms-input-placeholder {
+	color:#999
+}
+.form-control::-ms-expand {
+	border:0;
+	background-color:transparent
+}
+.breadcrumb {
+	padding:8px 15px;
+	margin-bottom:21px;
+	list-style:none;
+	background-color:#f5f5f5;
+	border-radius:0
+}
+.list-group {
+	margin-bottom:20px;
+	padding-left:0
+}
+.list-group-item {
+	position:relative;
+	display:block;
+	padding:10px 15px;
+	margin-bottom:-1px;
+	background-color:#fff;
+	border:1px solid #ddd
+}
+.list-group-item:first-child {
+	border-top-right-radius:0;
+	border-top-left-radius:0
+}
+.list-group-item:last-child {
+	margin-bottom:0;
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:0
+}
+a.list-group-item {
+	color:#555
+}
+a.list-group-item:focus,a.list-group-item:hover {
+	text-decoration:none;
+	color:#555;
+	background-color:#f5f5f5
+}
+.list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover {
+	z-index:2;
+	color:#fff;
+	background-color:#2780e3;
+	border-color:#ddd
+}
+.panel {
+	margin-bottom:21px;
+	background-color:#fff;
+	border:1px solid transparent;
+	border-radius:0;
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);
+	box-shadow:0 1px 1px rgba(0,0,0,.05)
+}
+.panel>.list-group {
+	margin-bottom:0
+}
+.panel>.list-group .list-group-item {
+	border-width:1px 0;
+	border-radius:0
+}
+.panel>.list-group:first-child .list-group-item:first-child {
+	border-top:0;
+	border-top-right-radius:-1;
+	border-top-left-radius:-1
+}
+.panel>.list-group:last-child .list-group-item:last-child {
+	border-bottom:0;
+		border-bottom-right-radius:-1;
+	border-bottom-left-radius:-1
+}
+.panel-primary {
+	border-color:#2780e3
+}
+.container:after,.container:before,.row:after,.row:before {
+	content:" ";
+	display:table
+}
+.container:after,.row:after {
+	clear:both
+}
+@-ms-viewport {
+	width:device-width
+}
+body {
+	line-height:1.42857143;
+	color:#222;
+	-webkit-font-smoothing:antialiased
+}
+body,h1,h2,h3 {
+	font-family:-apple-system,BlinkMacSystemFont,avenir next,avenir,Segoe UI,lucida grande,helvetica neue,helvetica,Fira Sans,roboto,noto,Droid Sans,cantarell,oxygen,ubuntu,franklin gothic medium,century gothic,Liberation Sans,sans-serif
+}
+
+/*
+My Custom Styles
+*/
+body {
+	background-color:#fdfdfd;
+	font-size:14pt
+}
+iframe {
+	border:none
+}
+#logo {
+	width:100%;
+	max-width: 262px
+}
+.float-right {
+	float:right
+}
+.float-left {
+	float:left
+}
+svg[height="24"][width="24"] {
+	position:relative;
+	top:3pt;
+	margin-top:-3pt
+}
+img {
+	max-width: 100%;
+}
