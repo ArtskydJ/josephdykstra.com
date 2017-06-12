@@ -59,7 +59,7 @@ Now for some of the dumbest logic yet:
 
 ![Image](./complaints-about-memes/6_wine_college.jpg)
 
-This makes just enough sense to click Like if aren't really thinking about it, and never set eyes upon it again.
+This makes just enough sense to click Like if you aren't really thinking about it, and never set eyes upon it again.
 
 The meme is trying to say this:
 
