@@ -38,6 +38,6 @@ If you hate the CF tag color that you just chose, then go ahead and change the f
 
 Now your CFML files look like this:
 
-![Success](./highlight-cfml-in-sublime/4_success.png)
+![Success](./highlight-cfml-in-sublime/4_highlighted.png)
 
 I hope this helps!
