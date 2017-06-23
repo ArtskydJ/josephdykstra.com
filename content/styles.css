@@ -345,3 +345,23 @@ svg[height="24"][width="24"] {
 img {
 	max-width: 100%;
 }
+/* Taken from GitHub */
+kbd {
+	display: inline-block;
+	padding: 4px 8px;
+	font-size: 13px;
+	line-height: 12px;
+	vertical-align: middle;
+	background-color: #f7f8f9;
+	border: solid 1px #ccd;
+	border-bottom-color: #99a;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 #99a;
+}
+kbd + kbd {
+	margin-left: 1px;
+}
+pre {
+	line-height: 1.2;
+	font-size:12pt;
+}
