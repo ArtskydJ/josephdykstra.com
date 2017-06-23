@@ -61,7 +61,7 @@ markdown: false
 					</div>
 					<div class="panel panel-primary">
 						<div class="list-group">
-							{{#postList.slice().reverse()}}
+							{{#postList.slice()}}
 								<a href="{{filename.replace(/\.md$/,'')}}" class="list-group-item {{#filename == current}}active{{/}}">{{title}}</a>
 							{{/}}
 						</div>

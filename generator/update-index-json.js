@@ -12,10 +12,12 @@ if (newPosts.length > 1) {
 	console.error('The following posts are not in your index.json yet: ' + newPosts.join(', '))
 	process.exit(1)
 } else if (newPosts.length === 1) {
-	posts.unshift(newPosts[0])
+	posts.push(newPosts[0])
+
 	var indexJson = JSON.stringify(posts)
 		.replace(/(\[|,)"/g, '$1\n  "')
 		.replace('"]', '"\n]\n')
+
 	fs.writeFileSync(relContentPath + 'index.json', indexJson)
 } else {
 	// console.log('No new posts found')
