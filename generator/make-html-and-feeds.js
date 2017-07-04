@@ -1,8 +1,7 @@
-var fs = require('fs')
-var path = require('path')
 var map = require('map')
-var feed = require('./feeds.js')()
-var noddity = require('./noddity.js')()
+var writeFile = require('./lib/write-file.js')
+var feed = require('./lib/feeds.js')()
+var noddity = require('./lib/noddity.js')()
 var htmlDir = require('./config.json').relativeGeneratorToHtmlPath
 
 noddity.getPost('index.md', function (err, post) {
@@ -31,8 +30,8 @@ noddity.getPosts(function (err, posts) {
 			feed.add(post, htmlPostFeeds[i])
 		})
 
-		fs.writeFile(path.join(htmlDir, 'feed.atom'), feed.renderAtom(), throwIfErr)
-		fs.writeFile(path.join(htmlDir, 'feed.rss'), feed.renderRss(), throwIfErr)
+		writeFile(htmlDir, 'feed.atom', feed.renderAtom())
+		writeFile(htmlDir, 'feed.rss', feed.renderRss())
 	})
 })
 
@@ -41,10 +40,6 @@ function savePost(post) {
 		if (err) throw err
 
 		var htmlFilename = post.filename.replace(/\.md$/, '.html')
-		fs.writeFile(path.join(htmlDir, htmlFilename), html, throwIfErr)
+		writeFile(htmlDir, htmlFilename, html)
 	})
-}
-
-function throwIfErr(err) {
-	if (err) throw err
 }

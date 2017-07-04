@@ -3,7 +3,7 @@ var Butler = require('noddity-butler')
 var Retrieval = require('noddity-fs-retrieval')
 var Linkifier = require('noddity-linkifier')
 var renderStatic = require('noddity-render-static')
-var config = require('./config.json')
+var config = require('../config.json')
 
 var FEED_ROOT_POST = {
 	filename: '',
