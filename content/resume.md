@@ -86,7 +86,7 @@ Coding in the Wild was a group started by a professional developer.  He invited 
 
 ### TechnaPWN (VEX Robotics) | September 2012 - April 2015
 
-[technapwn.com](http://technapwn.com) - [youtube.com/TechnaPWN](http://youtube.com/TechnaPWN)
+[technapwn.wixsite.com](http://technapwn.wixsite.com/3018) - [youtube.com/TechnaPWN](http://youtube.com/TechnaPWN)
 
 I wrote RobotC [code](https://github.com/ArtskydJ/technapwn-toss-up) (based on C) for a VEX robot, including pre-programmed routines, teleoperation, slewed motor control, an extensive LCD menu system, and more.  I maintained and updated the code throughout the entire season.  Also, the previous year, I worked with two other team members to write and maintain the code-base.  In April of 2014, I was too old to stay the team, but mentored them for a year.
 
