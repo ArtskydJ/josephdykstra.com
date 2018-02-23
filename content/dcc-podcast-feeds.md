@@ -13,8 +13,6 @@ I was going to make a scraper that would look up the sermons in a series, and cr
 
 Now the problem is that it's not very easy to get a link to a series' RSS feed... Until now!
 
-On Android, you can tap a link below, and choose your podcast app to subscribe to the DCC series:
-
 - [Life of David](            http://www.dominioncovenantchurch.com/?podcast&series=12 ) (130 sermons)
 - [Revelation](               http://www.dominioncovenantchurch.com/?podcast&series=36 ) (90 sermons)
 - [Acts](                     http://www.dominioncovenantchurch.com/?podcast&series=9  ) (68 sermons)
