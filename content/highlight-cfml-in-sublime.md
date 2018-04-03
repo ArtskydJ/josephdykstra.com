@@ -40,4 +40,6 @@ Now your CFML files look like this:
 
 ![Success](./highlight-cfml-in-sublime/4_highlighted.png)
 
+I had the custom color go away, and running the **CFML Toggle** a couple times didn't make it show. I changed the theme, then changed it back, then I ran the toggle a couple more times, and it started working again.
+
 I hope this helps!
