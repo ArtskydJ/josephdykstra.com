@@ -58,7 +58,7 @@ hr {
 	box-sizing:content-box;
 	height:0;
 	margin-bottom:21px;
-	border-top:1px solid #e6e6e6
+	border-top:1px solid #999
 }
 button::-moz-focus-inner,input::-moz-focus-inner {
 	border:0;
@@ -364,4 +364,17 @@ kbd + kbd {
 pre {
 	line-height: 1.2;
 	font-size:12pt;
+}
+pre, code {
+	background: #272822;
+	color:#f8f8f8;
+}
+pre {
+	padding: 0.5em 1em;
+}
+:not(pre) > code {
+	padding: 0.1em 0.2em;
+}
+article > p > img {
+	border: 1px solid #999;
 }
