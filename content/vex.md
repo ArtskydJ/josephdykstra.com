@@ -17,7 +17,7 @@ VEX was designed to teach students about STEM. (Science, Technology, Engineering
 
 ### What I learned
 
-I learned about intermediate robotics, mechanics, and programming. It was also a good tool for learning to handle stress. :)
+I learned about intermediate-level robotics, mechanics, and programming. It was also a good tool for learning to handle stress. :)
 
 ### Team Acheivements (While I was on the team)
 
