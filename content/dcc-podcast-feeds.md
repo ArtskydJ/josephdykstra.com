@@ -14,7 +14,7 @@ I was going to make a scraper that would look up the sermons in a series, and cr
 Now the problem is that it's not very easy to get a link to a series' RSS feed... Until now!
 
 - [Life of David](            http://www.dominioncovenantchurch.com/?podcast&series=12 ) (130 sermons)
-- [Revelation](               http://www.dominioncovenantchurch.com/?podcast&series=36 ) (90 sermons)
+- [Revelation](               http://www.dominioncovenantchurch.com/?podcast&series=36 ) (116 sermons)
 - [Acts](                     http://www.dominioncovenantchurch.com/?podcast&series=9  ) (68 sermons)
 - [Foundations](              http://www.dominioncovenantchurch.com/?podcast&series=48 ) (30 sermons)
 - [Christian and Prosperity]( http://www.dominioncovenantchurch.com/?podcast&series=49 ) (22 sermons)
