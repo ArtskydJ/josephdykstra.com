@@ -13,23 +13,21 @@ I was going to make a scraper that would look up the sermons in a series, and cr
 
 Now the problem is that it's not very easy to get a link to a series' RSS feed... Until now!
 
-| Series Title             | Podcast Feed URL                                                   | Sermon Count |
-|--------------------------|--------------------------------------------------------------------|--------------|
-| Life of David            | [http://www.dominioncovenantchurch.com/?podcast&series=12](http://www.dominioncovenantchurch.com/?podcast&series=12) | 130 sermons  |
-| Revelation               | [http://www.dominioncovenantchurch.com/?podcast&series=36](http://www.dominioncovenantchurch.com/?podcast&series=36) | 116 sermons  |
-| Acts                     | [http://www.dominioncovenantchurch.com/?podcast&series=9 ](http://www.dominioncovenantchurch.com/?podcast&series=9 ) | 68 sermons   |
-| Foundations              | [http://www.dominioncovenantchurch.com/?podcast&series=48](http://www.dominioncovenantchurch.com/?podcast&series=48) | 30 sermons   |
-| Christian and Prosperity | [http://www.dominioncovenantchurch.com/?podcast&series=49](http://www.dominioncovenantchurch.com/?podcast&series=49) | 22 sermons   |
-| Galatians                | [http://www.dominioncovenantchurch.com/?podcast&series=10](http://www.dominioncovenantchurch.com/?podcast&series=10) | 17 sermons   |
-| Esther                   | [http://www.dominioncovenantchurch.com/?podcast&series=47](http://www.dominioncovenantchurch.com/?podcast&series=47) | 12 sermons   |
-| James                    | [http://www.dominioncovenantchurch.com/?podcast&series=46](http://www.dominioncovenantchurch.com/?podcast&series=46) | 12 sermons   |
-| Ecclesiastes             | [http://www.dominioncovenantchurch.com/?podcast&series=28](http://www.dominioncovenantchurch.com/?podcast&series=28) | 11 sermons   |
-| Beatitudes               | [http://www.dominioncovenantchurch.com/?podcast&series=4 ](http://www.dominioncovenantchurch.com/?podcast&series=4 ) | 9 sermons    |
-| Christian Materialism    | [http://www.dominioncovenantchurch.com/?podcast&series=17](http://www.dominioncovenantchurch.com/?podcast&series=17) | 7 sermons    |
-| Evangelism               | [http://www.dominioncovenantchurch.com/?podcast&series=6 ](http://www.dominioncovenantchurch.com/?podcast&series=6 ) | 7 sermons    |
-| Titus - Waging War       | [http://www.dominioncovenantchurch.com/?podcast&series=56](http://www.dominioncovenantchurch.com/?podcast&series=56) | 7 sermons    |
-| Nehemiah                 | [http://www.dominioncovenantchurch.com/?podcast&series=58](http://www.dominioncovenantchurch.com/?podcast&series=58) | 6 sermons    |
-| Five Reformation Solas   | [http://www.dominioncovenantchurch.com/?podcast&series=32](http://www.dominioncovenantchurch.com/?podcast&series=32) | 5 sermons    |
-| Holy Trinity             | [http://www.dominioncovenantchurch.com/?podcast&series=45](http://www.dominioncovenantchurch.com/?podcast&series=45) | 5 sermons    |
+- Life of David (130 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=12](http://www.dominioncovenantchurch.com/?podcast&series=12)
+- Revelation (116 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=36](http://www.dominioncovenantchurch.com/?podcast&series=36)
+- Acts (68 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=9 ](http://www.dominioncovenantchurch.com/?podcast&series=9 )
+- Foundations (30 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=48](http://www.dominioncovenantchurch.com/?podcast&series=48)
+- Christian and Prosperity (22 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=49](http://www.dominioncovenantchurch.com/?podcast&series=49)
+- Galatians (17 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=10](http://www.dominioncovenantchurch.com/?podcast&series=10)
+- Esther (12 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=47](http://www.dominioncovenantchurch.com/?podcast&series=47)
+- James (12 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=46](http://www.dominioncovenantchurch.com/?podcast&series=46)
+- Ecclesiastes (11 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=28](http://www.dominioncovenantchurch.com/?podcast&series=28)
+- Beatitudes (9 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=4 ](http://www.dominioncovenantchurch.com/?podcast&series=4 )
+- Christian Materialism (7 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=17](http://www.dominioncovenantchurch.com/?podcast&series=17)
+- Evangelism (7 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=6 ](http://www.dominioncovenantchurch.com/?podcast&series=6 )
+- Titus - Waging War (7 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=56](http://www.dominioncovenantchurch.com/?podcast&series=56)
+- Nehemiah (6 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=58](http://www.dominioncovenantchurch.com/?podcast&series=58)
+- Five Reformation Solas (5 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=32](http://www.dominioncovenantchurch.com/?podcast&series=32)
+- Holy Trinity (5 sermons) [http://www.dominioncovenantchurch.com/?podcast&series=45](http://www.dominioncovenantchurch.com/?podcast&series=45)
 
 This does not have every single series, but it does have most series with five or more sermons. Click the Edit link below to add another series.
