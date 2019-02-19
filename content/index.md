@@ -11,6 +11,4 @@ I created [Comics RSS](https://www.comicsrss.com/), which scrapes webpages to cr
 
 I helped [TehShrike](https://twitter.com/TehShrike) create [Just Login](http://justlogin.xyz), an open source password-less authentication library for node.js.
 
-I also created [Let me NPM that for You (lmnpmtfy)](https://www.lmnpmtfy.com). It is like [lmgtfy](https://lmgtfy.com), but for [npm](https://npmjs.com).
-
 I have contributed to [abstract-state-router](https://github.com/TehShrike/abstract-state-router), which is like ui-router, but without all the Angular. [View the demo!](https://tehshrike.github.io/state-router-example)
