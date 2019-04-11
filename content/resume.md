@@ -64,10 +64,10 @@ This is the only technology company that I have worked for.
 
 - Josh Duff
 	- http://joshduff.com
-	- Developer, [eDataSource](http://www.edatasource.com/)
+	- Developer
 - Tobias Davis
 	- http://davistobias.com
-	- Developer, [eDataSource](http://www.edatasource.com/)
+	- Developer
 - Seth Dykstra (Family)
 	- On-Site IT Support, [P&L Technology](http://www.pltechnology.com/)
 - David Dykstra (Family)
