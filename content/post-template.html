@@ -27,11 +27,11 @@ markdown: false
 	<body>
 		<div class="container" id="page">
 			<div class="row">
-				<div class="col-md-9 float-right">
+				<div class="col-md-9 float-right main-bar">
 					<article>
-						<h1 class="text-center">{{title}}</h1>{{{html}}}
+						<h1 class="text-center title">{{title}}</h1>{{{html}}}
 					</article>
-					<div class="breadcrumb row">
+					<div class="breadcrumb row no-print">
 						<div class="col-xs-4 text-left">
 							<!-- Date SVG, from https://design.google.com/icons/#ic_date_range -->
 							<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@ markdown: false
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-xs-12 float-left">
+				<div class="col-md-3 col-xs-12 float-left no-print side-bar">
 					<div class="text-center">
 						<a href="/">
 							<img src="./logo.png" alt="logo" id="logo">

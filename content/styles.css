@@ -66,6 +66,9 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
+	.no-print {
+		display: none;
+	}
 	blockquote,img {
 		page-break-inside:avoid
 	}
@@ -78,9 +81,6 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 	}
 	a,a:visited {
 		text-decoration:underline
-	}
-	a[href]:after {
-		content:" (" attr(href) ")"
 	}
 	blockquote {
 		border:1px solid #999

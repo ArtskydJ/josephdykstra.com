@@ -3,6 +3,15 @@ title: Résumé
 date: 2014-10-23
 ---
 
+<style>
+@media print {
+	article > h1.title,
+	article > hr {
+		display: none;
+	}
+}
+</style>
+
 -----
 
 # Joseph Dykstra
