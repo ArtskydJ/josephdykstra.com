@@ -24,7 +24,7 @@ I enjoy software development. I like watching as a project starts from nothing, 
 
 I like writing JavaScript modules, and websites.
 
-I am currently working [FACTS](https://factsmgt.com/administration/student-information-system/) on the FACTS SIS product.  Schools use FACTS SIS for Admissions, Attendance, Communication, Health Info, Report Cards, Scheduling, Staff/Student/Family Info, Transcripts, and more.
+I am currently working for [FACTS](https://factsmgt.com/administration/student-information-system/) on the FACTS SIS product.  Schools use FACTS SIS for Admissions, Attendance, Communication, Health Info, Report Cards, Scheduling, Staff/Student/Family Info, Transcripts, and more.
 
 # Technologies
 
