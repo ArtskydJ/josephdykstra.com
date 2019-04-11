@@ -79,9 +79,6 @@ button::-moz-focus-inner,input::-moz-focus-inner {
 		box-shadow:none!important;
 		text-shadow:none!important
 	}
-	a,a:visited {
-		text-decoration:underline
-	}
 	blockquote {
 		border:1px solid #999
 	}

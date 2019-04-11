@@ -26,18 +26,15 @@ I like writing JavaScript modules, and websites.
 
 I am currently working [FACTS](https://factsmgt.com/administration/student-information-system/) on the FACTS SIS product.  Schools use FACTS SIS for Admissions, Attendance, Communication, Health Info, Report Cards, Scheduling, Staff/Student/Family Info, Transcripts, and more.
 
-# Languages
+# Technologies
 
 - JavaScript
-- HTML
-- CSS
-- SQL
+	- node.js
+	- Electron
+- HTML/CSS/JS
+- SQL Server
 - ColdFusion
 - C
-
-<!--
-- (And I'm excited to learn more!  I'm wanting to learn Go, Python, and possibly Kotlin.)
--->
 
 # Experience
 
