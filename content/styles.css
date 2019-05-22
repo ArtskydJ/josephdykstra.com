@@ -319,7 +319,8 @@ My Custom Styles
 */
 body {
 	background-color:#fdfdfd;
-	font-size:14pt
+	font-size:14pt;
+	word-break: break-word;
 }
 iframe {
 	border:none
