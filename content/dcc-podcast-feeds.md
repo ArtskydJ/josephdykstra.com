@@ -13,6 +13,7 @@ I was going to make a scraper that would look up the sermons in a series, and cr
 
 Now the problem is that it's not very easy to get a link to a series' RSS feed... Until now!
 
+- Bible Survey (10+ sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=64](http://www.dominioncovenantchurch.com/?podcast&series=64)
 - Life of David (130 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=12](http://www.dominioncovenantchurch.com/?podcast&series=12)
 - Revelation (116 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=36](http://www.dominioncovenantchurch.com/?podcast&series=36)
 - Acts (68 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=9 ](http://www.dominioncovenantchurch.com/?podcast&series=9 )
