@@ -11,7 +11,7 @@ In mid-March Gilbert and the boys moved Rebecca's baby grand piano from our hous
 
 Our family has a weekly gathering on Saturday nights where all the married children and their families come for pizza or sloppy joes. In mid-March, Michael came in with a shirt that said "Dad-To-Be". What a cute way to announce their pregnancy!
 
-In late April, Gilbert, Donna, Daniel, and Nathanael attended the First LEGO League World Championship in St. Louis, Missouri.  Nathanael is on a team called the Data Dragons, created by a family in our church.  The team 
+In late April, Gilbert, Donna, Daniel, and Nathanael attended the First LEGO League World Championship in St. Louis, Missouri.  Nathanael is on a team called the Data Dragons, created by a family in our church.
 
 In early May, Joseph's company flew his team to Texas for an in-person meetup. Joseph works from his "remote bunker" for the Texas-based company.
 
