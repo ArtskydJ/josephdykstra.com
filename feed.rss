@@ -4,7 +4,7 @@
         <title>Joseph Dykstra&apos;s Blog</title>
         <description>Follow Joseph&apos;s opinions on your feed reader!</description>
         <link>http://josephdykstra.com</link>
-        <lastBuildDate>Sun, 30 Jun 2019 03:16:55 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Jul 2019 12:28:24 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <image>
             <title>Joseph Dykstra&apos;s Blog</title>
@@ -13,6 +13,28 @@
         </image>
         <copyright>Copyright © Joseph Dykstra 2016.</copyright>
         <generator>Feed for Node.js</generator>
+        <item>
+            <title><![CDATA[How I Started Programming]]></title>
+            <link>http://josephdykstra.com/how-i-started-programming</link>
+            <guid>http://josephdykstra.com/how-i-started-programming</guid>
+            <pubDate>Thu, 04 Jul 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[<p>Some of the timeline is a bit fuzzy now, and some of these things were in parallel.</p>
+<p>I started coding BASIC with smallBASIC. I created a bunch of useless things, including a <a href="https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas">snake clone</a>.</p>
+<p>Then I played around with Game Maker. After pushing the limits of the drag &amp; drop interface, I learned the more powerful GML (Game Maker Language, similar to Javascript.)</p>
+<p>I joined a lego robotics team (the program is called FLL), and programmed the lego robot (called an NXT) using a graphical programming language. Unfortunately, the FLL rules did not allow us to use anything that was much better.</p>
+<p>I heard about a C-like programming language for the NXT, and I wrote a <a href="https://github.com/ArtskydJ/NXC_Source">handful of modules</a>. I wrote a high score saving module, an on-screen keyboard module, a menu module, and more. I also wrote a bunch of games, including Tetris, Snake, Simon, Bop It, and Tic Tac Toe.</p>
+<p>My friend, <a href="https://joshduff.com">Josh</a>, suggested that I learn an interpreted language. He also started meeting with people he knew that wanted to become developers, and I attended the meetings.</p>
+<p>I learned javascript, using mainly node.js and browserify. I got started with <a href="https://github.com/workshopper/learnyounode#readme">learnyounode</a> I also learned about unit tests, mysql, text parsing, and more from the weekly meetings. In the group, we developed <a href="https://github.com/coding-in-the-wild">a few things</a>, and he did code review and sometimes specs.</p>
+<p>Since then, I've created <a href="https://github.com/ArtskydJ?tab=repositories">various projects</a> for myself.</p>
+<p>So yeah, that's how I got started.</p>
+]]></description>
+            <content:encoded/>
+            <author>
+                <name>Joseph Dykstra</name>
+                <email>josephdykstra@gmail.com</email>
+                <link>http://josephdykstra.com</link>
+            </author>
+        </item>
         <item>
             <title><![CDATA[Compiling NXC using Sublime's Build system]]></title>
             <link>http://josephdykstra.com/compiling-nxc-using-sublime-build</link>
@@ -199,43 +221,6 @@ chmod -R 777 tt-rss
 <p>In December, Micah and Rebecca had a baby shower for their (unborn) boy.</p>
 <p>2017 has been another great year for the Dykstras, and we sincerely hope that you've had a great year too!  Remember that this season is about Christ's incarnation, and our joy in salvation through Him.  We thank you all for being our friends throughout this year!</p>
 <p>— The Dykstra Family</p>
-]]></description>
-            <content:encoded/>
-            <author>
-                <name>Joseph Dykstra</name>
-                <email>josephdykstra@gmail.com</email>
-                <link>http://josephdykstra.com</link>
-            </author>
-        </item>
-        <item>
-            <title><![CDATA[How to Highlight CFML Tags in Sublime Text 3]]></title>
-            <link>http://josephdykstra.com/highlight-cfml-in-sublime</link>
-            <guid>http://josephdykstra.com/highlight-cfml-in-sublime</guid>
-            <pubDate>Thu, 22 Jun 2017 00:00:00 GMT</pubDate>
-            <description><![CDATA[<p>I use Sublime Text 3, and in my day job, I write and edit code in ColdFusion Markup Language (CFML), so I wanted a syntax highlighter. You can use Sublime's built-in HTML highlighter, but then you can't easily distinguish CFML tags from plain HTML tags:</p>
-<p><img src="./highlight-cfml-in-sublime/1_initial.png" alt="Initial"></p>
-<p>Let me show you a more excellent way.</p>
-<p>If you don't already have <a href="https://packagecontrol.io">Package Control</a>, then go to <em>Tools</em> &gt; <em>Install Package Control</em>.</p>
-<p>If you don't already have the CFML package, then press <kbd>Ctrl/Cmd</kbd><kbd>Shift</kbd><kbd>P</kbd>. Then type <strong>Install Package</strong>, and press <kbd>Enter</kbd>. Then type <strong>CFML</strong>, and press <kbd>Enter</kbd>.</p>
-<p>If you want CFML tags to be visually distinct from HTML tags then go to <em>Preferences</em> &gt; <em>Package Settings</em> &gt; <em>CFML</em> &gt; <em>Settings</em>, and paste the following code:</p>
-<pre><code class="language-json">{
-    // color scheme styles to inject for Lucee/CFML tags
-    // valid keys are "foreground" and "fontStyle"
-    // "foreground": "#RRGGBB", "#RGB" or ""
-    // "fontStyle": "bold", "italic", "bold italic", or ""
-    "cfml_tag_style": { "foreground": "#4C9BB0", "fontStyle": "" },
-    "cfml_tag_attribute_style": { "foreground": "", "fontStyle": "" }
-}
-</code></pre>
-<p>Save the file.</p>
-<p>The example code above will modify the tag style but not the attribute style. Customize it it to your liking.</p>
-<p>To actually enable it, you must press <kbd>Ctrl/Cmd</kbd><kbd>Shift</kbd><kbd>P</kbd>. Then type <strong>CFML Toggle</strong>, and press <kbd>Enter</kbd>.</p>
-<p><img src="./highlight-cfml-in-sublime/3_cfml_package_toggle.png" alt="CFML Package Color Toggle"></p>
-<p>If you hate the CF tag color that you just chose, then go ahead and change the foreground color. You will have to run the <strong>CFML Toggle</strong> two times to see the new color.</p>
-<p>Now your CFML files look like this:</p>
-<p><img src="./highlight-cfml-in-sublime/4_highlighted.png" alt="Success"></p>
-<p>I had the custom color go away, and running the <strong>CFML Toggle</strong> a couple times didn't make it show. I changed the theme, then changed it back, then I ran the toggle a couple more times, and it started working again.</p>
-<p>I hope this helps!</p>
 ]]></description>
             <content:encoded/>
             <author>
