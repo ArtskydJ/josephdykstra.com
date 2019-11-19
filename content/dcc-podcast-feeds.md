@@ -17,6 +17,7 @@ Now the problem is that it's not very easy to get a link to a series' RSS feed..
 - Life of David (130 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=12](http://www.dominioncovenantchurch.com/?podcast&series=12)
 - Revelation (116 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=36](http://www.dominioncovenantchurch.com/?podcast&series=36)
 - Acts (68 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=9 ](http://www.dominioncovenantchurch.com/?podcast&series=9 )
+- Daniel (36 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=67](http://www.dominioncovenantchurch.com/?podcast&series=67)
 - Foundations (30 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=48](http://www.dominioncovenantchurch.com/?podcast&series=48)
 - Christian and Prosperity (22 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=49](http://www.dominioncovenantchurch.com/?podcast&series=49)
 - Galatians (17 sermons) <br> [http://www.dominioncovenantchurch.com/?podcast&series=10](http://www.dominioncovenantchurch.com/?podcast&series=10)
