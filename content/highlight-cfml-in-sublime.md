@@ -21,7 +21,7 @@ If you want CFML tags to be visually distinct from HTML tags then go to *Prefere
 	// valid keys are "foreground" and "fontStyle"
 	// "foreground": "#RRGGBB", "#RGB" or ""
 	// "fontStyle": "bold", "italic", "bold italic", or ""
-	"cfml_tag_style": { "foreground": "#4C9BB0", "fontStyle": "" },
+	"cfml_tag_style": { "foreground": "#66F", "fontStyle": "" },
 	"cfml_tag_attribute_style": { "foreground": "", "fontStyle": "" }
 }
 ```
