@@ -15,7 +15,7 @@ If you don't already have the CFML package, then press <kbd>Ctrl/Cmd</kbd><kbd>S
 
 If you want CFML tags to be visually distinct from HTML tags then go to *Preferences* > *Package Settings* > *CFML* > *Settings*, and paste the following code:
 
-```json
+```jsonc
 {
 	// color scheme styles to inject for Lucee/CFML tags
 	// valid keys are "foreground" and "fontStyle"
