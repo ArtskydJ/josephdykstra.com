@@ -8,4 +8,4 @@ var everythingExceptMarkdown = {
 	filter: [ '**', '!**/*.md' ]
 }
 
-copy(src, dest, everythingExceptMarkdown)
+module.exports = copy(src, dest, everythingExceptMarkdown) // returns a promise
