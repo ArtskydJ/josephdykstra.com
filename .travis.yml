@@ -9,7 +9,8 @@ sudo: true
 script:
   - set -e # If one script throws an error, all scripts end
   - sudo apt-get install -y wkhtmltopdf
-  - sh -e /etc/init.d/xvfb start # Avoid "QXcbConnection: Could not connect to display" error (I hope)
+  - QT_QPA_PLATFORM="offscreen phantomjs rasterize.js 2i8zaNg04d9B41Zir2kT3J/output.html 2i8zaNg04d9B41Zir2kT3J.png" # https://github.com/ariya/phantomjs/issues/14376#issuecomment-236213526
+  - sudo sh -e /etc/init.d/xvfb start # Avoid "QXcbConnection: Could not connect to display" error (I hope)
   - git config --global user.name "Travis CI Deploy"
   - git config --global user.email "noreply@travis-ci.org"
   - pushd generator
