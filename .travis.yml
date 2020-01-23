@@ -7,8 +7,9 @@ env:
     secure: qPnAQgbNjFG2TyX2ytI9sHnjlcxllAFuQfX3MM+af+BxAq2X++MaEKviqW2NqVP47ivSD85KVeH3eteHT+Edh5IghIxqLJ72OiZ3lll0ofsu9opfs23TU+Z3FSN0AuZK+5eLfdNIuoRGSX+xw30wFnD/fOqeDeTBgVWT457lOkw=
 sudo: true
 script:
-  - sudo apt-get install -y wkhtmltopdf
   - set -e # If one script throws an error, all scripts end
+  - sudo apt-get install -y wkhtmltopdf
+  - sh -e /etc/init.d/xvfb start # Avoid "QXcbConnection: Could not connect to display" error (I hope)
   - git config --global user.name "Travis CI Deploy"
   - git config --global user.email "noreply@travis-ci.org"
   - pushd generator
