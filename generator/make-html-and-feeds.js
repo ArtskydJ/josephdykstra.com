@@ -24,7 +24,12 @@ noddity.getPost('resume.md', function (err, post) {
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
 		writeFile(htmlDir, 'resume-pdf.html', html)
 		
-		cp.execFileSync('wkhtmltopdf', [ htmlPath, resumePath ])
+		try {
+			cp.execFileSync('wkhtmltopdf', [ htmlPath, resumePath ])
+		} catch (e) {
+			console.log('Unable to update resume.pdf')
+			console.log(e)
+		}
 	})
 })
 
