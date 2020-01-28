@@ -21,12 +21,10 @@ I am a full-stack software developer.  I enjoy working with a friendly team that
 
 - JavaScript
 	- Server: node.js, npm
-	- Browser: Vanilla, jQuery, or bundled
-	- Desktop: Basic Electron knowledge
+	- Browser: jQuery, HyperScript, Browserify
 - HTML
-	- I have used HTML-templating languages similar to [Mustache](https://en.wikipedia.org/wiki/Mustache_%28template_system%29)
+	- Mustache
 - CSS
-	- Some working knowledge of preprocessors like scss, or stylus
 - SQL
 - ColdFusion
 - C
@@ -35,8 +33,8 @@ I am a full-stack software developer.  I enjoy working with a friendly team that
 
 ## Tools
 
-- Git (CLI and GUI)
-- Command line (Windows and Linux)
+- Git: CLI, GUI
+- Command line: Windows, Linux
 
 # Experience
 
