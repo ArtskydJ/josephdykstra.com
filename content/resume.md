@@ -7,7 +7,12 @@ date: 2014-10-23
 	article > h1.title {
 		display: none;
 	}
+	.avoid-break {
+		page-break-inside: avoid;
+	}
 </style>
+
+<div class="avoid-break">
 
 # Joseph Dykstra
 
@@ -17,7 +22,12 @@ date: 2014-10-23
 
 I am a full-stack software developer.  I enjoy working with a friendly team that takes satisfaction in their work.
 
+</div>
+<div class="avoid-break">
+
 # Knowledge
+
+### Languages
 
 - JavaScript
 	- Server: node.js, npm
@@ -31,10 +41,18 @@ I am a full-stack software developer.  I enjoy working with a friendly team that
 - Batch
 - Shell script
 
-## Tools
+</div>
+<div class="avoid-break">
 
-- Git: CLI, GUI
+### Tools
+
+- Git interfaces: CLI, GUI
+- Git hosts: GitHub, Bitbucket, DevOps
 - Command line: Windows, Linux
+- Continuous Integration, Deployment
+
+</div>
+<div class="avoid-break">
 
 # Experience
 
@@ -48,12 +66,18 @@ I am currently working for FACTS SIS on the [SIS](https://factsmgt.com/administr
 
 I work with a team to fix issues that clients have, and develop new features or new projects for thousands of schools. I ship code regularly, and I enjoy helping my fellow team members.
 
+</div>
+<div class="avoid-break">
+
 - I have created a mailing-label system so schools can print Mail Labels, ID Cards, barcodes, and more onto standard Avery label sheets.
 - I have worked with REST APIs to sync school data with 3rd party school-related software, such as Learning Management Systems.
 - I fix a variety of issues. E.g. invalid data, security issues, optimizing database queries, etc.
 - I'm the primary maintainer for a system that builds SQL queries for data stored in 50+ tables.  The user selects data fields, filters, and sorting options, and the system exports a spreadsheet of the selected data.
 
 This is the only software company that I have worked for.
+
+</div>
+<div class="avoid-break">
 
 ### Personal Projects | July 2008 - [Present]
 
@@ -65,6 +89,9 @@ This is the only software company that I have worked for.
 - I have created hundreds of [pull requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3AArtskydJ+) on Github to various open source projects
 - I have written and I maintain over [50 JavaScript modules](https://npmjs.org/~artskydj) for node.js
 - I wrote [Snake](https://github.com/ArtskydJ/snake), [Tetris](https://github.com/ArtskydJ/tetris), and an [8-Queens Solver](https://github.com/ArtskydJ/eight-queens) in C
+
+</div>
+<div class="avoid-break">
 
 # References
 
@@ -80,3 +107,5 @@ This is the only software company that I have worked for.
 	- Owner of Millennium Construction (Omaha)
 - Michael Dykstra (Family)
 	- Apprentice plumber, Schulte Plumbing
+
+</div>
