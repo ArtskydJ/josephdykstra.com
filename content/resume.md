@@ -15,24 +15,28 @@ date: 2014-10-23
 
 # About Me
 
-I enjoy software development. I like seeing a project start from nothing, and progress into a full-blown application.
+I am a full-stack software developer.  I enjoy working with a friendly team that takes satisfaction in their work.
 
-I like writing JavaScript modules, and websites.
-
-# Technologies
+# Knowledge
 
 - JavaScript
-	- node.js
-	- Electron
-- HTML/CSS/JS
-- SQL Server
+	- Server: node.js, npm
+	- Browser: Vanilla, jQuery, or bundled
+	- Desktop: Basic Electron knowledge
+- HTML
+	- I have used HTML-templating languages similar to [Mustache](https://en.wikipedia.org/wiki/Mustache_%28template_system%29)
+- CSS
+	- Some working knowledge of preprocessors like scss, or stylus
+- SQL
 - ColdFusion
 - C
+- Batch
+- Shell script
 
 ## Tools
 
-- Git
-- Command line
+- Git (CLI and GUI)
+- Command line (Windows and Linux)
 
 # Experience
 

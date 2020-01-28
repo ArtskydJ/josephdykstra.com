@@ -1,5 +1,3 @@
-var cp = require('child_process')
-var path = require('path')
 var map = require('map')
 var writeFile = require('./lib/write-file.js')
 var feed = require('./lib/feeds.js')()
@@ -14,22 +12,12 @@ noddity.getPost('index.md', function (err, post) {
 
 noddity.getPost('resume.md', function (err, post) {
 	if (err) throw err
-		
-	const resumePath = path.resolve(htmlDir, 'resume.pdf')
-	const htmlPath = path.resolve(htmlDir, 'resume-pdf.html')
 
 	noddity.renderFeed(post, function (err, html) {
 		if (err) throw err
 		
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
 		writeFile(htmlDir, 'resume-pdf.html', html)
-		
-		try {
-			cp.execFileSync('wkhtmltopdf', [ htmlPath, resumePath ])
-		} catch (e) {
-			console.log('Unable to update resume.pdf')
-			console.log(e)
-		}
 	})
 })
 
