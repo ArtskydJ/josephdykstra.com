@@ -28,10 +28,27 @@ If you are unaware of how many Christians see this passage, try reading this: [5
 
 The Great Tribulation has already happened. You can read about the [Siege of Jerusalem](https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(AD_70)). If you hear wars an rumors of wars today, it doesn't mean Jesus is coming back soon, since this prophecy has already been fulfilled.
 
-Jesus says very plainly that the Tribulation will occur in some of the listeners' lifetimes.
+The Son of Man sent His angels to gather His elect from the four winds, from one end of heaven to the other. This can not be in the future, since Jesus says very plainly that all these things will occur in some of the listeners' lifetimes. (See verse 34.)
 
-After talking about the Siege of Jerusalem, Jesus went on to talk about the end times. (Remember that His disciples asked about both the destruction of the temple, and the end times in verse 3.)
+After talking about the Siege of Jerusalem, Jesus went on to talk about the end of the age. There are multiple interpretations, and my mind has been changed on what the following refers to. It is easy to assume that "End of the age" means "end of the world". I don't believe that anymore.
+
+Jesus said Heaven and earth will pass away, but His words will not. He is emphasizing how certain His words are. The Great Tribulation is not the same as Heaven and earth passing away. If it was, then you would be forced to believe (with verses 34-35) that Heaven and earth passed away within a generation of Christ's human walk on the earth. (Maybe there's some argument that earth as they knew it passed away? That feels like a stretch. But Heaven didn't pass away.)
 
 > But of that day and hour no one knows, not even the angels of heaven, but My Father only. But as the days of Noah were, so also will the coming of the Son of Man be. For as in the days before the flood, they were eating and drinking, marrying and giving in marriage, until the day that Noah entered the ark, and did not know until the flood came and took them all away, so also will the coming of the Son of Man be. Then two men will be in the field: one will be taken and the other left. Two women will be grinding at the mill: one will be taken and the other left. Watch therefore, for you do not know what hour your Lord is coming. But know this, that if the master of the house had known what hour the thief would come, he would have watched and not allowed his house to be broken into. Therefore you also be ready, for the Son of Man is coming at an hour you do not expect."
 
+All that has passed.
+
+<!--
+apparently, the following argument made a lot of sense to a younger me.
+it is embarassing
+
 Here, Jesus explains that we *won't* have signs telling us when the end times are coming. If the Great Tribulation = End Times, then this makes no sense, becuase Jesus Himself just told them signs for the Great Tribulation!
+
+I don't believe great trib = end times, but I do not believe that great trib = end of the age, and that end of the age != end times.
+
+The things that Jesus describes here are not signs of a future trib. They are effects of an in-progress tribulation.
+
+And the one taken, and the other is left, is a bit awkward if you believe in an optimistic eschatology, as I do.
+-->
+
+
