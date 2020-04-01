@@ -39,16 +39,20 @@ Jesus said Heaven and earth will pass away, but His words will not. He is emphas
 All that has passed.
 
 <!--
+<p>
 apparently, the following argument made a lot of sense to a younger me.
 it is embarassing
 
-Here, Jesus explains that we *won't* have signs telling us when the end times are coming. If the Great Tribulation = End Times, then this makes no sense, becuase Jesus Himself just told them signs for the Great Tribulation!
+Here, Jesus explains that we *will not* have signs telling us when the end times are coming. If the Great Tribulation is the End Times, then this makes no sense, becuase Jesus Himself just told them signs for the Great Tribulation.
 
-I don't believe great trib = end times, but I do not believe that great trib = end of the age, and that end of the age != end times.
+I do not believe great trib is the end times
+I do believe that great trib was the end of the age
+I do not believe and that end of the age is the end times.
 
 The things that Jesus describes here are not signs of a future trib. They are effects of an in-progress tribulation.
 
 And the one taken, and the other is left, is a bit awkward if you believe in an optimistic eschatology, as I do.
+</p>
 -->
 
 
