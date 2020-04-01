@@ -27,6 +27,8 @@ date: 2014-02-17
 
 [**Isaiah 64:6-8**](https://www.biblegateway.com/passage/?version=NKJV&search=Isaiah%2064%3A6-8) But we are all like an unclean thing, And all our righteousnesses are like filthy rags; We all fade as a leaf, And our iniquities, like the wind, Have taken us away. And there is no one who calls on Your name, Who stirs himself up to take hold of You; For You have hidden Your face from us, And have consumed us because of our iniquities. But now, O Lord, You are our Father; We are the clay, and You our potter; And all we are the work of Your hand.
 
+[**Romans 8:7**](https://www.biblegateway.com/passage/?version=NKJV&search=Romans%208:7)  Because the [carnal mind is enmity against God; for it is not subject to the law of God, nor indeed can be.
+
 ## Biblical Inerrancy
 
 In case you need proof of it now. ;-)
