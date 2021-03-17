@@ -1,5 +1,6 @@
 {
 	"relativeGeneratorToHtmlPath": "../docs/",
 	"relativeGeneratorToContentPath": "../content/",
-	"relativeGeneratorToStaticPath": "../content/"
+	"relativeGeneratorToStaticPath": "../content/",
+	"relativeContentToPostTemplatePath": "../generator/"
 }

@@ -24,7 +24,7 @@ module.exports = function () {
 	return {
 		getPost: butler.getPost,
 		getPosts: butler.getPosts,
-		renderHtml: render.bind(null, 'post-template.html'),
+		renderHtml: render.bind(null, config.relativeContentToPostTemplatePath + 'post-template.html'),
 		renderFeed: render.bind(null, FEED_ROOT_POST)
 	}
 }
