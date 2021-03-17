@@ -21,13 +21,12 @@ noddity.getPost('resume.md', function (err, post) {
 
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
 		writeFile(contentDir, 'resume-pdf.html', html)
-		cp.exec('wkhtmltopdf ' + contentDir + 'resume-pdf.html ' + contentDir + 'resume.pdf', function (err, stdout) {
+		cp.exec('wkhtmltopdf ' + contentDir + 'resume-pdf.html ' + htmlDir + 'resume.pdf', function (err, stdout) {
 			if (err) {
 				// I'm OK with this error when in CI
 				console.error(err)
 			}
 			require('fs').unlinkSync(contentDir + 'resume-pdf.html')
-			callbackWhenResumePdfIsGenerated()
 		})
 	})
 })
@@ -64,11 +63,4 @@ function savePost(post) {
 		var htmlFilename = post.filename.replace(/\.md$/, '.html')
 		writeFile(htmlDir, htmlFilename, html)
 	})
-}
-
-let callbackWhenResumePdfIsGenerated = function () {}
-module.exports = function (cb) {
-	if (cb) {
-		callbackWhenResumePdfIsGenerated = cb
-	}
 }
