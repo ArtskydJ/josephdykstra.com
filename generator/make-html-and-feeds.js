@@ -1,8 +1,11 @@
+var cp = require('child_process')
 var map = require('map')
 var writeFile = require('./lib/write-file.js')
 var feed = require('./lib/feeds.js')()
 var noddity = require('./lib/noddity.js')()
-var htmlDir = require('./config.json').relativeGeneratorToHtmlPath
+var config = require('./config.json')
+var htmlDir = config.relativeGeneratorToHtmlPath
+var contentDir = config.relativeGeneratorToContentPath
 
 noddity.getPost('index.md', function (err, post) {
 	if (err) throw err
@@ -15,9 +18,14 @@ noddity.getPost('resume.md', function (err, post) {
 
 	noddity.renderFeed(post, function (err, html) {
 		if (err) throw err
-		
+
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
-		writeFile(htmlDir, 'resume-pdf.html', html)
+		writeFile(contentDir, 'resume-pdf.html', html)
+		cp.exec('wkhtmltopdf ' + contentDir + 'resume-pdf.html ' + contentDir + 'resume.pdf', function (err, stdout) {
+			if (err) throw err
+			require('fs').unlinkSync(contentDir + 'resume-pdf.html')
+			callbackWhenResumePdfIsGenerated()
+		})
 	})
 })
 
@@ -53,4 +61,11 @@ function savePost(post) {
 		var htmlFilename = post.filename.replace(/\.md$/, '.html')
 		writeFile(htmlDir, htmlFilename, html)
 	})
+}
+
+let callbackWhenResumePdfIsGenerated = function () {}
+module.exports = function (cb) {
+	if (cb) {
+		callbackWhenResumePdfIsGenerated = cb
+	}
 }
