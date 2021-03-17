@@ -17,13 +17,13 @@
   },
   "dependencies": {
     "feed": "^0.2.6",
-    "level-mem": "^0.18.0",
+    "level-mem": "^5.0.1",
     "map": "0.0.3",
-    "noddity-butler": "^2.0.0",
+    "noddity-butler": "^2.6.2",
     "noddity-fs-retrieval": "^1.1.0",
     "noddity-linkifier": "^3.0.0",
     "noddity-render-static": "^2.4.3",
-    "recursive-copy": "^2.0.6",
-    "rimraf": "^2.6.1"
+    "recursive-copy": "^2.0.11",
+    "rimraf": "^3.0.2"
   }
 }
