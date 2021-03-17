@@ -17,4 +17,3 @@ script:
   - git commit -m "build [skip ci]"
   - git push --quiet https://${GITHUB_TOKEN}@github.com/ArtskydJ/josephdykstra.com master:master
   - popd
-  - popd
