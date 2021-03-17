@@ -39,7 +39,7 @@ markdown: false
 								<path d="M0 0h24v24H0z" fill="none"/>
 							</svg>
 							{{#date}}
-								{{date.toDateString()}}
+								{{date.toLocaleString('en-US', { timeZone: 'Etc/GMT', dateStyle: 'medium' })}}
 							{{else}}
 								Unknown
 							{{/}}
