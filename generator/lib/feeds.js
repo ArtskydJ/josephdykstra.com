@@ -18,7 +18,7 @@ module.exports = function () {
 	var feed = new Feed({
 		title: 'Joseph Dykstra\'s Blog',
 		description: 'Follow Joseph\'s opinions on your feed reader!',
-		link: 'http://josephdykstra.com',
+		link: 'https://www.josephdykstra.com',
 		image: 'http://josephdykstra.com/logo.png',
 		copyright: 'Copyright © Joseph Dykstra 2016.',
 		author: authorJoseph,
@@ -26,7 +26,7 @@ module.exports = function () {
 	})
 
 	function add(post, html) {
-		var link = 'http://josephdykstra.com/' + post.filename.replace(/\.md$/, '')
+		var link = 'https://www.josephdykstra.com/' + post.filename.replace(/\.md$/, '')
 
 		feed.addItem({
 			title: post.metadata.title,
