@@ -13,7 +13,7 @@ I tried 4 well-rated apps: AntennaPod, Podcast Republic, Podkicker, and Podcast 
 
 > Disclaimer: Facts such as ratings and features of apps might change after I write this review.
 
-## AntennaPod
+## AntennaPod ![](https://play-lh.googleusercontent.com/VV5fdZWuZolh8Ii8FiuxD7LYCacmT76sCxyuMTm7kyfsHJkBWfkHSZNmqr1UGTo6JZCq=s40)
 
 [AntennaPod](https://play.google.com/store/apps/details?id=de.danoeh.antennapod) is rated 4.5 stars on the google play store. It is ad-free and open source.
 
@@ -21,7 +21,7 @@ The UI is great. It is simple, intuitive, and I like how it is set up.
 
 It does have an auto-download, and auto-delete. However, it doesn't support downloading from oldest to newest, so it's out.
 
-## Podcast Republic
+## Podcast Republic ![](https://play-lh.googleusercontent.com/lthJnaOfgebO_ZTi3GFideRTi22RHgiP6CqAfkfvjUN7Aoni5Xi5HvxYNkaL5AdtKHSW=s40)
 
 [Podcast Republic](https://play.google.com/store/apps/details?id=com.itunestoppodcastplayer.app&hl=en) is rated 4.4 stars on the google play store. It is ad-supported.
 
@@ -31,7 +31,7 @@ Lots of settings for this app, but they're well organized, so you can easily fin
 
 This app has auto-download and auto-delete. It's unable to auto-download oldest to newest, so I am not keeping it.
 
-## Podkicker
+## Podkicker ![](https://play-lh.googleusercontent.com/_W2wBD7JC-fV-2MlzKW2vUSUg6QpaKNcV6VQLv9zOqCDXGF-xFnHC0_9TzsF32higBQI=s40)
 
 [Podkicker](https://play.google.com/store/apps/details?id=ait.podka) is rated 4.2 stars on the google play store. It is ad-supported.
 
@@ -39,7 +39,7 @@ This app is hands-down the simplest UI for a podcast app of the four. Very intui
 
 The app seems to lack an auto-delete, but it has a new-episodes-only auto-download. Goodbye app.
 
-## Podcast Addict
+## Podcast Addict ![](https://play-lh.googleusercontent.com/m6FeLOkUfP8qTZNXKFSSI8_exI-SlGJRcIArl3gRm3-VninL7l1RdYlPkkf2CfbBnA=s40)
 
 [Podcast Addict](https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict) is rated 4.6 stars on the google play store. It is ad-supported.
 
