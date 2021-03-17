@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Lift Gear Radio Calculator</title>
+
+	<style type="text/css">
+		body {
+			font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+			font-size:12px;
+		}
+
+		p, h1, form, button{border:0; margin:0; padding:0;}
+
+		/* ----------- My Form ----------- */
+		.myform{
+			margin:0 auto;
+			width:400px;
+			padding:14px;
+		}
+
+		.flex {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		/* ----------- stylized ----------- */
+		#stylized{
+			border:solid 2px #b7ddf2;
+			background:#ebf4fb;
+		}
+
+		#stylized h1 {
+			font-size:14px;
+			font-weight:bold;
+			margin-bottom:8px;
+		}
+
+		.pretty {
+			margin-bottom:20px;
+			border-bottom:solid 1px #b7ddf2;
+			padding-bottom:10px;
+		}
+
+		p {
+			font-size:11px;
+			color:#666666;
+		}
+
+		#stylized label{
+			display:block;
+			font-weight:bold;
+			text-align:right;
+			width:140px;
+		}
+
+		#stylized .small{
+			color:#666666;
+			display:block;
+			font-size:11px;
+			font-weight:normal;
+			text-align:right;
+			width:140px;
+		}
+
+		#stylized select,
+		#stylized input{
+			font-size:12px;
+			padding:4px 2px;
+			border:solid 1px #aacfe4;
+			width:200px;
+			margin:2px 0 20px 10px;
+			box-sizing: content-box;
+		}
+
+		#stylized button{
+			margin-left:150px;
+			width:125px;
+			height:31px;
+			background:#666;
+			border-radius: 5px;
+			text-align:center;
+			line-height:31px;
+			color:#FFF;
+			font-size:11px;
+			font-weight:bold;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+
+		// Constants
+		var stallTorque = { // inch-pounds
+			v5_100: 18.6,
+			v5_200: 9.3,
+			v5_600: 3.1,
+			_393_torque: 14.8,
+			_393_speed: 9.2,
+			_393_turbo: 6.2,
+			_269: 8.6
+		}
+
+		var speed = {
+			v5_100: 100,
+			v5_200: 200,
+			v5_600: 600,
+			_393_torque: 100,
+			_393_speed: 160,
+			_393_turbo: 240,
+			_269: 100
+		}
+
+		// Shorthand gets
+		function get(id) { return document.getElementById(id); }
+
+		function getSelected(id) {
+			var e = get(id);
+			return e.options[e.selectedIndex];
+		}
+
+		function calculate() {
+
+			get('output').style.display = 'block';
+
+			var mtr_out_torque = (stallTorque[getSelected('motor_type').value] * get('motor_torque').value / 100);
+
+			var mtr_out_speed = (speed[getSelected('motor_type').value] * get('motor_speed').value / 100);
+
+			var ratio = (get('length').value * get('stages').value * get('weight').value) / (mtr_out_torque * get('motors').value);
+
+
+			// ratio = ratio * 100 / (100 - ((getSelected('linkage').value-1)*8));
+
+			// ratio = ratio * (100-((getSelected('tension').value-1)*25))/100;
+
+			var time = get('angle').value * ratio / (mtr_out_speed * 360 / 60);
+
+			// Set output forms
+			get('ratio').value = ratio;
+			get('time').value = time;
+
+		}
+
+	</script>
+
+</head>
+
+<body>
+
+	<div id="stylized" class="myform">
+		<h1>VEX Lift Gear Ratio Calculator</h1>
+		<p class="pretty">Created by Joseph Dykstra (Team 3018), ported to web by Cody Smith</p>
+
+		<form id="form" id="form" class="flex" method="post" action="">
+			<label for="length">Bar Length
+				<span class="small">in inches</span>
+			</label>
+			<input id="length" type="number" min="0" value="12" required>
+
+			<label for="stages">Stages
+				<span class="small">#</span>
+			</label>
+			<input id="stages" type="number" step="1" min="1" value="1" required>
+
+			<label for="angle">Angle Change
+				<span class="small">in degrees</span>
+			</label>
+			<input id="angle" type="number" min="0" max="360" value="120" required>
+
+			<label for="weight">Weight
+				<span class="small">in lbs.</span>
+			</label>
+			<input id="weight" type="number" min="0" value="2" required>
+
+			<label for="motors">Motors
+				<span class="small">#</span>
+			</label>
+			<input id="motors" type="number" step="1" min="0" value="2" required>
+
+			<label for="motor_type">Motor Type
+				<span class="small">select</span>
+			</label>
+			<select id="motor_type">
+			   <option value="v5_100">VEX V5 Smart Motor - 100 RPM
+			   <option value="v5_200">VEX V5 Smart Motor - 200 RPM
+			   <option value="v5_600">VEX V5 Smart Motor - 600 RPM
+			   <option value="_393_torque">VEX 393 - Torque
+			   <option value="_393_speed">VEX 393 - Speed
+			   <option value="_393_turbo">VEX 393 - Turbo
+			   <option value="_269">VEX 269
+			</select>
+
+			<label for="motor_speed">Motor Speed
+				<span class="small">% RPM</span>
+			</label>
+			<input id="motor_speed" type="number" min="0" value="50" required>
+
+			<label for="motor_torque">Motor Torque
+				<span class="small">% stall torque</span>
+			</label>
+			<input id="motor_torque" type="number" step="1" min="0" value="50" required>
+	<!-- 
+			<label for="linkage">Linkage
+				<span class="small">select</span>
+			</label>
+			<select id="linkage">
+			   <option value="1">Directly driven
+			   <option value="2">Driven with gears
+			   <option value="3">Driven with chain
+			   <option value="4">Driven with gears and chain
+			</select>
+
+			<label for="tension">Tension
+				<span class="small">select</span>
+			</label>
+			<select id="tension">
+			   <option value="1">No elastic tension
+			   <option value="2">Good tension
+			   <option value="3">Perfect tension
+			</select> -->
+
+
+		<button type="button" onClick="calculate();">Calculate</button>
+
+		<div id="output" style="display: none;">
+			<h1 class="pretty">Output</h1>
+
+			<div class="flex">
+				<label for="ratio">Ratio</label>
+				<input id="ratio" readonly>
+
+				<label for="time">Speed<span class="small">in seconds</span></label>
+				<input id="time" readonly>
+			</div>
+
+		</div>
+
+		</form>
+
+		<div class="spacer"></div>
+		<p>Public domain, use at your own risk / don't sue us.</p>
+	</div>
+</body>
+</html>

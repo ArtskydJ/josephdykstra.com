@@ -1,5 +1,5 @@
 {
-	"relativeGeneratorToHtmlPath": "./josephdykstra.com_gh-pages/",
+	"relativeGeneratorToHtmlPath": "../docs/",
 	"relativeGeneratorToContentPath": "../content/",
 	"relativeGeneratorToStaticPath": "../content/"
 }

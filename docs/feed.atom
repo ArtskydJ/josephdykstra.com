@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Joseph Dykstra&apos;s Blog</title>
+    <link>https://www.josephdykstra.com</link>
+    <updated>2021-03-17T03:29:51Z</updated>
+    <author>
+        <name>Joseph Dykstra</name>
+        <email>josephdykstra@gmail.com</email>
+        <uri>http://josephdykstra.com</uri>
+    </author>
+    <link rel="alternate" href="https://www.josephdykstra.com"/>
+    <subtitle>Follow Joseph&apos;s opinions on your feed reader!</subtitle>
+    <logo>http://josephdykstra.com/logo.png</logo>
+    <rights>Copyright © Joseph Dykstra 2016.</rights>
+    <generator>Feed for Node.js</generator>
+    <entry>
+        <title type="html"><![CDATA[How I Started Programming]]></title>
+        <id>https://www.josephdykstra.com/how-i-started-programming</id>
+        <link href="https://www.josephdykstra.com/how-i-started-programming">
+        </link>
+        <updated>2019-07-04T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Some of the timeline is a bit fuzzy now, and some of these things were in parallel.</p> <p>I started coding BASIC with smallBASIC. I created a bunch of useless things, including a <a href="https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas">snake clone</a>.</p> <p>Then I played around with Game Maker. After pushing the limits of the drag &amp; drop interface, I learned the more powerful GML (Game Maker Language, similar to Javascript.)</p> <p>I joined a lego robotics team (the program is called FLL), and programmed the lego robot (called an NXT) using a graphical programming language. Unfortunately, the FLL rules did not allow us to use anything that was much better.</p> <p>I heard about a C-like programming language for the NXT, and I wrote a <a href="https://github.com/ArtskydJ/NXC_Source">handful of modules</a>. I wrote a high score saving module, an on-screen keyboard module, a menu module, and more. I also wrote a bunch of games, including Tetris, Snake, Simon, Bop It, and Tic Tac Toe.</p> <p>My friend, <a href="https://joshduff.com">Josh</a>, suggested that I learn an interpreted language. He also started meeting with people he knew that wanted to become developers, and I attended the meetings.</p> <p>I learned javascript, using mainly node.js and browserify. I got started with <a href="https://github.com/workshopper/learnyounode#readme">learnyounode</a> I also learned about unit tests, mysql, text parsing, and more from the weekly meetings. In the group, we developed <a href="https://github.com/coding-in-the-wild">a few things</a>, and he did code review and sometimes specs.</p> <p>Since then, I've created <a href="https://github.com/ArtskydJ?tab=repositories">various projects</a> for myself.</p> <p>So yeah, that's how I got started.</p>]]></summary>
+        <author>
+            <name>Joseph Dykstra</name>
+            <email>josephdykstra@gmail.com</email>
+            <uri>http://josephdykstra.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Compiling NXC using Sublime's Build system]]></title>
+        <id>https://www.josephdykstra.com/compiling-nxc-using-sublime-build</id>
+        <link href="https://www.josephdykstra.com/compiling-nxc-using-sublime-build">
+        </link>
+        <updated>2019-03-16T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<ul><li>NXT is a Lego Mindstorms robot</li> <li>NXT-G is the default programming software for the NXT, using visual Drag-and-Drop "blocks"</li> <li>NXC is a C-like programming language for the NXT</li> <li>NBC is a compiler for NXC code, as well as a couple other languages</li> <li>BricxCC is an IDE for the languages that NBC supports</li> <li>FLL is a competition using NXT robots, which only allows NXT-G</li></ul> <p>I used NXT-G to program <a href="https://www.josephdykstra.com/fll">FLL</a> robots, many years ago. For personal fun projects, I was disappointed in the limitations of NXT-G. It doesn't even have arrays. So I used the <a href="http://bricxcc.sourceforge.net/">BricxCC</a> IDE, and I wrote code in the <a href="http://bricxcc.sourceforge.net/nbc/">NXC</a> programming language. I was able to create much more interesting and advanced programs for the NXT using NXC than I had been able to create using NXT-G. I created clones of some classic games like <a href="https://github.com/ArtskydJ/nxc-simon">Simon</a>, <a href="https://github.com/ArtskydJ/nxc-snake">Snake</a>, and <a href="https://github.com/ArtskydJ/nxc-tetris">Tetris</a>. I developed those games using BricxCC. The cursor behavior in BricxCC is quite different from most text editors, and I got used to it, and liked it.</p> <p>A month ago, I programmed the NXT robot, and I really disliked the BricxCC IDE, and it's funky cursor behavior. I wanted to develop NXC programs using Sublime Text, and to download the programs using Sublime Text's Build System.</p> <p>So I made a Sublime Text 3 build script for compiling the current file, and downloading it via USB. To use the same script I have, follow the steps below:</p> <p>(Note that I did this on Windows. I don't know if you can make it work using macOS or Linux. Let me know if you make it work!)</p> <ol><li><p>Open Sublime Text, and click <em>Tools</em> &gt; <em>Build System</em> &gt; <em>New Build System...</em></p></li> <li><p>Delete the placeholder JSON, and paste the following JSON:</p></li></ol> <pre><code class="language-json">{
+    "cmd": [
+        // Replace next line with your nbc.exe path!
+        "C:\\Program Files (x86)\\BricxCC\\nbc.exe",
+        "-S=usb",
+        "-d", // -d: Download, -r: Download and Run
+        "-sm-", // Avoid nbc status messages
+        "$file"
+    ],
+    "file_patterns": [ "*.nxc" ],
+    "file_regex": "^File \"(.+)\" ; line (\\d+)",
+    "quiet": true // Avoid sublime environment info
+}
+</code></pre> <ol start="3"><li><p>Replace line 4 with your actual <code>nbc.exe</code> path. If you've already got BricxCC installed on a 64-bit Windows machine, my path above should work for you.</p></li> <li><p>Save the file as <code>NXC.sublime-build</code>.</p></li> <li><p>Connect your NXT, open an <code>.nxc</code> file, and hit <kbd>Ctrl</kbd><kbd>B</kbd>!</p></li></ol>]]></summary>
+        <author>
+            <name>Joseph Dykstra</name>
+            <email>josephdykstra@gmail.com</email>
+            <uri>http://josephdykstra.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to set up Tiny Tiny RSS on a Digital Ocean VPS]]></title>
+        <id>https://www.josephdykstra.com/how-to-setup-tt-rss-on-do-vps</id>
+        <link href="https://www.josephdykstra.com/how-to-setup-tt-rss-on-do-vps">
+        </link>
+        <updated>2018-05-07T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Setting up <a href="https://tt-rss.org/">Tiny Tiny RSS</a> can be a bit tricky, even if you have some technical knowledge. I ran into a few issues when I set it up, and found solutions which I thought might come in handy for others who try to set up Tiny Tiny RSS.</p> <h2 id="what-you-need">What you need:</h2> <ul><li><a href="https://www.digitalocean.com/">Digital Ocean</a> account</li> <li>SSH Client - I use <a href="https://putty.org/">PuTTY</a> (Windows)</li></ul> <h2 id="create-the-vps">Create the VPS</h2> <p>Log into your <a href="https://www.digitalocean.com/">Digital Ocean</a> account, and create a new droplet. Choose the One-Click App called <strong>LAMP on 16.04</strong>.</p> <p><img src="./how-to-setup-ttrss/01-lamp.PNG" alt="Lamp on 16.04"></p> <p>I chose the cheapest, smallest server.</p> <p><img src="./how-to-setup-ttrss/02-size.PNG" alt="cheapest server"></p> <p>Hit <strong>Create</strong>!</p> <h2 id="login-to-the-vps">Login to the VPS</h2> <p>Open your SSH client, and log into your new VPS. You will need to copy the IP address from the Digital Ocean dashboard. If you did not add any SSH keys, then you will have to wait for the root password in an email. In my experience, this email can come 30 minutes after creating the server.</p> <p>Login with the VPS's IP and the username <strong>root</strong>.</p> <p><img src="./how-to-setup-ttrss/05-putty.PNG" alt="Login to VPS"></p> <p>On your first login, you might have to accept the key fingerprint.</p> <p><img src="./how-to-setup-ttrss/06-putty-confirm-fingerprint.PNG" alt="Confirm fingerprint"></p> <h2 id="install-mysql">Install MySQL</h2> <p>Get the MySQL password by running <code>cat .digitalocean_password</code>.</p> <p>Copy the password. In PuTTY, selecting the text copies it to the clipboard.</p> <p><img src="./how-to-setup-ttrss/07-cat-do-pw.PNG" alt="cat digitalocean_password"></p> <p>Install MySQL by running <code>mysql_secure_installation --use-default</code>. When the password prompt pops up, paste the password. (In PuTTY, just right click to paste. You won't see the screen change.) Then press <kbd>Enter</kbd>.</p> <h2 id="set-up-mysql">Set Up MySQL</h2> <pre><code class="language-bash">mysql --user=root --password=[Your copied password]
+mysql&gt; CREATE DATABASE ttrss;
+mysql&gt; exit
+</code></pre> <p><img src="./how-to-setup-ttrss/08-mysql-create-db.PNG" alt="Create Database"></p> <h2 id="install-php-plugins">Install PHP Plugins</h2> <p>Paste the following commands into the console:</p> <pre><code class="language-bash">apt-get update
+apt-get install php-mbstring -y
+apt-get install php-xml -y
+apt-get install php-curl -y
+service apache2 restart
+</code></pre> <h2 id="install-tiny-tiny-rss">Install Tiny Tiny RSS</h2> <pre><code class="language-bash">cd /var/www/html
+git clone https://tt-rss.org/git/tt-rss.git tt-rss
+chmod -R 777 tt-rss
+</code></pre> <p>Visit <strong>[IP]/tt-rss/install/</strong> in your browser, and fill in the fields:</p> <ol><li>Database type is <strong>MySQL</strong>.</li> <li>Username is <strong>root</strong>.</li> <li>Password is the one you copied earlier.</li> <li>Database name is whatever you put after the <code>CREATE DATABASE</code> command, in this case <strong>ttrss</strong>.</li> <li>Leave Host name empty. (This is the host name for the database server, which defaults to <strong>localhost</strong>.)</li> <li>Port is <strong>3306</strong>.</li> <li>Tiny Tiny RSS URL should be left as-is.</li></ol> <p><img src="./how-to-setup-ttrss/09-ttrss-install.PNG" alt="Install TTRSS"></p> <p>Press <strong>Test configuration</strong>. I got a minor warning about internationalized domain names, which I ignored.</p> <p>Press <strong>Initialize database</strong>.</p> <p><img src="./how-to-setup-ttrss/14-ttrss-initialize-db2.PNG" alt="Init db"></p> <p>Press <strong>Save configuration</strong>.</p> <p>Visit <strong>[IP]/tt-rss/</strong> in your browser.</p> <ol><li>Login is <strong>admin</strong>.</li> <li>Password is <strong>password</strong>.</li></ol> <p><img src="./how-to-setup-ttrss/15-login.PNG" alt="Login"></p> <p>Change the password when you log in!</p>]]></summary>
+        <author>
+            <name>Joseph Dykstra</name>
+            <email>josephdykstra@gmail.com</email>
+            <uri>http://josephdykstra.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[DCC Podcast Feeds]]></title>
+        <id>https://www.josephdykstra.com/dcc-podcast-feeds</id>
+        <link href="https://www.josephdykstra.com/dcc-podcast-feeds">
+        </link>
+        <updated>2018-02-22T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p><a href="http://www.dominioncovenantchurch.com">My church</a> has an RSS feed, and I want to listen through sermon series with my <a href="./android-podcast-apps-review">podcast app</a>. There are a few problems with this:</p> <ul><li>The RSS feed has thousands of entries. This makes it tough to find and download a series.</li> <li>The RSS feed has sermons and communion meditations (mini-sermons) all mixed together.</li> <li>The RSS feed has some unrelated sermons in the middle of a series.</li></ul> <p>I was going to make a scraper that would look up the sermons in a series, and create an RSS file, but I found that my church's website will dynamically generate an RSS feed for a series. There is not a way to open a series' RSS feed using the church's website.</p> <p>Now the problem is that it's not very easy to get a link to a series' RSS feed... Until now!</p> <ul><li>Bible Survey (10+ sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=64">http://www.dominioncovenantchurch.com/?podcast&amp;series=64</a></li> <li>Life of David (130 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=12">http://www.dominioncovenantchurch.com/?podcast&amp;series=12</a></li> <li>Revelation (116 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=36">http://www.dominioncovenantchurch.com/?podcast&amp;series=36</a></li> <li>Acts (68 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=9">http://www.dominioncovenantchurch.com/?podcast&amp;series=9</a></li> <li>Daniel (36 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=67">http://www.dominioncovenantchurch.com/?podcast&amp;series=67</a></li> <li>Foundations (30 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=48">http://www.dominioncovenantchurch.com/?podcast&amp;series=48</a></li> <li>Christian and Prosperity (22 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=49">http://www.dominioncovenantchurch.com/?podcast&amp;series=49</a></li> <li>Galatians (17 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=10">http://www.dominioncovenantchurch.com/?podcast&amp;series=10</a></li> <li>Esther (12 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=47">http://www.dominioncovenantchurch.com/?podcast&amp;series=47</a></li> <li>James (12 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=46">http://www.dominioncovenantchurch.com/?podcast&amp;series=46</a></li> <li>Ecclesiastes (11 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=28">http://www.dominioncovenantchurch.com/?podcast&amp;series=28</a></li> <li>Beatitudes (9 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=4">http://www.dominioncovenantchurch.com/?podcast&amp;series=4</a></li> <li>Christian Materialism (7 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=17">http://www.dominioncovenantchurch.com/?podcast&amp;series=17</a></li> <li>Evangelism (7 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=6">http://www.dominioncovenantchurch.com/?podcast&amp;series=6</a></li> <li>Titus - Waging War (7 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=56">http://www.dominioncovenantchurch.com/?podcast&amp;series=56</a></li> <li>Nehemiah (6 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=58">http://www.dominioncovenantchurch.com/?podcast&amp;series=58</a></li> <li>Five Reformation Solas (5 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=32">http://www.dominioncovenantchurch.com/?podcast&amp;series=32</a></li> <li>Holy Trinity (5 sermons) <br> <a href="http://www.dominioncovenantchurch.com/?podcast&amp;series=45">http://www.dominioncovenantchurch.com/?podcast&amp;series=45</a></li></ul> <p>This does not have every single series, but it does have most series with five or more sermons. Click the Edit link below to add another series.</p>]]></summary>
+        <author>
+            <name>Joseph Dykstra</name>
+            <email>josephdykstra@gmail.com</email>
+            <uri>http://josephdykstra.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2017 Christmas Letter]]></title>
+        <id>https://www.josephdykstra.com/2017-dykstra-christmas-letter</id>
+        <link href="https://www.josephdykstra.com/2017-dykstra-christmas-letter">
+        </link>
+        <updated>2018-02-10T00:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>A big "Howdy" from the Dykstras!</p> <p>We have been busy, but busy is good. Gilbert is still keeping bees, and is transitioning from primarily producing honey to producing more queen bees. Donna is keeping the house, garden, and kids in check. Joseph is still working as a programmer for a School Information System vendor. Levi is still working for a landscaper family-friend, and taking horticulture classes. Daniel is still working for David, who is a General Contractor. Nathanael is being homeschooled by Donna, and is currently in Seventh grade.</p> <p>In mid-March Gilbert and the boys moved Rebecca's baby grand piano from our house to Micah and Rebecca's house.</p> <p>Our family has a weekly gathering on Saturday nights where all the married children and their families come for pizza or sloppy joes. In mid-March, Michael came in with a shirt that said "Dad-To-Be". What a cute way to announce their pregnancy!</p> <p>In late April, Gilbert, Donna, Daniel, and Nathanael attended the First LEGO League World Championship in St. Louis, Missouri. Nathanael is on a team called the Data Dragons, created by a family in our church.</p> <p>In early May, Joseph's company flew his team to Texas for an in-person meetup. Joseph works from his "remote bunker" for the Texas-based company.</p> <p>In June, Donna's parents moved from their house of 40ish years to a condo across town, and our family helped them move. It's a huge change for them, and it's still a little hard to believe that they are living somewhere else.</p> <p>August was a busy month. Our church hosted a conference called the Providential History Festival. Levi played the role of a guard for a drama at PHF.</p> <p>Nathanael joined a local homeschool junior-varsity flag-football team called Lightning. The team won three of five official games.</p> <p>In late-August, our family drove to North-East Nebraska to view the solar eclipse. Unfortunately clouds covered the sun during totality where we were, but we still got to see a lot of the eclipse clearly.</p> <p>In September, we had a family "Staycation". All of the married children and their families came over to our house for a week. One day we visited the zoo. One night was "guy's night" where the guys played laser tag. The girls went to an escape room for "girl's night". During the staycation we played tons of board games, and even had some tournaments for ping pong, rook, and giant jenga. (Giant jenga is jenga, but with 2x4s).</p> <p>On October 22, Michael and Elizabeth's first child was born. She was named Abigail Delores Dykstra. She is Gilbert and Donna's eighth grandchild.</p> <p>In December, Micah and Rebecca had a baby shower for their (unborn) boy.</p> <p>2017 has been another great year for the Dykstras, and we sincerely hope that you've had a great year too! Remember that this season is about Christ's incarnation, and our joy in salvation through Him. We thank you all for being our friends throughout this year!</p> <p>— The Dykstra Family</p>]]></summary>
+        <author>
+            <name>Joseph Dykstra</name>
+            <email>josephdykstra@gmail.com</email>
+            <uri>http://josephdykstra.com</uri>
+        </author>
+    </entry>
+</feed>

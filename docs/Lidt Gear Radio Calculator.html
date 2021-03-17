@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://polynomic3d.com/user/smith/vex-lift-calc.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Lidt Gear Radio Calculator</title>
+
+<style type="text/css">
+
+body{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serid;
+	font-size:12px;
+}
+
+p, h1, form, button{border:0; margin:0; padding:0;}
+
+.spacer{clear:both; height:1px;}
+
+/* ----------- My Form ----------- */
+.myform{
+	margin:0 auto;
+	width:400px;
+	padding:14px;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+	border:solid 2px #b7ddf2;
+	background:#ebf4fb;
+}
+
+#stylized h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+
+.pretty {
+	margin-bottom:20px;
+	border-bottom:solid 1px #b7ddf2;
+	padding-bottom:10px;
+}
+
+p {
+	font-size:11px;
+	color:#666666;
+}
+
+#stylized label{
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:140px;
+	float:left;
+}
+
+#stylized .small{
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-align:right;
+	width:140px;
+}
+
+#stylized input{
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:200px;
+	margin:2px 0 20px 10px;
+}
+
+#stylized select{
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:200px;
+	margin:2px 0 20px 10px;
+}
+
+#stylized button{
+	clear:both;
+	margin-left:150px;
+	width:125px;
+	height:31px;
+	background:#666666;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	text-align:center;
+	line-height:31px;
+	color:#FFFFFF;
+	font-size:11px;
+	font-weight:bold;
+}
+
+</style>
+
+<script type="text/javascript">
+
+// Constants
+var stallTorque = new Array();
+stallTorque['393_torque'] = 14.97;
+stallTorque['393_speed'] = 9.2;
+stallTorque['269'] = 8.6;
+
+var speed = new Array();
+speed['393_torque'] = 100;
+speed['393_speed'] = 160;
+speed['269'] = 100;
+	
+// Shorthand gets
+function get(id) { return document.getElementById(id); } 
+
+function getSelected(id) {
+	var e = get(id);
+	return e.options[e.selectedIndex];
+} 
+
+function calculate() {
+	
+	get('output').style.display = 'block';
+	
+	var mtr_out_torque = (stallTorque[getSelected('motor_type').value] * get('motor_torque').value / 100);
+	
+	var mtr_out_speed = (speed[getSelected('motor_type').value] * get('motor_speed').value / 100);
+	
+	var ratio = (get('length').value * get('stages').value * get('weight').value) / (mtr_out_torque * get('motors').value);
+	
+	
+	ratio = ratio * 100 / (100 - ((getSelected('linkage').value-1)*8));
+	
+	ratio = ratio * (100-((getSelected('tension').value-1)*25))/100;
+	
+	var time = get('angle').value * ratio / (mtr_out_speed * 360 / 60);
+	
+	// Set output forms
+	get('ratio').value = ratio;
+	get('time').value = time;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="stylized" class="myform">
+    <h1>VEX Lift Gear Ratio Calculator</h1>
+    <p class="pretty">Created by Joseph Dykstra (Team 3018), proted to web by Cody Smith</p>
+    
+    <form id="form" method="post" action="http://polynomic3d.com/user/smith/vex-lift-calc.html">
+        <label for="length">Bar Length
+            <span class="small">in inches</span>
+        </label>
+        <input id="length" type="number" min="0" value="12" required="">
+        
+        <label for="stages">Stages
+            <span class="small">#</span>
+        </label>
+        <input id="stages" type="number" step="1" min="1" value="2" required="">
+        
+        <label for="angle">Angle Change
+            <span class="small">in degrees</span>
+        </label>
+        <input id="angle" type="number" min="0" max="360" value="45" required="">
+        
+        <label for="weight">Weight
+            <span class="small">in lbs.</span>
+        </label>
+        <input id="weight" type="number" min="0" value="2" required="">
+        
+        <label for="motors">Motors
+            <span class="small">#</span>
+        </label>
+        <input id="motors" type="number" step="1" min="0" value="2" required="">
+    
+		<label for="motor_type">Motor Type
+            <span class="small">select</span>
+        </label>
+        <select id="motor_type">
+           <option value="393_torque">VEX 393 - Torque
+           </option><option value="393_speed">VEX 393 - Speed
+           </option><option value="269">VEX 269
+        </option></select>
+        
+        <label for="motor_speed">Motor Speed
+            <span class="small">% RPM</span>
+        </label>
+        <input id="motor_speed" type="number" min="0" value="80" required="">
+        
+        <label for="motor_torque">Motor Torque
+            <span class="small">% in-lbs.</span>
+        </label>
+        <input id="motor_torque" type="number" step="1" min="0" value="65" required="">
+        
+        <label for="linkage">Linkage
+            <span class="small">select</span>
+        </label>
+        <select id="linkage">
+           <option value="1">Directly driven
+           </option><option value="2">Driven with gears
+           </option><option value="3">Driven with chain
+           </option><option value="4">Driven with gears and chain
+        </option></select>
+        
+        <label for="tension">Tension
+            <span class="small">select</span>
+        </label>
+        <select id="tension">
+           <option value="1">No elastic tension
+           </option><option value="2">Good tension
+           </option><option value="3">Perfect tension
+        </option></select>
+    
+        
+    <button type="button" onclick="calculate();">Calculate</button>
+    
+	<div id="output" style="display: none;">
+    	<h1 class="pretty">Output</h1>
+        
+        <label for="ratio">Ratio</label>
+        <input id="ratio" readonly="">
+        
+        <label for="time">Speed<span class="small">in seconds</span></label>
+        <input id="time" readonly="">
+        
+    </div>
+    
+    </form>
+    
+    <div class="spacer"></div>
+    <p>Public domain, use at your own risk / don't sue us.</p>
+</div>
+
+
+</body></html>
