@@ -20,66 +20,65 @@ date: 2014-10-23
 
 # About Me
 
-I am a full-stack software developer.  I enjoy working with a friendly team that takes satisfaction in their work.
+I am a full-stack software engineer with 5 years of professional experience, and .  I enjoy working with a friendly team that takes satisfaction in their work.
 
 </div>
 <div class="avoid-break">
 
 # Knowledge
 
-### Languages
-
-- JavaScript
-	- Server: node.js, npm
-	- Browser: jQuery, HyperScript, Browserify
-- HTML
-	- Mustache
-- CSS
-- SQL
-- ColdFusion
-- C
-- Batch
-- Shell script
-
-</div>
-<div class="avoid-break">
-
-### Tools
-
-- Git interfaces: CLI, GUI
-- Git hosts: GitHub, Bitbucket, DevOps
-- Command line: Windows, Linux
-- Continuous Integration, Deployment
+- Languages: JavaScript (node.js and browser), HTML, CSS, Mustache, Svelte, SQL Server, ColdFusion (CFML and CF Script), C, Batch, Shell
+- Source Control: Git CLI, Git GUI, GitHub, Bitbucket, Azure DevOps
+- Continuous Integration, Deployment: Travis CI, Circle CI, AppVeyor, Azure Pipelines, custom (cron job + shell script)
 
 </div>
 <div class="avoid-break">
 
 # Experience
 
-### [FACTS SIS](https://factsmgt.com/) | April 2015 - [Present]
+### [FACTS SIS](https://factsmgt.com/) | 2015 - Present
 
 <!--
 April 6, 2015
 -->
 
-I am currently working for FACTS SIS on the [SIS](https://factsmgt.com/administration/student-information-system/) (Student Information System) product.  Schools use the SIS for Admissions, Attendance, Communication, Health Info, Gradebooks, Report Cards, Class Scheduling, Staff/Student/Family Info, Transcripts, and more.
+I am currently working for FACTS SIS on the [SIS](https://factsmgt.com/administration/student-information-system/)(Student Information System) product.  Schools use the SIS for Admissions, Attendance, Communication, Health Info, Gradebooks, Report Cards, Class Scheduling, Staff/Student/Family Info, Transcripts, and more.
 
 I work with a team to fix issues that clients have, and develop new features or new projects for thousands of schools. I ship code regularly, and I enjoy helping my fellow team members.
 
 </div>
 <div class="avoid-break">
 
+- I created an internal tool to greatly shorten the amount of time it takes to convert customer data from a particular SIS into our SIS. I estimate that this saved over 100 of man-hours of work for the conversion team since its inception two years ago. <!-- 13 schools as of 2020-02-25 -->
+- I created a test suite that would batch-scan schools, and would quickly verify that our cloud migration was working as intended. I estimate that without this tool, the same testing would have cost over 50 man-hours of highly repetitive work.
+- I have been the primary maintainer of multiple "Integrations", which is a source of recurring income for our company.
+	- Many of the integrations use REST APIs to sync school data with 3rd party school-related software, such as Learning Management Systems.
+	One such system that I maintain, is a partial [OneRoster API provider](https://www.imsglobal.org/oneroster-v11-final-specification) implementation.
 - I have created a mailing-label system so schools can print Mail Labels, ID Cards, barcodes, and more onto standard Avery label sheets.
-- I have worked with REST APIs to sync school data with 3rd party school-related software, such as Learning Management Systems.
-- I fix a variety of issues. E.g. invalid data, security issues, optimizing database queries, etc.
+- I track down, and solve a variety of issues. E.g. invalid client data, security issues, optimizing slow database queries, etc.
 - I'm the primary maintainer for a system that builds SQL queries for data stored in 50+ tables.  The user selects data fields, filters, and sorting options, and the system exports a spreadsheet of the selected data.
 
-This is the only software company that I have worked for.
-
 </div>
+<!--
+I could mention competitions that I've been a part of.
+jpearman programming challenge for vex
+
+-->
+
+
+
+<!--
+2009-09-xx Joined FLL, I think
+2009-02-09 emailed myself a simple game maker program, "object follow mouse"
+2009-01-03 in my journal, I mention discovering game maker
+2008-12-24 created my gmail account, so I can't search earlier than that. And all my hotmail emails are gone, so I can't search those either.
+2008-12-19 in my journal, I mention NXT.
+I thought I did other programming prior to game maker... but I'm not sure, so I'll will stick with 2009.
+I had previously written July 2008. Not sure where I got "July 2008". That would have been before JC's wedding.
+-->
 <div class="avoid-break">
 
-### Personal Projects | July 2008 - [Present]
+### Personal Projects | 2009 - Present
 
 [Github Repositories](https://github.com/ArtskydJ?tab=repositories) - [NPM modules](http://npmjs.org/~artskydj)
 
@@ -91,6 +90,11 @@ This is the only software company that I have worked for.
 - I wrote [Snake](https://github.com/ArtskydJ/snake), [Tetris](https://github.com/ArtskydJ/tetris), and an [8-Queens Solver](https://github.com/ArtskydJ/eight-queens) in C
 
 </div>
+<!--
+<div class="avoid-break">
+	WRG, etc.
+</div>
+-->
 <div class="avoid-break">
 
 # References
@@ -102,7 +106,7 @@ This is the only software company that I have worked for.
 	- https://davistobias.com
 	- Developer
 - Seth Dykstra (Family)
-	- On-Site IT Support, [P&L Technology](https://www.pltechnology.com/)
+	- IT Support, [Five Nines](https://gonines.com/)
 - David Dykstra (Family)
 	- Owner of Millennium Construction (Omaha)
 - Michael Dykstra (Family)
