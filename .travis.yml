@@ -10,6 +10,7 @@ script:
   - set -e # If one script throws an error, all scripts end
   - git config --global user.name "ArtskydJ"
   - git config --global user.email "josephdykstra@gmail.com"
+  - git checkout master
   - pushd generator
   - npm i
   - node index
