@@ -10,7 +10,7 @@ var newPosts = fs.readdirSync(relContentPath)
 if (newPosts.length > 1) {
 	console.error('You can only have one extra post to automatically insert into the index.json file')
 	console.error('The following posts are not in your index.json yet: ' + newPosts.join(', '))
-	process.exit(1)
+	// process.exit(1)
 } else if (newPosts.length === 1) {
 	posts.push(newPosts[0])
 
