@@ -4,7 +4,7 @@
         <title>Joseph Dykstra&apos;s Blog</title>
         <description>Follow Joseph&apos;s opinions on your feed reader!</description>
         <link>https://www.josephdykstra.com</link>
-        <lastBuildDate>Wed, 17 Mar 2021 06:19:52 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Mar 2021 15:02:56 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <image>
             <title>Joseph Dykstra&apos;s Blog</title>
@@ -32,7 +32,7 @@
             <author>
                 <name>Joseph Dykstra</name>
                 <email>josephdykstra@gmail.com</email>
-                <link>http://josephdykstra.com</link>
+                <link>https://www.josephdykstra.com</link>
             </author>
         </item>
         <item>
@@ -80,7 +80,7 @@
             <author>
                 <name>Joseph Dykstra</name>
                 <email>josephdykstra@gmail.com</email>
-                <link>http://josephdykstra.com</link>
+                <link>https://www.josephdykstra.com</link>
             </author>
         </item>
         <item>
@@ -157,7 +157,7 @@ chmod -R 777 tt-rss
             <author>
                 <name>Joseph Dykstra</name>
                 <email>josephdykstra@gmail.com</email>
-                <link>http://josephdykstra.com</link>
+                <link>https://www.josephdykstra.com</link>
             </author>
         </item>
         <item>
@@ -199,7 +199,7 @@ chmod -R 777 tt-rss
             <author>
                 <name>Joseph Dykstra</name>
                 <email>josephdykstra@gmail.com</email>
-                <link>http://josephdykstra.com</link>
+                <link>https://www.josephdykstra.com</link>
             </author>
         </item>
         <item>
@@ -227,7 +227,7 @@ chmod -R 777 tt-rss
             <author>
                 <name>Joseph Dykstra</name>
                 <email>josephdykstra@gmail.com</email>
-                <link>http://josephdykstra.com</link>
+                <link>https://www.josephdykstra.com</link>
             </author>
         </item>
     </channel>

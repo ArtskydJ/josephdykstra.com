@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Joseph Dykstra&apos;s Blog</title>
     <link>https://www.josephdykstra.com</link>
-    <updated>2021-03-17T06:19:52Z</updated>
+    <updated>2021-03-17T15:02:56Z</updated>
     <author>
         <name>Joseph Dykstra</name>
         <email>josephdykstra@gmail.com</email>
-        <uri>http://josephdykstra.com</uri>
+        <uri>https://www.josephdykstra.com</uri>
     </author>
     <link rel="alternate" href="https://www.josephdykstra.com"/>
     <subtitle>Follow Joseph&apos;s opinions on your feed reader!</subtitle>
@@ -32,7 +32,7 @@
         <author>
             <name>Joseph Dykstra</name>
             <email>josephdykstra@gmail.com</email>
-            <uri>http://josephdykstra.com</uri>
+            <uri>https://www.josephdykstra.com</uri>
         </author>
     </entry>
     <entry>
@@ -80,7 +80,7 @@
         <author>
             <name>Joseph Dykstra</name>
             <email>josephdykstra@gmail.com</email>
-            <uri>http://josephdykstra.com</uri>
+            <uri>https://www.josephdykstra.com</uri>
         </author>
     </entry>
     <entry>
@@ -157,7 +157,7 @@ chmod -R 777 tt-rss
         <author>
             <name>Joseph Dykstra</name>
             <email>josephdykstra@gmail.com</email>
-            <uri>http://josephdykstra.com</uri>
+            <uri>https://www.josephdykstra.com</uri>
         </author>
     </entry>
     <entry>
@@ -199,7 +199,7 @@ chmod -R 777 tt-rss
         <author>
             <name>Joseph Dykstra</name>
             <email>josephdykstra@gmail.com</email>
-            <uri>http://josephdykstra.com</uri>
+            <uri>https://www.josephdykstra.com</uri>
         </author>
     </entry>
     <entry>
@@ -227,7 +227,7 @@ chmod -R 777 tt-rss
         <author>
             <name>Joseph Dykstra</name>
             <email>josephdykstra@gmail.com</email>
-            <uri>http://josephdykstra.com</uri>
+            <uri>https://www.josephdykstra.com</uri>
         </author>
     </entry>
 </feed>

@@ -12,7 +12,7 @@ module.exports = function () {
 	var authorJoseph = {
 		name: 'Joseph Dykstra',
 		email: 'josephdykstra@gmail.com',
-		link: 'http://josephdykstra.com'
+		link: 'https://www.josephdykstra.com'
 	}
 
 	var feed = new Feed({
