@@ -20,7 +20,7 @@ date: 2014-10-23
 
 # About Me
 
-I am a full-stack software engineer with 5 years of professional experience, and .  I enjoy working with a friendly team that takes satisfaction in their work.
+I am a full-stack software engineer with 5 years of professional experience, and I enjoy working with a friendly team that takes satisfaction in their work.
 
 </div>
 <div class="avoid-break">
@@ -36,10 +36,20 @@ I am a full-stack software engineer with 5 years of professional experience, and
 
 # Experience
 
-### [FACTS SIS](https://factsmgt.com/) | 2015 - Present
+
+### [T.REX ARMS](https://factsmgt.com/) | 2020 - Present
+<!--
+2020-04-27
+-->
+
+[I still need to add work experience...]
+
+
+
+### [FACTS SIS](https://factsmgt.com/) | 2015 - 2020
 
 <!--
-April 6, 2015
+2015-04-06 through 2020-04-24
 -->
 
 I am currently working for FACTS SIS on the [SIS](https://factsmgt.com/administration/student-information-system/)(Student Information System) product.  Schools use the SIS for Admissions, Attendance, Communication, Health Info, Gradebooks, Report Cards, Class Scheduling, Staff/Student/Family Info, Transcripts, and more.
