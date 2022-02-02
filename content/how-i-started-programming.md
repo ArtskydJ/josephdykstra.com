@@ -5,7 +5,7 @@ date: 2019-07-04
 
 Some of the timeline is a bit fuzzy now, and some of these things were in parallel.
 
-I started coding BASIC with smallBASIC. I created a bunch of useless things, including a [snake clone](https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas).
+I started coding BASIC with smallBASIC. I created a bunch of useless things, including a [snake clone](https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas) with help from a friend.
 
 Then I played around with Game Maker. After pushing the limits of the drag & drop interface, I learned the more powerful GML (Game Maker Language, similar to Javascript.)
 
