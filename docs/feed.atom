@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Joseph Dykstra&apos;s Blog</title>
     <link>https://www.josephdykstra.com</link>
-    <updated>2021-06-25T02:53:13Z</updated>
+    <updated>2022-02-16T17:02:13Z</updated>
     <author>
         <name>Joseph Dykstra</name>
         <email>josephdykstra@gmail.com</email>
@@ -20,7 +20,7 @@
         </link>
         <updated>2019-07-04T00:00:00Z</updated>
         <summary type="html"><![CDATA[<p>Some of the timeline is a bit fuzzy now, and some of these things were in parallel.</p>
-<p>I started coding BASIC with smallBASIC. I created a bunch of useless things, including a <a href="https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas">snake clone</a>.</p>
+<p>I started coding BASIC with smallBASIC. I created a bunch of useless things, including a <a href="https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas">snake clone</a> with help from a friend.</p>
 <p>Then I played around with Game Maker. After pushing the limits of the drag &amp; drop interface, I learned the more powerful GML (Game Maker Language, similar to Javascript.)</p>
 <p>I joined a lego robotics team (the program is called FLL), and programmed the lego robot (called an NXT) using a graphical programming language. Unfortunately, the FLL rules did not allow us to use anything that was much better.</p>
 <p>I heard about a C-like programming language for the NXT, and I wrote a <a href="https://github.com/ArtskydJ/NXC_Source">handful of modules</a>. I wrote a high score saving module, an on-screen keyboard module, a menu module, and more. I also wrote a bunch of games, including Tetris, Snake, Simon, Bop It, and Tic Tac Toe.</p>

@@ -4,7 +4,7 @@
         <title>Joseph Dykstra&apos;s Blog</title>
         <description>Follow Joseph&apos;s opinions on your feed reader!</description>
         <link>https://www.josephdykstra.com</link>
-        <lastBuildDate>Fri, 25 Jun 2021 02:53:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Feb 2022 17:02:13 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <image>
             <title>Joseph Dykstra&apos;s Blog</title>
@@ -19,7 +19,7 @@
             <guid>https://www.josephdykstra.com/how-i-started-programming</guid>
             <pubDate>Thu, 04 Jul 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[<p>Some of the timeline is a bit fuzzy now, and some of these things were in parallel.</p>
-<p>I started coding BASIC with smallBASIC. I created a bunch of useless things, including a <a href="https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas">snake clone</a>.</p>
+<p>I started coding BASIC with smallBASIC. I created a bunch of useless things, including a <a href="https://github.com/ArtskydJ/BAS_Source/blob/master/Snake4.bas">snake clone</a> with help from a friend.</p>
 <p>Then I played around with Game Maker. After pushing the limits of the drag &amp; drop interface, I learned the more powerful GML (Game Maker Language, similar to Javascript.)</p>
 <p>I joined a lego robotics team (the program is called FLL), and programmed the lego robot (called an NXT) using a graphical programming language. Unfortunately, the FLL rules did not allow us to use anything that was much better.</p>
 <p>I heard about a C-like programming language for the NXT, and I wrote a <a href="https://github.com/ArtskydJ/NXC_Source">handful of modules</a>. I wrote a high score saving module, an on-screen keyboard module, a menu module, and more. I also wrote a bunch of games, including Tetris, Snake, Simon, Bop It, and Tic Tac Toe.</p>
