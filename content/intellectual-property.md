@@ -9,7 +9,7 @@ The aforementioned intangible objects are protected under copyrights, trademarks
 
 Infringements on copyrights are often, considered stealing, partially due to propaganda spread by video marketing companies, like this video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/v/HmZm8vNHBSU&fs=1&source=uds"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HmZm8vNHBSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The Christian's (and the movie's) main argument against "piracy" that it "is stealing". If I go to wal-mart, take a CD and run out with out paying, I am stealing the CD. If I torrent the data from the CD, then I am not taking a tangible object, therefore I am not stealing. If I paint a picture, and someone takes it from my house, they're stealing. If they takes a photograph of it, and then they print it, they are not stealing.
 
