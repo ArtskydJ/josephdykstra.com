@@ -18,14 +18,14 @@ date: 2014-10-23
 
 [*josephdykstra@gmail.com*](mailto:josephdykstra@gmail.com)
 
-# About Me
+## About Me
 
 I am a full-stack software engineer with 5 years of professional experience, and I enjoy working with a friendly team that takes satisfaction in their work.
 
 </div>
 <div class="avoid-break">
 
-# Knowledge
+## Knowledge
 
 - Languages: JavaScript (node.js and browser), HTML, CSS, Mustache, Svelte, SQL Server, ColdFusion (CFML and CF Script), C, Batch, Shell
 - Source Control: Git CLI, Git GUI, GitHub, Bitbucket, Azure DevOps
@@ -34,7 +34,7 @@ I am a full-stack software engineer with 5 years of professional experience, and
 </div>
 <div class="avoid-break">
 
-# Experience
+## Experience
 
 
 ### [T.REX ARMS](https://factsmgt.com/) | 2020 - Present
@@ -50,11 +50,13 @@ I am a full-stack software engineer with 5 years of professional experience, and
 
 <!--
 2015-04-06 through 2020-04-24
+started as a "IT Technical Support Engineer"
+left as a "" (I forget)
 -->
 
-I am currently working for FACTS SIS on the [SIS](https://factsmgt.com/administration/student-information-system/)(Student Information System) product.  Schools use the SIS for Admissions, Attendance, Communication, Health Info, Gradebooks, Report Cards, Class Scheduling, Staff/Student/Family Info, Transcripts, and more.
+I worked for FACTS SIS on the [Student Information System (SIS)](https://factsmgt.com/administration/student-information-system/).  School admins and teachers use the SIS for Admissions, Attendance, Communication, Health Info, Gradebooks, Report Cards, Class Scheduling, Staff/Student/Family Info, Transcripts, and more.
 
-I work with a team to fix issues that clients have, and develop new features or new projects for thousands of schools. I ship code regularly, and I enjoy helping my fellow team members.
+I worked with a team to fix issues that clients had, and developed new features or new projects for thousands of schools. I regularly shipped code, and enjoyed helping my fellow team members.
 
 </div>
 <div class="avoid-break">
