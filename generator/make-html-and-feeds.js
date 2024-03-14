@@ -22,7 +22,7 @@ noddity.getPost('resume.md', function (err, post) {
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
 		writeFile(contentDir, 'resume-pdf.html', html)
 
-		var cmd = 'wkhtmltopdf resume-pdf.html resume.pdf'
+		var cmd = 'wkhtmltopdf --enable-local-file-access resume-pdf.html resume.pdf'
 		console.log('Running: ' + cmd)
 		cp.exec(cmd, { cwd: contentDir }, function (err, stdout) {
 			if (err) throw err
