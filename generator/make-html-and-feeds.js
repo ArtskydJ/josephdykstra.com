@@ -22,11 +22,11 @@ noddity.getPost('resume.md', function (err, post) {
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
 		writeFile(contentDir, 'resume-pdf.html', html)
 
-		require('fs').unlinkSync(contentDir + 'resume-pdf.html')
 		var cmd = 'wkhtmltopdf ' + contentDir + 'resume-pdf.html ' + contentDir + 'resume.pdf'
 		console.log('Running: ' + cmd)
 		cp.exec(cmd, function (err, stdout) {
 			if (err) throw err
+			require('fs').unlinkSync(contentDir + 'resume-pdf.html')
 			console.log('Finished running: ' + cmd)
 			cbWhenResumePdfIsGenerated()
 		})
