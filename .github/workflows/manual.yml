@@ -5,6 +5,21 @@ on:
     branches:
       - master
 
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,10 +42,26 @@ jobs:
           npm install
           node index
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "ArtskydJ"
-          git config --global user.email "josephdykstra@gmail.com"
-          git add .
-          git commit -m "build [skip ci]"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/ArtskydJ/josephdykstra.com master:master
+      # instead of committing causing GH pages to deploy, don't commit, but redeploy
+      # - name: Commit and push changes
+      #   run: |
+      #     git config --global user.name "ArtskydJ"
+      #     git config --global user.email "josephdykstra@gmail.com"
+      #     git add .
+      #     git commit -m "build [skip ci]"
+      #     git push https://${{ secrets.GITHUB_TOKEN }}@github.com/ArtskydJ/josephdykstra.com master:master
+
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
