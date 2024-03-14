@@ -21,14 +21,10 @@ noddity.getPost('resume.md', function (err, post) {
 
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
 		writeFile(contentDir, 'resume-pdf.html', html)
-		// Because CI doesn't have wkhtmltopdf, the resume.pdf file should be generated
-		// in the contentDir so CI treats it as a static file to copy to the htmlDir
+
+		require('fs').unlinkSync(contentDir + 'resume-pdf.html')
 		cp.exec('wkhtmltopdf ' + contentDir + 'resume-pdf.html ' + contentDir + 'resume.pdf', function (err, stdout) {
-			if (err) {
-				// I'm OK with this error when in CI
-				console.error(err)
-			}
-			require('fs').unlinkSync(contentDir + 'resume-pdf.html')
+			if (err) throw err
 			cbWhenResumePdfIsGenerated()
 		})
 	})
