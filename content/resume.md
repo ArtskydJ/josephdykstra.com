@@ -20,7 +20,7 @@ date: 2014-10-23
 
 ## About Me
 
-I am a full-stack software engineer with 5 years of professional experience, and I enjoy working with a friendly team that takes satisfaction in their work.
+I am a full-stack software engineer with 8 years of professional experience, and I enjoy working with a friendly team that takes satisfaction in their work.
 
 </div>
 <div class="avoid-break">
@@ -37,7 +37,7 @@ I am a full-stack software engineer with 5 years of professional experience, and
 ## Experience
 
 
-### [T.REX ARMS](https://factsmgt.com/) | 2020 - Present
+### [T.REX ARMS](https://www.trex-arms.com) | 2020 - Present
 <!--
 2020-04-27
 -->
