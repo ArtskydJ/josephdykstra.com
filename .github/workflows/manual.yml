@@ -23,7 +23,6 @@ jobs:
 
       - name: Install dependencies and run script
         run: |
-          apt install 
           cd generator
           npm install
           node index
