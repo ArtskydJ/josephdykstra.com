@@ -102,7 +102,7 @@ Here's my research as to whether a candidate claims to be a Christian... And if 
 - Bryan Jack Holder
 	- Unknown
 
-### Sheriff
+### Sheriff (Pottawattamie County)
 
 - Andy Brown
 	- Religion: Christian
