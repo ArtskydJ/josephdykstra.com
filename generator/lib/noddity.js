@@ -3,6 +3,7 @@ var Butler = require('noddity-butler')
 var Retrieval = require('noddity-fs-retrieval')
 var Linkifier = require('noddity-linkifier')
 var renderStatic = require('noddity-render-static')
+var path = require('path')
 var config = require('../config.json')
 
 var FEED_ROOT_POST = {
@@ -12,7 +13,7 @@ var FEED_ROOT_POST = {
 }
 
 module.exports = function () {
-	var butler = new Butler(new Retrieval(config.relativeGeneratorToContentPath), new Level())
+	var butler = new Butler(new Retrieval(path.join(__dirname, '..', config.relativeGeneratorToContentPath)), new Level())
 
 	function render(root, filename, cb) {
 		renderStatic(root, filename, {

@@ -1,6 +1,5 @@
 var writeFile = require('./lib/write-file.js')
 var config = require('./config.json')
-var htmlDir = config.relativeGeneratorToHtmlPath
 var redirectsPath = config.relativeGeneratorToContentPath
 
 var redirects = require(redirectsPath + 'redirects.json')
@@ -10,7 +9,7 @@ Object.keys(redirects).forEach(function (key) {
 	var toUrl = redirects[key]
 
 	var redirectFileContents = generateRedirectFile(toUrl)
-	writeFile(htmlDir, fromFilename, redirectFileContents)
+	writeFile('html', fromFilename, redirectFileContents)
 })
 
 function generateRedirectFile(url) {

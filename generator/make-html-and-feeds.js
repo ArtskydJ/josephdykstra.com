@@ -1,10 +1,11 @@
 var cp = require('child_process')
+var fs = require('fs')
+var path = require('path')
 var map = require('map')
 var writeFile = require('./lib/write-file.js')
 var feed = require('./lib/feeds.js')()
 var noddity = require('./lib/noddity.js')()
 var config = require('./config.json')
-var htmlDir = config.relativeGeneratorToHtmlPath
 var contentDir = config.relativeGeneratorToContentPath
 
 noddity.getPost('index.md', function (err, post) {
@@ -20,13 +21,13 @@ noddity.getPost('resume.md', function (err, post) {
 		if (err) throw err
 
 		html = '<link href="./styles.css?" rel="stylesheet">' + html
-		writeFile(contentDir, 'resume-pdf.html', html)
+		writeFile('content', 'resume-pdf.html', html)
 
 		var cmd = 'wkhtmltopdf --enable-local-file-access resume-pdf.html resume.pdf'
 		console.log('Running: ' + cmd)
-		cp.exec(cmd, { cwd: contentDir }, function (err, stdout) {
+		cp.exec(cmd, { cwd: path.join(__dirname, contentDir) }, function (err, stdout) {
 			if (err) throw err
-			require('fs').unlinkSync(contentDir + 'resume-pdf.html')
+			fs.unlinkSync(path.join(__dirname, contentDir, 'resume-pdf.html'))
 			console.log('Finished running: ' + cmd)
 			cbWhenResumePdfIsGenerated()
 		})
@@ -53,8 +54,8 @@ noddity.getPosts(function (err, posts) {
 			feed.add(post, htmlPostFeeds[i])
 		})
 
-		writeFile(htmlDir, 'feed.atom', feed.renderAtom())
-		writeFile(htmlDir, 'feed.rss', feed.renderRss())
+		writeFile('html', 'feed.atom', feed.renderAtom())
+		writeFile('html', 'feed.rss', feed.renderRss())
 	})
 })
 
@@ -63,7 +64,7 @@ function savePost(post) {
 		if (err) throw err
 
 		var htmlFilename = post.filename.replace(/\.md$/, '.html')
-		writeFile(htmlDir, htmlFilename, html)
+		writeFile('html', htmlFilename, html)
 	})
 }
 

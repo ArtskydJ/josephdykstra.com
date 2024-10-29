@@ -1,9 +1,11 @@
 var fs = require('fs')
+var path = require('path')
+var writeFile = require('./lib/write-file.js')
 var config = require('./config.json')
 var relContentPath = config.relativeGeneratorToContentPath
 var posts = require(relContentPath + 'index.json')
 
-var newPosts = fs.readdirSync(relContentPath)
+var newPosts = fs.readdirSync(path.join(__dirname, relContentPath))
 	.filter(isPost)
 	.filter(isNotInIndexJson)
 
@@ -18,7 +20,7 @@ if (newPosts.length > 1) {
 		.replace(/(\[|,)"/g, '$1\n  "')
 		.replace('"]', '"\n]\n')
 
-	fs.writeFileSync(relContentPath + 'index.json', indexJson)
+	writeFile('content', 'index.json', indexJson)
 } else {
 	// console.log('No new posts found')
 }
