@@ -71,7 +71,7 @@ The meme is trying to say this:
 
 Obviously it can be bad, even disastrous to go into debt. It's legal to go into debt. Colleges are a common method by which people go into debt. Should colleges be illegal? No! People can decide for themselves whether college is worth the investment.
 
-The first part of the meme has nothing to do with the second part, which I just covered. It just mentions that alcohol is illegal in the U.S. I don't think it should be, but that's not really the point of the meme.
+The first part of the meme has nothing to do with the second part, which I just covered. It just mentions that alcohol is illegal for 18-year-olds in the U.S. I don't think it should be, but that's not really the point of the meme.
 
 -----
 
